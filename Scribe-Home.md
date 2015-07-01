@@ -1,4 +1,4 @@
-<div style="text-align:center"><img src ="https://popey456963.github.io/CodeCombat/CoCo.png" /></div>
+<div style="text-align:center"><img src ="https://popey456963.github.io/s/CoCo.png" /></div>
 
 Programming and code aren't the only languages we use at CodeCombat — the written word makes our app easy to understand, fun to play, and a joy to contribute to. For these important tasks, we lean on our [Scribes](http://direct.codecombat.com/contribute/scribe).
 
