@@ -80,4 +80,4 @@ To rebuild the virtual machine from scratch, run `vagrant destroy` followed by `
 * [Brunch](http://brunch.io/) is used by CodeCombat to watch for changes to Coffeescript files and recompile them automatically. In order to allow Brunch running in the virtual machine to detect changes made on the "host" machine, "polling" mode is used. This results in higher CPU usage.
   * In order to avoid this and run Brunch in regular mode, you can start Brunch manually inside the VM by `vagrant ssh`, `cd /vagrant`, and `brunch w`. You will need to have an SSH client installed (e.g. the one installed by Git for Windows).
   * When running Brunch in regular mode, changes must be made from inside the virtual machine (i.e. via `vagrant ssh`). The virtual machine is running Ubuntu Linux, so any of the normal text mode editors may be installed and used.
-
+  * When running on a Mac, if you stop the brunch process from running and then try and start it again, it may throw and error complaining about port forwarding to port 3000. To resolve this issue, find the process running it ``sudo lsof -i :3000`` and kill it: ``sudo kill -9 3267``
