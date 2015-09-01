@@ -6,7 +6,7 @@ Our installation guides are now split into per-OS guides.
  * [Hands-On](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux#complex-linux-installation)
  * [Ubuntu Hands-On](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux#ubuntu-installation)
 * **[Windows Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows)**
-* **[Mac](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
+* **[Mac Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
 * **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS')
 
 ### Issues
