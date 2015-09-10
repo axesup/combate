@@ -49,6 +49,74 @@ On Linux, you'll need _make_, _build-essential_, _ruby_, _curl_ and _git_ instal
 5. Run `bin/coco-mongodb`, `bin/coco-brunch` and `bin/coco-dev-server`.
 6. Go to [http://localhost:3000](http://localhost:3000) to see your local CodeCombat in action.
 
+####Ubuntu Desktop
+实验环境：Ubuntu 14.04.3 LTS Desktop（选择英文语言安装）
+(PS:不必非用root登录，以下步骤没用root登录，所以命令前要加sudo)
+步骤开始
+一、更新软件源并安装编译环境
+sudo apt-get update
+sudo apt-get install make build-essential curl git zlib1g-dev
+二、在桌面创建一个目录
+cd ~/Desktop && mkdir -p coco
+cd coco
+三、下载git项目并更新源
+git clone https://github.com/[YOUR_USERNAME_OR_ID]/codecombat.git
+cd codecombat
+git remote add upstream https://github.com/codecombat/codecombat.git
+git fetch upstream
+git checkout master
+git merge upstream/master
+git push -u origin master
+四、安装其它运行环境
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+sudo npm install
+sudo npm install -g n
+sudo n stable
+sudo npm update
+sudo apt-get install ruby1.9.1 ruby1.9.1-dev
+sudo gem install sass 
+sudo ./node_modules/bower/bin/bower --allow-root install
+sudo ./node_modules/bower/bin/bower --allow-root update
+五、下载并安装mongodb 3.0.6
+cd ~/Desktop/coco && mkdir -p mongodl
+cd mongodl
+wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.0.6.tgz
+tar xfz mongodb-linux-x86_64-ubuntu1404-3.0.6.tgz
+sudo cp mongodb-linux-x86_64-ubuntu1404-3.0.6/bin/* /usr/local/bin
+六、下载并解压缩数据库
+cd ~/Desktop/coco && mkdir -p db
+cd db
+wget http://analytics.codecombat.com:8080/dump.tar.gz --no-cache
+tar xzvf dump.tar.gz --no-same-owner
+七、恢复数据库快照
+1.打开一个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-mongodb
+2.重新打开一个终端，保持上一个终端不关闭
+cd ~/Desktop/coco/db && sudo mongorestore --drop dump
+八、更新CreateJS项目文件
+cd ~/Desktop/coco/codecombat/bin
+sudo ./coco-update-createjs
+九、运行服务器
+1.打开一个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-brunch
+2.再打开一个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-dev-server
+
+十、重启计算机后运行服务器
+1.打开一个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-mongodb
+2.打开第二个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-brunch
+3.打开第三个终端
+cd ~/Desktop/coco/codecombat/bin && sudo ./coco-dev-server
+十一、在本地项目修改后如何提交到github上
+cd ~/Desktop/coco/codecombat
+git add .
+git commit -m "update test" //检测文件改动并附加提交注释
+git push -u origin master //提交修改到项目主线
+
 ####Ubuntu Installation
 
 Thank you to Steve Malmskog for writing this great guide on getting the development environment running on Ubuntu 12.04 LTS (and later)!
