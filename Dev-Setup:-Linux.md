@@ -53,68 +53,197 @@ On Linux, you'll need _make_, _build-essential_, _ruby_, _curl_ and _git_ instal
 
 Thank you to Steve Malmskog for writing this great guide on getting the development environment running on Ubuntu 12.04 LTS (and later)!
 
-#####Installation
-The installation assumes a couple destinations. Season to taste:
+* This new installation steps prepared by blianwmaster!(Experimental environment for Ubuntu 14.04.3 LTS Desktop)
+* Choose English language installed 
+* Do not use root login, the following steps didn't use the root login, so before the command to add sudo
+* My test website http://www.icodegame.com:3000
+* This is my share of the database file repair
+* Link: http: //pan.baidu.com/s/1mgqzOSw Password: t98l
+* The 99% of the picture and sound repair,I compressed coco.tar.gz database file is 81M
 
-* `export COCO_TREE=~/src/coco/codecombat`
-* `export COCO_DB=~/src/coco/db`
-* `export MONGO_DL=~/mongodl`
+#####Installation
+Update and install software source compiler environment:
+
+- `sudo apt-get update`
+- `sudo apt-get install make build-essential curl git zlib1g-dev`
+
+Create a directory on the desktop：
+
+- `cd ~/Desktop && mkdir -p coco`
+- `cd coco`
+
 
 Fork and download the codecombat git repo:
 - Create a git account or sign in
 - [Fork](https://github.com/codecombat/codecombat/fork) the CodeCombat repository
 - Clone the repository:
-    - `mkdir -p $COCO_TREE && cd $COCO_TREE`
     - `git clone https://github.com/[YOUR_USERNAME_OR_ID]/codecombat.git`
+    - `cd codecombat`
     - `git remote add upstream https://github.com/codecombat/codecombat.git`
+    - `git fetch upstream`
+    - `git checkout master`
+    - `git merge upstream/master`
+    - `git push -u origin master`
 
-Download and install Node.JS for Ubuntu 12.04 (and later):
+Install Other runtime environments for Ubuntu 12.04 LTS Desktop (Experimental environment for Ubuntu 14.04.3 LTS Desktop):
+* Add this line to your package.json in
+- https://github.com/blianwmaster/codecombat/blob/master/package.json#L55
+ 
 - `sudo add-apt-repository ppa:chris-lea/node.js`
 - `sudo apt-get update`
 - `sudo apt-get install nodejs`
-
-Install node packages:
-- `cd $COCO_TREE` (based on CodeCombat directory with packages)
-- `npm install `
-
-Install brunch and bower:
-- `sudo npm install -g brunch`
-- `sudo npm install -g bower`
-
-Install ruby and sass:
+- `sudo npm install`
+- `sudo npm install -g n`
+- `sudo n stable`
+- `sudo npm update`
 - `sudo apt-get install ruby1.9.1 ruby1.9.1-dev`
 - `sudo gem install sass`
+- `sudo ./node_modules/bower/bin/bower --allow-root install`
+- `sudo ./node_modules/bower/bin/bower --allow-root update`
 
-Setup bower:
-- `cd $COCO_TREE && bower install`
-
-Download and (manually) install mongodb 2.6 for Linux:
-- `mkdir -p $MONGO_DL && cd $MONGO_DL`
-- `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.6.4.tgz` (`wget https://fastdl.mongodb.org/linux/mongodb-linux-i686-2.6.4.tgz` for 32-bit)
-- `tar xfz mongodb-linux-x86_64-2.6.4.tgz` (`tar xfz mongodb-linux-i686-2.6.4.tgz` for 32-bit)
-- `sudo cp mongodb-linux-x86_64-2.6.4/bin/* /usr/local/bin` (`sudo cp mongodb-linux-i686-2.6.4/bin/* /usr/local/bin` for 32-bit)
-- `sudo mkdir -p /data/db`
-- `sudo chown -R <username>:<username> /data/db` where \<username\> = your username (e.g., `whoami`)
+Download and (manually) install mongodb 3.0.6 for Ubuntu:
+- `cd ~/Desktop/coco && mkdir -p mongodl`
+- `cd mongodl`
+- `wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.0.6.tgz`
+- `tar xfz mongodb-linux-x86_64-ubuntu1404-3.0.6.tgz`
+- `sudo cp mongodb-linux-x86_64-ubuntu1404-3.0.6/bin/* /usr/local/bin`
 
 Download and unpack database snapshot:
-- `mkdir -p $COCO_DB && cd $COCO_DB`
+- `cd ~/Desktop/coco && mkdir -p db`
+- `cd db`
 - `wget http://analytics.codecombat.com:8080/dump.tar.gz`
 - `tar xfz dump.tar.gz`
 
 Install database snapshot:
 - In first terminal:
-   - `cd $COCO_TREE && bin/coco-mongodb`
+   - `cd ~/Desktop/coco/codecombat/bin && sudo ./coco-mongodb`
 - In another terminal:
-   - `cd $COCO_DB && mongorestore --drop dump`
+   - `cd ~/Desktop/coco/db && sudo mongorestore --drop dump`
+
+Update CreateJS:
+- In another terminal:
+   - `cd ~/Desktop/coco/codecombat/bin`
+   - `sudo gedit ./coco-update-createjs`
+   - * Copy and paste the following text
+- * -----------begin---------------------
+- `# automatically builds the latest versions of the CreateJS suite`
+- `# and puts them into vendor/scripts.`
+
+- `# for this to work:`
+- `cd ~/Desktop/coco`
+- `mkdir -p CreateJS`
+- `cd CreateJS`
+- `git clone https://github.com/[YOUR_USERNAME_OR_ID]/EaselJS.git`
+- `cd EaselJS`
+- `git remote add upstream https://github.com/CreateJS/EaselJS.git`
+- `git fetch upstream`
+- `git checkout master`
+- `git merge upstream/master`
+- `git push -u origin master`
+
+- `cd ..`
+- `git clone https://github.com/[YOUR_USERNAME_OR_ID]/PreloadJS.git`
+- `cd PreloadJS`
+- `git remote add upstream https://github.com/CreateJS/PreloadJS.git`
+- `git fetch upstream`
+- `git checkout master`
+- `git merge upstream/master`
+- `git push -u origin master`
+
+- `cd ..`
+- `git clone https://github.com/[YOUR_USERNAME_OR_ID]/SoundJS.git`
+- `cd SoundJS`
+- `git remote add upstream https://github.com/CreateJS/SoundJS.git`
+- `git fetch upstream`
+- `git checkout master`
+- `git merge upstream/master`
+- `git push -u origin master`
+
+- `cd ..`
+- `git clone https://github.com/[YOUR_USERNAME_OR_ID]/TweenJS.git`
+- `cd TweenJS`
+- `git remote add upstream https://github.com/CreateJS/TweenJS.git`
+- `git fetch upstream`
+- `git checkout master`
+- `git merge upstream/master`
+- `git push -u origin master`
+
+
+- `# then you can run this script to build the latest version whenever`
+- `# see the build/README file in any of these libraries on GitHub for more info`
+- `# https://github.com/CreateJS/EaselJS/blob/master/build/README.md`
+
+
+
+- `cd ~/Desktop/coco/CreateJS/EaselJS/`
+- `echo updating Easel`
+- `git checkout .`
+- `git pull`
+- `sudo npm update`
+- `cd build`
+- `sudo npm update`
+- `echo building Easel`
+- `sudo ~/Desktop/coco/codecombat/node_modules/grunt-cli/bin/grunt combine`
+
+- `cd ~/Desktop/coco/CreateJS/PreloadJS/`
+- `echo updating Preload`
+- `git checkout .`
+- `git pull`
+- `sudo npm update`
+- `cd build`
+- `sudo npm install`
+- `sudo npm update`
+- `echo building Preload`
+- `sudo ~/Desktop/coco/codecombat/node_modules/grunt-cli/bin/grunt combine`
+
+- `cd ~/Desktop/coco/CreateJS/SoundJS/`
+- `echo updating Sound`
+- `git checkout .`
+- `git pull`
+- `sudo npm update`
+- `cd build`
+- `sudo npm install`
+- `sudo npm update`
+- `echo building Sound`
+- `sudo ~/Desktop/coco/codecombat/node_modules/grunt-cli/bin/grunt combine`
+
+- `cd ~/Desktop/coco/CreateJS/TweenJS/`
+- `echo updating Tween`
+- `git checkout .`
+- `git pull`
+- `sudo npm update`
+- `cd build`
+- `sudo npm install`
+- `sudo npm update`
+- `echo building Tween`
+- `sudo ~/Desktop/coco/codecombat/node_modules/grunt-cli/bin/grunt combine`
+
+- `echo moving to CoCo`
+- `cp ~/Desktop/coco/CreateJS/EaselJS/build/output/easeljs-NEXT.combined.js ~/Desktop/coco/codecombat/vendor/scripts`
+- `cp ~/Desktop/coco/CreateJS/EaselJS/build/output/movieclip-NEXT.combined.js ~/Desktop/coco/codecombat/vendor/scripts`
+- `cp ~/Desktop/coco/CreateJS/EaselJS/src/easeljs/display/SpriteStage.js ~/Desktop/coco/codecombat/vendor/scripts/`
+- `cp ~/Desktop/coco/CreateJS/EaselJS/src/easeljs/display/SpriteContainer.js ~/Desktop/coco/codecombat/vendor/scripts/`
+- `cp ~/Desktop/coco/CreateJS/SoundJS/lib/soundjs-NEXT.combined.js ~/Desktop/coco/codecombat/vendor/scripts`
+- `cp ~/Desktop/coco/CreateJS/PreloadJS/build/output/preloadjs-NEXT.combined.js ~/Desktop/coco/codecombat/vendor/scripts`
+- `cp ~/Desktop/coco/CreateJS/TweenJS/build/output/tweenjs-NEXT.combined.js ~/Desktop/coco/codecombat/vendor/scripts`
+
+- *----------end-----------
+- https://github.com/codecombat/codecombat/blob/master/config.coffee#L146
+- movieclip-NEXT.min.js
+- * Replace and Save
+- movieclip-NEXT.combined.js
+
+   - `sudo ./coco-update-createjs`
 
 #####Running
 
 Start up mongo:
 - Mongo should already be running from your database snapshot install. If not:
-   - `cd $COCO_TREE && bin/coco-mongodb`
+   - `cd ~/Desktop/coco/codecombat/bin && sudo ./coco-mongodb`
+
 
 Start up brunch:
-- `sudo cd $COCO_TREE && bin/coco-brunch`
+- `cd ~/Desktop/coco/codecombat/bin && sudo ./coco-brunch`
    This should say something like:
 
    info: compiled 806 files into 597 files, copied 371 in 34766ms
@@ -122,7 +251,7 @@ Start up brunch:
    It will continue to run in the foreground.
 
 Start up the dev server:
-- `cd $COCO_TREE && bin/coco-dev-server`
+- `cd ~/Desktop/coco/codecombat/bin && sudo ./coco-dev-server`
 
 Accessing the local instance of codecombat:
 - Start up a local browser and go to: http://localhost:3000.
@@ -131,6 +260,9 @@ Accessing the local instance of codecombat:
 
 Pick up upstream changes:
 - `git fetch upstream`
+- `git checkout master`
+- `git merge upstream/master`
+- `git push -u origin master`
 
 ####Installing the Database
 Download the [CodeCombat database](http://analytics.codecombat.com:8080/dump.tar.gz) (updated every 10 minutes) and import it to your locally running database with the following commands:
