@@ -62,18 +62,18 @@ Thank you to Steve Malmskog for writing this great guide on getting the developm
 * The 99% of the picture and sound repair,I compressed coco.tar.gz database file is 81M
 
 
-`#!/bin/bash`
-`echo -------------------------------------------------------------------------`
-`echo ----------Update software source`
-`echo -------------------------------------------------------------------------`
-
-`sleep 5s`
-`sudo apt-get update`
-`echo -------------------------------------------------------------------------`
-`echo ----------Install compiler environment`
-`echo -------------------------------------------------------------------------`
-
-`sleep 5s`
+-`#!/bin/bash`
+-`echo -------------------------------------------------------------------------`
+-`echo ----------Update software source`
+-`echo -------------------------------------------------------------------------`
+-
+-`sleep 5s`
+-`sudo apt-get update`
+-`echo -------------------------------------------------------------------------`
+-`echo ----------Install compiler environment`
+-`echo -------------------------------------------------------------------------`
+-
+-`sleep 5s`
 `sudo apt-get -y install make build-essential curl git zlib1g-dev python-software-properties`
 `echo -------------------------------------------------------------------------`
 `echo ----------Download the codecombat git`
