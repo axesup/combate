@@ -28,7 +28,7 @@ If running on Windows and this is the first time you have used a VirtualBox virt
 
 The first time you do `vagrant up`, it will take much longer, because it will install the various dependencies, like Node, Bower, and MongoDB.
 
-If there are errors during the setup, you can try `vagrant destroy` followed by `vagrant up` again. If you aren't able to figure it out, try asking in the [CodeCombat chat room](http://www.hipchat.com/g3plnOKqa).
+If there are errors during the setup, you can try `vagrant destroy` followed by `vagrant up` again. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
 
 ## Running CodeCombat
 
