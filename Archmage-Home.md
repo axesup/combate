@@ -20,7 +20,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 1. Check out the [Good for Newbies Issues](https://github.com/codecombat/codecombat/labels/good-for-newbies).
 1. Browse the wiki to learn something new!
 1. Fix [bugs](https://github.com/codecombat/codecombat/labels/bug).
-1. Bring up new ideas in our [HipChat room](https://www.hipchat.com/g3plnOKqa).
+1. Bring up new ideas in our [HipChat room](https://www.hipchat.com/gkaufqwnj).
 
 ####Reading Material
 ######General:
