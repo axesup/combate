@@ -24,5 +24,5 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 
 ######More Resources
 
-* [Public HipChat Room](http://www.hipchat.com/g3plnOKqa)
+* [Public HipChat Room](https://www.hipchat.com/gkaufqwnj)
 * [Artisan Forum](http://discourse.codecombat.com/category/artisan)
