@@ -10,7 +10,7 @@ Hello [Archmages](http://codecombat.com/contribute/archmage)! Welcome to the dev
 
 ####Contact Us
 
-There are a variety of ways to get help with CodeCombat related things.  We have a developer chat room at [HipChat](http://www.hipchat.com/g3plnOKqa).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.  We have room for off-topic talking [here](http://www.hipchat.com/gaXOD7lQ8) where you can talk about anything!
+There are a variety of ways to get help with CodeCombat related things.  We have a developer chat room at [HipChat](https://www.hipchat.com/gkaufqwnj).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.  We have room for off-topic talking [here](http://www.hipchat.com/gaXOD7lQ8) where you can talk about anything!
 
 The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main HipChat Room page](https://github.com/codecombat/codecombat/wiki/HipChat-Room).
 
