@@ -7,7 +7,7 @@
 
 ### Simple Mac Tutorial
 
-This method should work on Mac, if it doesn't, join our [HipChat room](https://www.hipchat.com/g3plnOKqa). This tutorial requires you to have the [XCode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
+This method should work on Mac, if it doesn't, join our [HipChat room](https://www.hipchat.com/gkaufqwnj). This tutorial requires you to have the [XCode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12).
 
 1. [Create a GitHub account](https://github.com/join) if you don't already have one.
 2. [Set up Git on your computer](https://help.github.com/articles/set-up-git/) to allow your computer to speak to GitHub.
@@ -26,7 +26,7 @@ This method should work on Mac, if it doesn't, join our [HipChat room](https://w
 
     NOTE: The repository will be in the coco subdirectory. You should not run a separate git clone, as that is taken care of.
 6. Ensure you have Python 2 installed with `brew install python`, or your distributional equivalent.  Python 3.1 is also supported, but 3.2+ are not tested.
-7. Follow the on-screen prompts.  The program will download and install all necessary dependencies. If nothing seems to be happening, try running `sudo python ./coco/scripts/devSetup/setup.py` or join the [HipChat room](https://www.hipchat.com/g3plnOKqa) to fix things.
+7. Follow the on-screen prompts.  The program will download and install all necessary dependencies. If nothing seems to be happening, try running `sudo python ./coco/scripts/devSetup/setup.py` or join the [HipChat room](https://www.hipchat.com/gkaufqwnj) to fix things.
 8.  Run the following commands in separate windows:
     * `./coco/bin/coco-mongodb` - Starts MongoDB
     * `sudo ./coco/bin/coco-brunch` - Starts brunch, which watches for file changes 
