@@ -59,3 +59,4 @@
  * [[Treema]]
  * [[Versioning]]
  * [[Views]]
+ * [[HipChat Room Rules]]
