@@ -17,7 +17,7 @@ Other versions, newer then _Windows XP_, and not listed above, might work, but w
 
 ###Detailed Windows Installation
 
-**NOTE**: Following the guide can be complicated. If you have any questions, just ask in the [CodeCombat chatroom](https://www.hipchat.com/g3plnOKqa).
+**NOTE**: Following the guide can be complicated. If you have any questions, just ask in the [CodeCombat chatroom](https://www.hipchat.com/gkaufqwnj).
 
 First, you'll need some preliminary knowledge.
 
@@ -191,7 +191,7 @@ This paragraph is only for people who want to help on the development of the ins
 ###### Introduction
 The manual installation of the CodeCombat development environment on Windows was tricky, and a lot of users had troubles with this. Therefore we decided to develop a fully automatic setup for Windows, to avoid users getting frustrated and giving up before they ever started on real development. That's in a nutshell the short background of why this setup exists in the first place.
 
-Please note that this setup is in development and maintained by only one person. This means that there is a high risk of potential bugs. These can and should be reported like any other issue on [the official CodeCombat issue list](https://github.com/codecombat/codecombat/issues?labels=enhancement&state=open). Because of this solo development process there is probably quite some room for optimizations and improvements possible, to make it work faster, safer and better. Feel free to discuss proposals to improve it, with **Glen DC** on the [CodeCombat chatroom](http://www.hipchat.com/g3plnOKqa).
+Please note that this setup is in development and maintained by only one person. This means that there is a high risk of potential bugs. These can and should be reported like any other issue on [the official CodeCombat issue list](https://github.com/codecombat/codecombat/issues?labels=enhancement&state=open). Because of this solo development process there is probably quite some room for optimizations and improvements possible, to make it work faster, safer and better. Feel free to discuss proposals to improve it, with **Glen DC** on the [CodeCombat chatroom](https://www.hipchat.com/gkaufqwnj).
 
 **[Go back to the top.](#index)**
 
@@ -290,6 +290,6 @@ SCOCODE.bat should pop up three command prompts. The first one is MongoDB. If th
 **[Go back to the top.](#index)**
 
 ###### Final Note
-That's it. If there are any question, just ask them on the [CodeCombat chatroom](http://www.hipchat.com/g3plnOKqa). 
+That's it. If there are any question, just ask them on the [CodeCombat chatroom](https://www.hipchat.com/gkaufqwnj). 
 
 **[Go back to the top.](#index)**
