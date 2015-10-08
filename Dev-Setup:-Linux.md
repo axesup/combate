@@ -26,7 +26,7 @@ On Linux, you'll need _make_, _build-essential_, _ruby_, _curl_ and _git_ instal
     ```
     NOTE: The repository will be in the coco subdirectory.  You should not run a separate git clone, as that is taken care of.
 6. Ensure you have Python 2 installed with `sudo apt-get install python2`, or your distributional equivalent.  Python 3.1 is also supported, but 3.2+ are not tested.  If that is not working, it is also possible to install it directly from the Ubuntu software center.
-7. Follow the on-screen prompts.  The program will download and install all necessary dependencies.  If nothing seems to be happening, try running `sudo python ./coco/scripts/devSetup/setup.py` or join the [HipChat room](https://www.hipchat.com/g3plnOKqa) to fix things.
+7. Follow the on-screen prompts.  The program will download and install all necessary dependencies.  If nothing seems to be happening, try running `sudo python ./coco/scripts/devSetup/setup.py` or join the [HipChat room](https://www.hipchat.com/gkaufqwnj) to fix things.
 7.  Run the following commands in separate windows (these are python scripts, so make sure you have a python IDE installed):
     * `./coco/bin/coco-mongodb` - Starts MongoDB
     * `sudo ./coco/bin/coco-brunch` - Starts brunch, which watches for file changes 
