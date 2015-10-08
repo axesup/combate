@@ -2,7 +2,7 @@
 
 CodeCombat has a public [HipChat room](http://www.hipchat.com/g3plnOKqa), where we hang out when we're awake. Stop by, say hi, and ask a question any time. Although the core devs are asleep during the night (US Pacific time), there are usually a few other players awake.  
 
-There is absolutely no inappropriate messages allowed in the rooms.
+There is absolutely no inappropriate messages allowed in the rooms. If you would like to see the rules please go [here] (https://github.com/codecombat/codecombat/wiki/HipChat-Room-Rules).
 
 There's also an off-topic room at [http://www.hipchat.com/gaXOD7lQ8](http://www.hipchat.com/gaXOD7lQ8).
 
