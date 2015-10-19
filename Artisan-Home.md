@@ -22,6 +22,10 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 * [[Coding Guidelines for Artisans]]
 * [[Keyboard Shortcuts]]
 
+###### How-To
+
+* [[Artisan How-To Index]]
+
 ######More Resources
 
 * [Public HipChat Room](https://www.hipchat.com/gkaufqwnj)
