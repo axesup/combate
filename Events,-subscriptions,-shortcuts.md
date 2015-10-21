@@ -20,6 +20,8 @@ All `CocoView` subclasses support subscriptions. Objects subscribe on constructi
 
 See the [Backbone-Mediator repository](https://github.com/chalbert/Backbone-Mediator) for more details.
 
+If one object needs to listen to another and they are closely related, such as a view that opens a modal and needs to wait for the modal to return a result, use [Backbone Events](http://backbonejs.org/#Events) instead.
+
 ## Subscription Validation
 To regulate what objects get passed around (or _published_), all such objects are subject to [JSON Schema](http://json-schema.org/) validation. This allows for all of these objects to be defined and documented in a central location, namely `app/schemas`. The validation itself is done by [tv4](https://github.com/geraintluff/tv4); all we need to do is write down the schemas.
 
