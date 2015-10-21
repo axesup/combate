@@ -22,3 +22,7 @@ Try to avoid writing low-value comments. Comments should be mainly used to flag 
 ## Breaking CodeCombat Down Into Third-Party Modules
 
 [Aether](https://github.com/codecombat/aether) and [Treema](https://github.com/codecombat/treema) are built from the ground up to be modular and not tied to CodeCombat, because they're large projects that we could imagine being used in a variety of other projects. There are other parts of CodeCombat which could be spun off into separate, fully autonomous projects. These projects do need to be fully autonomous, though, in terms of code. Treema and Aether are built not to have anything specific to CodeCombat. If more parts are to be spun off, they need to be generalized enough to be useful to others and without irrelevant cruft.
+
+## Leveraging Third-Party Tools
+
+CodeCombat uses a great many open source libraries for both [client](https://github.com/codecombat/codecombat/blob/master/bower.json) and [server](https://github.com/codecombat/codecombat/blob/master/package.json), and are summarized in the [wiki](https://github.com/codecombat/codecombat/wiki/Third-party-software-and-services). Familiarize yourself with these tools and use them whenever possible. Try to avoid re-inventing any of the many wheels included in the codebase. In particular, read through the documentation on [Backbone](http://backbonejs.org/), [Bootstrap](http://getbootstrap.com/), [Lodash](https://lodash.com/docs), and [jQuery](https://jquery.com/).
