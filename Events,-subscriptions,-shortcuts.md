@@ -60,14 +60,13 @@ See how the `level:view-switched` schema uses `$ref` to refer to the `id` of `jQ
 ```coffee
 module.exports = class PlayLevelView extends View
   events:
-    'click #level-done-button': 'onDonePressed'
+    'click #level-done-btn': 'onClickLevelDoneButton'
+    'change #language-select': 'onChangeLanguageSelect'
 ```
 
-Events are [Backbone Events](http://backbonejs.org/#Events) for [Backbone Views](http://backbonejs.org/#View). These are for things like mouse clicks or other DOM events.
+Events are [Backbone Events](http://backbonejs.org/#Events) for [Backbone Views](http://backbonejs.org/#View). These are for things like mouse clicks or other DOM events. `CocoView` is a subclass of Backbone's `View` class so they all support events, and are handled by Backbone as usual. See the [Backbone docs](http://backbonejs.org/) for more details.
 
-`CocoView` is a subclass of Backbone's `View` class so they all support events, and are handled by Backbone as usual.
-
-See the [Backbone docs](http://backbonejs.org/) for more details.
+Callback functions should start with "on", with the rest being the CamelCase version the jQuery event signature. Give the element an id or class which leads to a sensible callback function name, one that ends with the HTML element or Bootstrap component name, such as in the above example. This guideline makes it easier to match element with callback and encourages names which describe both the element and the action.
 
 ## Shortcuts
 
