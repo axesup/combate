@@ -16,11 +16,11 @@
  * [[Third party software and services]]
 * **[[Artisan General|Artisan Home]]**
  * [[Building A Level]]
- * [[Chief Artisan Level Audition]]
  * [[Coding Guidelines for Artisans]]
  * [[Editing Thang Components]]
  * [[Important Artisan Concepts]]
  * [[Keyboard Shortcuts]]
+ * [[Artisan How-To Index]]
 * **[[Adventurer General|Adventurer Home]]**
 * **[[Scribe General|Scribe Home]]**
 * **[[Diplomat General|Diplomat Home]]**
