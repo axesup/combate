@@ -24,7 +24,7 @@ Modals are views too, and by using openModalView in CocoView they can be handled
 
 ### Templates
 
-A view typically has one jade template associated with it. When you create a view in /app/views, you should also add a jade file in /app/views, following a parallel path and named same as the view but with a hyphenated-name instead of CamelCaseName.
+A view typically has one jade template associated with it. When you create a view in /app/views, you should also add a jade file in /app/templates, following a parallel path and named same as the view but with a hyphenated-name instead of CamelCaseName.
 
 A template will typically look something like this:
 
