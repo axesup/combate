@@ -22,6 +22,25 @@ When a view is navigated away from, its destroy function is called, which tears 
 
 Modals are views too, and by using openModalView in CocoView they can be handled uniformly. Modals should subclass ModalView.
 
+### Templates
+
+A view typically has one jade template associated with it. When you create a view in /app/views, you should also add a jade file in /app/views, following a parallel path and named same as the view but with a hyphenated-name instead of CamelCaseName.
+
+A template will typically look something like this:
+
+```jade
+extends /templates/base
+
+block content
+  p Main content goes here.
+  p Insert static content from the view like this: #{view.modelYouLoaded.get('name')}.
+  p= view.accountStatusString()
+  - var now = moment(new Date());
+  p It is now #{now.format('LLLL')}.
+```
+
+Every template has access to the view that renders it, as well as a handful of other globals such as lodash (_) and moment. See `getRenderData` in [CocoView.coffee](https://github.com/codecombat/codecombat/blob/master/app/views/core/CocoView.coffee) for a complete, current list. Use view to hold data and middleware you want to use for your particular view.
+
 ***
 
 If you're building client views, it's recommended you look through the files in /app/views/kinds to familiarize yourself with the common tools, and how things are generally done.
