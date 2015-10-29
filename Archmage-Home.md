@@ -12,7 +12,7 @@ Hello [Archmages](http://codecombat.com/contribute/archmage)! Welcome to the dev
 
 There are a variety of ways to get help with CodeCombat related things.  We have [a developer chat room on Slack](https://coco-slack-invite.herokuapp.com/) (or [HipChat](https://www.hipchat.com/gkaufqwnj) if you prefer not to register).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.  We have a HipChat room for off-topic discussions [here](http://www.hipchat.com/gaXOD7lQ8).
 
-The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main HipChat Room page](https://github.com/codecombat/codecombat/wiki/HipChat-Room).
+The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main chat page](https://github.com/codecombat/codecombat/wiki/HipChat-Room).
 
 ####Starting Off
 1. Setup the [Developer Environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information).
@@ -20,7 +20,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 1. Check out the [Good for Newbies Issues](https://github.com/codecombat/codecombat/labels/good-for-newbies).
 1. Browse the wiki to learn something new!
 1. Fix [bugs](https://github.com/codecombat/codecombat/labels/bug).
-1. Bring up new ideas in our [HipChat room](https://www.hipchat.com/gkaufqwnj).
+1. Bring up new ideas in our [Slack channel](https://coco-slack-invite.herokuapp.com).
 
 ####Reading Material
 ######General:
@@ -75,4 +75,4 @@ Doing [this](https://www.codeschool.com/courses/try-git) quick course should get
 We'll try! It should be a cinch on Linux or Mac, but it's pretty hard to get right on Windows right now. If you can't find us for help on Windows, you might try installing it on a Linux VM.  Anyone who can help with updating the Windows version is welcome to!  A good platform to setup your VM on is [Ubuntu](http://www.ubuntu.com/) which can have a desktop or only a terminal.  Also, [VirtualBox](https://www.virtualbox.org/) is easy to setup with and it free.
 
 ######What are some larger projects I can do?
-[[Here's out big project ideas list|Project Ideas List]], which should give you some ideas about what you can contribute on.
+[[Here's our big project ideas list|Project Ideas List]], which should give you some ideas about what you can contribute on.
