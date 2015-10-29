@@ -1,3 +1,18 @@
+# Deprecation Notice
+
+The setup pages are out of date. We are no longer using scripts for automatic installation, nor are we using ruby sass. For **all** platforms, the general process is now:
+
+1. Install/run MongoDB
+1. Install Node/NPM
+1. Install Git
+1. Clone this repo
+1. Run npm install
+1. Run npm start
+
+TODO: Rewrite setup pages to expand on these steps for each OS (OS-specific install links, Homebrew, Cygwin, etc).
+
+***
+
 ### Installation Guides
 
 Our installation guides are now split into per-OS guides.
