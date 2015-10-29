@@ -12,7 +12,7 @@ Hello [Archmages](http://codecombat.com/contribute/archmage)! Welcome to the dev
 
 There are a variety of ways to get help with CodeCombat related things.  We have [a developer chat room on Slack](https://coco-slack-invite.herokuapp.com/) (or [HipChat](https://www.hipchat.com/gkaufqwnj) if you prefer not to register).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.  We have a HipChat room for off-topic discussions [here](http://www.hipchat.com/gaXOD7lQ8).
 
-The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main chat page](https://github.com/codecombat/codecombat/wiki/HipChat-Room).
+The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main chat page](https://github.com/codecombat/codecombat/wiki/Chat-Room).
 
 ####Starting Off
 1. Setup the [Developer Environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information).
