@@ -28,5 +28,5 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 
 ######More Resources
 
-* [Public HipChat Room](https://www.hipchat.com/gkaufqwnj)
+* [Public Slack Channel](https://coco-slack-invite.herokuapp.com/)
 * [Artisan Forum](http://discourse.codecombat.com/category/artisan)
