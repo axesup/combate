@@ -20,7 +20,7 @@ If you have not set up Git, then at least do the following:
 
 ## Cloning
 
-First fork and clone [codecombat repository][repo], and track upstream.
+First fork and clone the [CodeCombat repository][repo], and track upstream.
 
     git clone https://github.com/$GITHUB_USERNAME/codecombat.git
     cd codecombat
