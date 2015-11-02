@@ -57,6 +57,7 @@ You don't need to learn how to use all of these tools, but please take some time
 
 ## Other tools
 * [Jasmine](http://jasmine.github.io/2.0/introduction.html): Used for testing.
+* [BrowserStack](http://browserstack.com): Used for browser compatibility testing.
 * [Karma](https://github.com/karma-runner/karma): Test runner.
 * [Brunch](https://github.com/brunch/brunch): Assembles the project, and is pretty much central to everything development.
 * [Discourse](http://www.discourse.org/): Actually good forum software. CodeCombat is blessed by Jeff Atwood and Discourse.
