@@ -7,7 +7,7 @@
 
 This method should work on Mac, if it doesn't, join our [HipChat room](https://www.hipchat.com/gkaufqwnj).
 
-This tutorial requires you to have the [XCode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12), and have installed the XCode Command Line Tools (which can be found under the menu Xcode -> Preferences -> Downloads).
+This tutorial requires you to have the [XCode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12), and have installed the XCode Command Line Tools (which can be found under the menu `Xcode -> Preferences -> Downloads`).
 
 1. Make sure you have Git, Node.js, MongoDB, and Python 2.7 installed.
 2. [Create a GitHub account](https://github.com/join) if you don't already have one.
