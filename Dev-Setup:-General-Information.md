@@ -3,7 +3,7 @@
 1. Install MongoDB, Node.js, Git, Python 2.7
 1. `git clone`
 1. `npm install`
-1. Start database and import the [database dump](#database)
+1. Start MongoDB and import the [database dump](#database)
 1. Run `npm run dev` (live coding) or `npm start` (preview)
 
 TODO: Rewrite setup pages to expand on these steps for each OS (OS-specific install links, Homebrew, Cygwin, etc).
