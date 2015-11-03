@@ -1,13 +1,10 @@
-# Deprecation Notice
+### General Instructions
 
-The setup pages are out of date. We are no longer using scripts for automatic installation, nor are we using ruby sass. For **all** platforms, the general process is now:
-
-1. Install/run MongoDB
-1. Install Node/NPM
-1. Install Git
-1. Clone this repo
-1. Run npm install
-1. Run npm start
+1. Install MongoDB, Node.js, Git, Python 2.7
+1. `git clone`
+1. `npm install`
+1. Start database and import the [database dump](#database)
+1. Run `npm run dev` (live coding) or `npm start` (preview)
 
 TODO: Rewrite setup pages to expand on these steps for each OS (OS-specific install links, Homebrew, Cygwin, etc).
 
@@ -15,11 +12,9 @@ TODO: Rewrite setup pages to expand on these steps for each OS (OS-specific inst
 
 ### Installation Guides
 
-Our installation guides are now split into per-OS guides.
+Our installation guides are split into per-OS guides.
+
 * **[Linux Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux)**
- * [Automatic](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux#automatic-linux-installation)
- * [Hands-On](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux#complex-linux-installation)
- * [Ubuntu Hands-On](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux#ubuntu-installation)
 * **[Windows Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows)**
 * **[Mac Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
 * **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS')
@@ -36,15 +31,11 @@ You don't need any particular IDE to work with CodeCombat. Scott uses WebStorm, 
 
 If Brunch is running and you have a page open to the development server and you make changes to the programming logic one way or another, Brunch will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating. If you edit just the styling, Brunch will apply the new styling without refreshing.
 
-Brunch is good, but it is finicky (or possibly improperly configured). Its finicks include but are not limited to:
-
-* Stops reloading the page properly
-* Takes strangely long to compile
-* Doesn't compile every file into app.js
-
-Usually, restarting it by hitting Ctrl-C once in the Brunch terminal window will fix it. Because of the frequency of it needing restarting, it will automatically restart when terminated once, and will only really stop if it's terminated twice in a row manually.
-
 ### Database
+
+The link to the database dump is http://analytics.codecombat.com:8080/dump.tar.gz.
+
+To import the database into MongoDB unpack the archive and run `mongorestore --drop /path/to/dump`.
 
 When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. Currently, there's no easy way to transfer data you make on your dev environment back to production, so be sure to build levels you want to share on the site, not on the dev server.
 
