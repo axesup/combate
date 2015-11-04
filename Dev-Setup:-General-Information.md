@@ -1,6 +1,6 @@
 ### General Instructions
 
-1. Install MongoDB, Node.js, Git, Python 2.7
+1. Install [MongoDB](https://www.mongodb.org/downloads#production), [Node.js](https://nodejs.org/en/download/), [Git](https://desktop.github.com/), [Python 2.7](https://www.python.org/download/releases/2.7/)
 1. `git clone`
 1. `npm install`
 1. Start MongoDB and import the [database dump](#database)
@@ -17,11 +17,11 @@ Our installation guides are split into per-OS guides.
 * **[Linux Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux)**
 * **[Windows Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows)**
 * **[Mac Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
-* **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS')
+* **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS)
 
 ### Issues
 
-We are starting a [list of dev setup issues and workarounds here](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Issues). If you have a problem and we figure out how to get around it, please help by updating this page.
+There's a [list of dev setup issues and workarounds here](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Issues). If you have a problem and we figure out how to get around it, please help by updating this page.
 
 ### Working in the environment
 
@@ -29,16 +29,18 @@ You don't need any particular IDE to work with CodeCombat. Scott uses WebStorm, 
 
 ### Live-coding
 
-If Brunch is running and you have a page open to the development server and you make changes to the programming logic one way or another, Brunch will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating. If you edit just the styling, Brunch will apply the new styling without refreshing.
+If Brunch is running and you make code changes, Brunch will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating. If you edit just the styling, Brunch will apply the new styling without refreshing.
 
 ### Database
 
-The link to the database dump is http://analytics.codecombat.com:8080/dump.tar.gz.
+The link to the database dump is: http://analytics.codecombat.com:8080/dump.tar.gz
 
-To import the database into MongoDB unpack the archive and run `mongorestore --drop /path/to/dump`.
+To import the database into MongoDB, unpack the archive and run: `mongorestore --drop /path/to/dump`
 
-When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. Currently, there's no easy way to transfer data you make on your dev environment back to production, so be sure to build levels you want to share on the site, not on the dev server.
+When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. To keep the database dump small, we only include a handful of testing levels. If you need to work on a specific level, let us know.
+
+Currently, there's no easy way to transfer data you make on your dev environment back to production, so be sure to build levels you want to share on [direct.codecombat.com](http://direct.codecombat.com/editor/level), not on the dev server.
 
 ### Third Party Services
 
-API services we use such as MailChimp will not be accessible unless you have an API key. Generally you shouldn't need them to work on the site, but if you do then let us know and we'll see if we can get something worked out. Some systems may break without the keys, and so will need to be modified to soldier on without them.
+API services we use such as MailChimp will not be accessible unless you have an API key. Generally you shouldn't need them to work on the site, but if you do, then let us know.
