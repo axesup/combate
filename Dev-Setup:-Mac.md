@@ -1,15 +1,8 @@
-<!--
-* [Simple Mac Tutorial](#simple-mac-tutorial)
-* [Vagrant Tutorial](#the-do-it-yourself-vagrant-vm-method)
-* [Installing the Database](#installing-the-database)
-* [Mac OS X Screencast](https://www.youtube.com/watch?v=fom1ksXSbKM) (video)
--->
+This tutorial requires you to have the [Xcode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12), and have installed the Xcode Command Line Tools (which can be found under the menu `Xcode -> Preferences -> Downloads`).
 
-This method should work on Mac, if it doesn't, join our [HipChat room](https://www.hipchat.com/gkaufqwnj).
-
-This tutorial requires you to have the [XCode Developer Tools](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12), and have installed the XCode Command Line Tools (which can be found under the menu `Xcode -> Preferences -> Downloads`).
-
-1. Make sure you have Git, Node.js, MongoDB, and Python 2.7 installed.
+1. Make sure you have MongoDB and Node.js installed. Git comes with Xcode and Python 2.7 should already be installed.
+    1. [MongoDB instructions here](https://docs.mongodb.org/master/tutorial/install-mongodb-on-os-x/). We recommend using [Homebrew](http://brew.sh/).
+    1. The [Node.js installer](https://nodejs.org/en/download/) is easy to use.
 2. [Create a GitHub account](https://github.com/join) if you don't already have one.
 3. [Set up Git on your computer](https://help.github.com/articles/set-up-git/) to allow your computer to speak to GitHub.
 4. _(Optional)_ [Fork](https://github.com/codecombat/codecombat/fork) our CodeCombat repository if you wish to make changes.
@@ -26,7 +19,7 @@ Download the [CodeCombat database](http://analytics.codecombat.com:8080/dump.tar
 
 1. Make sure the database is running on your computer.
 1. Uncompress the file with `tar xzvf [filename]`).
-1. Run `mongorestore --drop [path to dump]` if mongorestore is in your path. If mongorestore is not in your path, run `[path to CodeCombat folder]/bin/mongo/mongorestore --drop [path to dump]`.
+1. Run `mongorestore --drop [path to dump]` if mongorestore is in your path. If mongorestore is not in your path, run `[path to where you downloaded MongoDB]/mongorestore --drop [path to dump]`.
 
 When downloading a new dump to keep the database up-to-date, use `mongorestore --drop [path to dump]` to clear out all old data (including any local data you have created) and replace with just the new data.
 
