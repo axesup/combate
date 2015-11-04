@@ -1,6 +1,4 @@
-###We're afraid we're not participating in GSoC this year.
-
-Provided here are a list of features that we feel would be good to see in CodeCombat.  They range from beginner-level all the way up to crazy compiler stuff, take your pick.  To try most of these projects you'll need a basic understanding of CoffeeScript (JavaScript + Python).  You'll be working with over 250 other contributors in order to create the best coding game ever created! 
+Provided here are a list of larger features that we feel would be good to see in CodeCombat.  They range from beginner-level all the way up to crazy compiler stuff, take your pick.  To try most of these projects you'll need a basic understanding of CoffeeScript (JavaScript with a more Python/Ruby-like syntax).  You'll be working with over 400 other contributors in order to create the best coding game ever created! 
 
 ###Steps to Contribute
 
@@ -9,9 +7,7 @@ Provided here are a list of features that we feel would be good to see in CodeCo
 1. You should also [sign up as an Archmage](http://codecombat.com/contribute/archmage), [follow our forum](http://discourse.codecombat.com/), and watch this GitHub repository.
 1. Play through [some of our existing levels](http://codecombat.com/play) to get a feel for the game.
 1. Read through some of the [articles on our Archmage wiki](https://github.com/codecombat/codecombat/wiki/Archmage-Home) to better understand the code.
-1. If you need help getting oriented or experience difficulties with the dev setup you can join our [HipChat room](https://www.hipchat.com/g3plnOKqa) and start talking to us about what they're passionate about doing and finding the perfect project idea. But make sure to read [the HipChat FAQ](https://github.com/codecombat/codecombat/wiki/HipChat-Room) first.
-
-This was originally put together as a Google Summer of Code projects list, but despite participating in 2014, we weren't selected for 2015. :cry: So instead, read it as a list of bigger projects that would be good for open source contributors interested in getting more involved.
+1. [Talk to us](https://coco-slack-invite.herokuapp.com/) about the project you want to build.
 
 ### Project Ideas
 
@@ -23,14 +19,12 @@ This was originally put together as a Google Summer of Code projects list, but d
 1. [Add More Programming Languages](#wiki-languages)
 1. [Improve iPad App Performance](#wiki-ipad)
 1. [Upgrade the Level Editor](#wiki-editor)
-1. [Add Classroom Organization Features](#wiki-classroom)
 1. [Organize Multilingual Audio Recordings](#wiki-multilingual-audio)
 1. [Improve Game Physics](#wiki-physics)
 1. [Add WebRTC Voice/Video Chat to Multiplayer](#wiki-webrtc)
 1. [Add Responsive Sound / Music](#wiki-audio)
 1. [Create Developer Tools Window](#wiki-devtools)
 1. [Build Massively Multiplayer Sandbox Play](#wiki-sandbox)
-1. [Autocomplete Magic](#wiki-autocomplete)
 1. [Your Own Idea](#wiki-your-idea)
 
 ##### <a name="aether"/> Make Aether Transpiler More Friendly
@@ -122,17 +116,6 @@ The level editor is really cool: drag-and-drop, completely configurable, and eve
 *Difficulty:* Easy. You can watch people try to make levels, see where they get stuck, and tweak the design until they stop getting stuck there.
 
 
-##### <a name="classroom"/> Add Classroom Organization Features
-
-Teachers of students of all ages often ask us for features to manage student accounts so that they can see their students' progress, give them levels to do, and better run a classroom of CodeCombatants. It would be great to bring CodeCombat into more schools by adding the classroom organization features that teachers need and [learning tools interoperability](https://github.com/codecombat/codecombat/issues/1238).
-
-*Expected results:* A system where teachers can create and manage groups of student accounts and get reports on their progress.
-
-*Knowledge prerequisite:* Basic web development knowledge. We use CoffeeScript, Jade, and Sass, but those are easy to pick up if you know JavaScript, HTML, and CSS. This will get into the server, so familiarity with Node.js or Express will also help, but aren't required.
-
-*Difficulty:* Medium. Teachers don't need a lot of features, but the features must be well-designed and intuitive to use.
-
-
 ##### <a name="multilingual-audio"/> Organize Multilingual Audio Recordings
 
 We've built internationalization and localization tools allowing translation of almost all of CodeCombat's text (pretty much except for the names of the player's API methods themselves), but we still have some voiceover from the heroes that is only in English. We could organize our Diplomats to record this dialogue for us in their own languages so that even younger international players can understand it (since often they want to hear, not read, the instructions, plus having flavor sound bytes in your own language is always cool). This wouldn't take much coding, although if you can code, there is some to do to be able to use the sound files in game and visualize the recording completion coverage progress. But mostly it'll take patience and communication with all of our Diplomats to get the recordings done. Alternatively, if your coding is strong, you could build an HTML5-based speech recorder node for [Treema](https://github.com/codecombat/treema) that would allow anyone to record their language's audio from their browser, normalize the audio and remove noise using the web audio APIs, and upload it to our server in mp3 and ogg.
@@ -210,18 +193,6 @@ CodeCombat currently simulates a level from beginning to end every time the code
 *Knowledge prerequisite:* Good programming fundamentals, some knowledge of CoffeeScript or JavaScript, and an interest in game design.
 
 *Difficulty:* Very hard.
-
-
-##### <a name="autocomplete"/> Autocomplete Magic
-
-CodeCombat currently extends the [ace editor](https://github.com/ajaxorg/ace) autocomplete via a [small library](https://github.com/differentmatt/zatanna)
- to handle our in-game code editor autocomplete.  It’s useful, but not magical.  That’s where you come in!  Contact [matt@codecombat.com](mailto:matt@codecombat.com) for more details.
-
-*Expected results:* CodeCombat autocomplete almost always puts the code snippet a player wants to type at the top of the suggestion popup, and the autocomplete visuals support advanced styling.
-
-*Knowledge prerequisite:* Basic web development knowledge. We use CoffeeScript, Jade, and Sass, but those are easy to pick up if you know JavaScript, HTML, and CSS.
-
-Difficulty: Medium.  Understanding the currently implementation should be straightforward.  Making autocomplete awesome will be the interesting part.
 
 
 ##### <a name="sandbox"/> Your Own Idea
