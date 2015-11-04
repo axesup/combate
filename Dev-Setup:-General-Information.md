@@ -6,8 +6,6 @@
 1. Start MongoDB and import the [database dump](#database)
 1. Run `npm run dev` (live coding) or `npm start` (preview)
 
-TODO: Rewrite setup pages to expand on these steps for each OS (OS-specific install links, Homebrew, Cygwin, etc).
-
 ***
 
 ### Installation Guides
