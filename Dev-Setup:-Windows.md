@@ -31,4 +31,4 @@ Start MongoDB if you haven't, then download the database dump at http://analytic
 
 Either run `npm run dev` (live coding) or `npm start` (just previewing) to start the server.
 
-Visit http://localhost:3000 to see your CodeCombat setup in action.
+Visit [http://localhost:3000](http://localhost:3000) to see your CodeCombat setup in action.
