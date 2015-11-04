@@ -13,7 +13,7 @@ If your default Python version is 3, then you'll also want to
 
     npm config set python `which python2.7`
 
-If you have not set up Git, then at least do the following:
+If you have not [set up Git](https://help.github.com/articles/set-up-git/#platform-linux), then at least do the following:
 
     git config --global user.name "$YOUR_NAME"
     git config --global user.email "$YOUR_EMAIL_ADDRESS"
@@ -38,6 +38,7 @@ This will take care of installing npm and bower dependencies, as well as buildin
 
     (cd $(mktemp -d /tmp/coco.XXXXXXXX) && curl http://analytics.codecombat.com:8080/dump.tar.gz | tar xzf - && mongorestore --drop --host 127.0.0.1)
 
+This will download the latest [development database](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#database) and overwrite your current development database with it.
 ## Running
 
 ### Database
@@ -52,18 +53,10 @@ On other distros with `systemd` you can try something like:
 
     sudo systemctl start mongodb
 
-### Live Coding
+### Development Server
 
     npm run dev
 
-This will start `brunch` (watches client files) and `nodemon` (watches server files).
+This will start `brunch` (watches client files) and `nodemon` (watches server files). (You can also just use `npm start` to run the server without keeping brunch watching for changes.)
 
-Visit http://localhost:3000 to see your local CodeCombat setup.
-
-### No Live Coding
-
-    npm start
-
-This just starts up the server.
-
-Visit http://localhost:3000 to see your local CodeCombat setup.
+Visit [http://localhost:3000](http://localhost:3000) to see your local CodeCombat setup.
