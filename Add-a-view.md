@@ -30,3 +30,6 @@ You should now be able to navigate to your new route and view your new view.
 
 ### Resources
 * [Backbone](http://backbonejs.org)
+* [CoffeeScript] (http://coffeescript.org/)
+* [Jade](http://jade-lang.com/)
+* [Sass](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
