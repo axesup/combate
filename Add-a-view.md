@@ -1,6 +1,3 @@
-## Libraries Used:
-* [Backbone](http://backbonejs.org)
-
 1. **View file**. In [/app/views](https://github.com/codecombat/codecombat/tree/master/app/views) or one of the subfolders, create the view file. The name should be CamelCase, end with 'View', and be a CoffeeScript file. The contents should be something like this:
 
   ```coffeescript
@@ -30,3 +27,6 @@
 1. **Router**. Add the route to [/app/core/Router.coffee](https://github.com/codecombat/codecombat/blob/master/app/core/Router.coffee). Use the `go` function to wrap around the path to the view file.
 
 You should now be able to navigate to your new route and view your new view.
+
+### Resources
+* [Backbone](http://backbonejs.org)
