@@ -5,7 +5,7 @@ You will need to install the following:
 * [Node.js](https://nodejs.org/en/download/) (LTS version should be fine)
 * [Git](https://help.github.com/articles/set-up-git/#setting-up-git)
 * [Python 2.7](https://www.python.org/downloads/windows/)
-* [MongoDB](https://github.com/git-for-windows/git/releases) (You should also [setup a service script](https://docs.mongodb.org/master/tutorial/install-mongodb-on-windows/#manually-create-a-windows-service-for-mongodb))
+* [MongoDB](https://www.mongodb.org/downloads#production) (You should also [setup a service script](https://docs.mongodb.org/master/tutorial/install-mongodb-on-windows/#manually-create-a-windows-service-for-mongodb))
 
 ### Set Up
 
