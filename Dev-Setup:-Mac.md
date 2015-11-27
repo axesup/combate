@@ -19,8 +19,10 @@ Download the [CodeCombat database](http://analytics.codecombat.com:8080/dump.tar
 
 1. Make sure the database is running on your computer.
 1. Uncompress the file with `tar xzvf [filename]`).
-1. Run `mongorestore --drop [path to dump]` if mongorestore is in your path. If mongorestore is not in your path, run `[path to where you downloaded MongoDB]/mongorestore --drop [path to dump]`.
+1. Run `mongorestore --drop [path to dump]` if mongorestore is in your path. If mongorestore is not in your path, run `[path to where you downloaded MongoDB]/mongorestore --drop [path to dump]`. (See below for troubleshooting).
 
 When downloading a new dump to keep the database up-to-date, use `mongorestore --drop [path to dump]` to clear out all old data (including any local data you have created) and replace with just the new data.
 
 *If you see an error like `no reachable servers` when running mongorestore, and mongo is running, try adding `--host=127.0.0.1` to the command line options.*
+
+*In version 3.0.7 of mongoDB is a bug in mongorestore. If you see an error like `Failed: restore error: [some file name]: error restoring from dump/[some file name]: insertion error: EOF` when running mongorestore, then try adding `--batchSize=100` to the command. (try 1000, or 100, or even smaller)* [see here for a discussion on that](https://jira.mongodb.org/browse/TOOLS-939)
