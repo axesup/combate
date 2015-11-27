@@ -9,7 +9,7 @@ This tutorial requires you to have the [Xcode Developer Tools](http://itunes.app
 5. Open a terminal and navigate to the folder you wish to install CodeCombat under.
 6. Run `git clone https://github.com/$GITHUB_USERNAME/codecombat.git && cd codecombat`
 7. Run `npm install`. This will install npm and bower dependencies, as well as building the static files.
-8. Start up and setup [MongoDB](#installing-the-database).
+8. Start up and setup [MongoDB](#installing-the-database). (try `ps -ax | grep mongo` to see if mongoDB is running.)
 9. Run `npm start` to just preview the site, or `npm run dev` to live code.
 10. Visit [http://localhost:3000](http://localhost:3000) to see your CodeCombat development environment!
 
