@@ -21,7 +21,7 @@ Add or extend [Backbone.View's events property](http://backbonejs.org/#View-even
       'click #some-btn': 'onClickSomeButton'
 
     onClickSomeButton: (e) ->
-      console.log('Some button was clicked', e);
+      console.log 'Some button was clicked', e
   ```
 
 *foo-view.jade*
