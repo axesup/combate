@@ -59,7 +59,7 @@ Jade templates can get rather deep, and at some point it's hard to figure out wh
 
 ### SubViews
 
-Particularly complicated views should be broken down into subviews. This is the solution with the highest overhead, so it should not be chosen lightly.
+Particularly complicated views should be broken down into subviews. This is the solution with the highest overhead, so it should not be chosen lightly. See the recipe to [[add subviews to views]].
 
 ## Resources
 
