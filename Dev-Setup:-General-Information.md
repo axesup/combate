@@ -35,7 +35,7 @@ The link to the database dump is: http://analytics.codecombat.com:8080/dump.tar.
 
 To import the database into MongoDB, unpack the archive and run: `mongorestore --drop /path/to/dump`
 
-When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. To keep the database dump small, we only include a handful of testing levels. If you need to work on a specific level, let us know.
+When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. To keep the database dump small, we only include a handful of testing levels, so the first two levels show up, but not the third. If you need to work on a specific level, let us know and we can provide you with more levels.
 
 Currently, there's no easy way to transfer data you make on your dev environment back to production, so be sure to build levels you want to share on [direct.codecombat.com](http://direct.codecombat.com/editor/level), not on the dev server.
 
