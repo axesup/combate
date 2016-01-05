@@ -6,3 +6,4 @@ We'll be adding some short How-To tutorials to help CodeCombat Artisans get star
 * Add Custom Referee Code
 * Use Comments in Sample Code
 * Reset Scripts
+* [[Autocomplete Tuning]]
