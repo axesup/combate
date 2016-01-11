@@ -5,6 +5,7 @@ Hello [Diplomats](https://codecombat.com/contribute/diplomat)! Welcome to the de
 ####Index
 * [Useful Links](#useful-links)
 * [Reading Material](#reading-material)
+* [Language-Specific Translation Guides](#translation-guides)
 
 ######Useful Links
 * [[i18n]]
@@ -14,3 +15,7 @@ Hello [Diplomats](https://codecombat.com/contribute/diplomat)! Welcome to the de
 
 ######Reading Material
 * [[Developer Organization]]
+
+######Language-Specific Translation Guides
+* [Norsk Bokmål][https://github.com/codecombat/codecombat/wiki/i18n-Glossary-nb]
+* [русский][https://github.com/codecombat/codecombat/wiki/i18n-Glossary-ru]
