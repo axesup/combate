@@ -33,6 +33,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 * [[JSON-Schema]]
 * [[Coco Models]]
 * [[Testing]]
+* [[Git Policies]]
 
 ######Frontend Development:
 
