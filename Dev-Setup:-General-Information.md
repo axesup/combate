@@ -11,9 +11,9 @@ After installation, to run the site locally, run the following commands in separ
 
 1. `./bin/coco-mongodb` (runs the MongoDB server)
 1. `npm run nodemon` (runs the server, automatically restarting on server-side changes)
-1. `npm run brunch watch` (compiles files continuously, refreshing the browser window on changes)
+1. `npm run brunch watch` (compiles app files to public folder continuously, refreshing the browser window on changes)
 
-You can also use the command `npm run dev` to both run brunch and the server in one terminal. If you don't need nodemon or brunch to restart on changes, you can simply run `npm run start` instead.
+You can also use the command `npm run dev` to both run brunch and the server in one terminal. If you don't need nodemon or brunch to restart on changes or build files, you can simply run `npm run start` instead.
 
 ***
 
