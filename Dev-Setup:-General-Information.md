@@ -1,8 +1,10 @@
 ### General Setup Instructions
 
-1. Install [MongoDB](https://www.mongodb.org/downloads#production), [Node.js](https://nodejs.org/en/download/), [Git](https://desktop.github.com/), [Python 2.7](https://www.python.org/download/releases/2.7/)
-1. `git clone`
-1. `npm install`
+This is the general overview for what you need in order to set up the development environment. For more specific instructions with recommended paths to success, see the installation guides below.
+
+1. Install [MongoDB](https://www.mongodb.org/downloads#production), [Node.js Stable version](https://nodejs.org/en/download/), [Git](https://desktop.github.com/), and [Python 2.7](https://www.python.org/download/releases/2.7/)
+1. `git clone` this repository.
+1. `npm install` in the repository's root directory.
 1. Start MongoDB and import the [database dump](#database)
 
 ### Running The Environment
