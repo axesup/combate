@@ -1,12 +1,9 @@
-Testing is a very valuable process. Like version control, it absolves programmers from fear of making changes that might break things. We're in the process of trying and expanding various systems, and seeking to get better code coverage, particularly for the client. Help us out!
-
 ## Running server tests
 
-* Run coco-mongodb
-* Run coco-test-server
-* Run coco-server-test-runner
+* Run `./bin/coco-mongodb` in one terminal
+* Run `npm run jasmine` in another terminal anytime you want to run tests.
 
-Now when you make changes to server code or tests, the server-test-runner will run the tests in /test/server and show results in the terminal.
+To run tests in just one file, run `npm run jasmine spec/server/path/to/some.spec.coffee`.
 
 ## Running client tests in the terminal
 
