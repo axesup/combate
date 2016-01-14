@@ -7,9 +7,9 @@ To run tests in just one file, run `npm run jasmine spec/server/path/to/some.spe
 
 ## Running client tests in the terminal
 
-* Run coco-mongodb
-* Run coco-brunch
-* Run coco-client-test-runner
+* Run `./bin/coco-mongodb`
+* Run `npm run brunch watch`
+* Run `./bin/coco-client-test-runner`
 
 A Chrome browser should appear. You can minimize it; it's karma running the tests. Whenever client side code changes or tests change, karma should run the tests from /test/app in that extra browser window and show results in the terminal.
 
