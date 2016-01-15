@@ -21,7 +21,7 @@ These steps are our **recommended approach** to setting up CodeCombat's developm
 1. **Install and compile CodeCombat source files.** Navigate into the folder where you downloaded the CodeCombat repository and run `npm install`. This will install npm and bower (client library) dependencies, as well as building the public directory, which is what the server... serves.
 1. **Add data to MongoDB.** [See below](#installing-the-database).
 1. **[Run the dev environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#running-the-environment)**.
-1. **Visit [http://localhost:3000](http://localhost:3000)** to see your CodeCombat development environment!
+1. **Visit [[http://localhost:3000/]]** to see your CodeCombat development environment!
 
 ### Installing the Database
 
