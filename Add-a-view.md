@@ -19,6 +19,9 @@ First, create the three core files:
   module.exports = class FooView extends RootView
     id: 'foo-view'
     template: template
+
+    initialize: (options) ->
+      # get things started here
   ```
 1. **Template file**. In [/app/templates](https://github.com/codecombat/codecombat/tree/master/app/templates), or one of the subfolders, create the template file. The name should be hyphenated, end with '-view', and be a jade file, and the subfolder-path should match the View's. The contents should look something like this:
 
