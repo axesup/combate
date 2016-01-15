@@ -19,7 +19,7 @@ This is the general overview for what you need in order to set up the developmen
 
 ### Running The Environment
 
-After installation, to run the site locally, run the following commands in separate terminals:
+After installation, to run the site locally, enter the following commands in separate terminals:
 
 1. `./bin/coco-mongodb` (runs the MongoDB server)
 1. `npm run nodemon` (runs the server, automatically restarting on server-side changes)
