@@ -1,6 +1,16 @@
-### General Setup Instructions
+### Installation Guides
 
-This is the general overview for what you need in order to set up the development environment. For more specific instructions with recommended paths to success, see the installation guides below.
+Our installation guides are split into per-OS guides which will give you step-by-step instructions on how to get your development environment set up. Aimed at beginners.
+
+* **[Linux Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux)**
+* **[Windows Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows)**
+* **[Mac Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
+* **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS)
+
+### General Setup Instructions
+#### For power users who know what they're doing
+
+This is the general overview for what you need in order to set up the development environment. For more specific instructions with recommended paths to success, see the installation guides listed above.
 
 1. Install [MongoDB](https://www.mongodb.org/downloads#production), [Node.js Stable version](https://nodejs.org/en/download/), [Git](https://desktop.github.com/), and [Python 2.7](https://www.python.org/download/releases/2.7/)
 1. `git clone` this repository.
@@ -18,15 +28,6 @@ After installation, to run the site locally, run the following commands in separ
 You can also use the command `npm run dev` to both run brunch and the server in one terminal. If you don't need nodemon or brunch to restart on changes or build files, you can simply run `npm run start` instead.
 
 ***
-
-### Installation Guides
-
-Our installation guides are split into per-OS guides.
-
-* **[Linux Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Linux)**
-* **[Windows Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows)**
-* **[Mac Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Mac)**
-* **[Vagrant Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Vagrant)** (Experimental, all OS)
 
 ### Issues
 
