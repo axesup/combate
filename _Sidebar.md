@@ -26,6 +26,7 @@
 * **[[Diplomat General|Diplomat Home]]**
  * [[i18n]]
  * [[i18n Glossary nb]]
+ * [[i18n Glossary ru]]
 * **[[Ambassador General|Ambassador Home]]**
 * **[[Dev Setup|Dev Setup: General Information]]**
  * [[Dev Setup: Linux]]
