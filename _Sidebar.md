@@ -27,6 +27,7 @@
  * [[i18n]]
  * [[i18n Glossary nb]]
  * [[i18n Glossary ru]]
+ * [[i18n Glossary es-419]]
 * **[[Ambassador General|Ambassador Home]]**
 * **[[Dev Setup|Dev Setup: General Information]]**
  * [[Dev Setup: Linux]]
