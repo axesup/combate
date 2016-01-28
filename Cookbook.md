@@ -9,3 +9,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Show data in a view]]
 * [[Organize a complicated template]]
 * [[Add a subview to a view]]
+* [[Accessing data through data attribute]]
