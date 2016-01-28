@@ -18,6 +18,7 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 * [[Editing Thang Components]]
 * [[Scripts Tab]]
 * [[Settings Tab]]
+* [[Tasks Tab]]
 * [[Components And Systems Tabs]]
 * [[Coding Guidelines for Artisans]]
 * [[Keyboard Shortcuts]]
