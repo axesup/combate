@@ -29,7 +29,8 @@ If you made any changes to the overall size of the level after creating the basi
 
 #### Publish.
 Once the previous tasks are complete, you're ready to publish the level. Your level isn't visible to the public until the level has been published.
-* `instructions on how to do so`
+
+<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/publish.png"/>
 
 ## Improve
 With the level put to the public, feel free to share your level's URL with your friend, on the forums, and in the Slack channel. People will gladly give you feedback and you will ned to take that feedback and make meaningful changes to improve your level! Don't worry, no level is perfect on the first draft.
@@ -39,26 +40,40 @@ When you settle on the concepts and gameplay of your level, it's time to finish 
 Describe your level. Once again, shortness is sweetness. Don't be afraid of being silly. CodeCombat is light hearted so humor is always welcome.
 #### Write the guide.
 This is where you will provide in detail help for players who may need it. It is your choice how detailed you will go into further hints, but we recommend not providing the full solution inside the guide. Instead reiterate the concepts the players will need to demonstrate to finish the level. Give a few level-specific code snippets that may lead the player to figuring out the solution.
-* `instructions on how to setup the guide`
-* `markup instructions`
+
+<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/guides.png"/>
+* **Reference:** [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 #### Choose the Existence System lifespan and frame rate.
 The Existence System is the system that updates each Thang individually. If a Thang isn't recognized by the Existence System, well, it doesn't exist. This system controls how long the level goes for (**Lifespan**) and how often it updates (**Frame Rate**). This is a process-heavy system, so it is important to optimize it. If fine details are important for your level, you will want a high frame rate, but, as a tradeoff we recommend shortening the lifespan. If the level is a long level, (60 seconds+,) we recommend dropping the frame rate to 15 or even 8.
-* `instructions for location`
+
+**Location:**
+
+1. Click the Settings tab at the top of the editor.
+2. Expand Existence.
 
 #### Choose the UI System paths and coordinate hover if needed.
 The UI System creates a layer of content over the battlefield. The path that the hero has walked and mousing over specific coordinates are provided by the UI System. If the user has no need for coordinates (dungeon with simple boots,) then they can be turned off. If a level doesn't need to display all the paths traversed by the play (e.g. lots of back-tracking, jumbled looking path lines, or the level isn't explicitly movement centric,) then that can be turned off.
-* `instructions for location`
+
+**Location:**
+
+1. Click the Settings tab at the top of the editor.
+2. Expand UI.
 
 #### Choose the AI System pathfinding and Vision System line of sight.
 The AI System handles interactions between all Thangs inside the level. "Can I see an enemy?" "How am I going to get there?" are some questions the AI System answers for the Thangs. It is a processing-heavy system, so it is important to get these values correct for your level. If the level is wide open, there is no need for pathfinding or line-of-sight. If the level is in the Dungeon with lots of turns? The AI system needs to create paths for the Thangs to navigate.
-* `instructions for location`
+
+**Location:**
+
+1. Click the Settings tab at the top of the editor.
+2. Expand UI.
 
 ## Final Steps
 Nearing release? Have you gotten it reviewed by friends and peers alike? Ready to see your name in lights? There are a few more important tasks you'll need to knock out. Mostly 
 #### Click the Populate i18n button.
 i18n is shorthand for 'internationalization' ... Now you can see why we use the short version! Pressing this button includes the necessary fields for the Diplomat team to translate the various strings inside your level.
-* `instructions on how to find it`
+
+<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/populate_i18n.png"/>
 
 #### Add i18n field for the sample code comments.
 The sample code i18n is a special i18n field that needs to be added after the sample comment field has been added. Just create the i18n object field under the comments and you are good to go.
