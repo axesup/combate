@@ -1,6 +1,6 @@
 # Goals
 Goals are the way CodeCombat decides whether or not a level is completed. They are used by the achievement system to award completion as well because it is possible to beat a level without completing all the optional goals.
-* **Further Reading:** [Referee: Advanced Goals](https://github.com/codecombat/codecombat/wiki/Referee-Scripting#Advanced Goals)
+* **Further Reading:** [Referee: Advanced Goals](https://github.com/codecombat/codecombat/wiki/Referee-Scripting#advanced-goals)
 
 ## Structure of a Goal
 #### Name
