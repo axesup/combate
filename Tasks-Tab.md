@@ -15,18 +15,17 @@ Once the prototype has been made, it's time to finalize a few aspects of the lev
 The best level names aren't too long... **Destruction of the Evil OGre FORTRESS DOOM DAY!!!!** is no where as elegant as **Fortress Assault**. One of the best rules for a good name is not to over think it. Don't worry about giving it a placeholder name until that perfect name strikes you.
 #### Write the sample code.
 Since CodeCombat is a game about programming, the sample code plays an important part in how the level plays. Giving no sample code makes for a difficult level. Giving too much sample code means after a few lines the game plays itself. It is important to find the balance as to create an interesting challenge for players to solve.
-* `note about sample code comments here.`
+* **Note:** Comments in CodeCombat have the opportunity to dynamically insert i18n strings as well as provide further hints at run-time. Refer to our [Sample Code](https://github.com/codecombat/codecombat/wiki/Sample-Code) page.
 
 #### Do basic set decoration.
 A different task from actually building the level. Once the prototype is established, you'll want to begin filling out some of the details that will make your level unique. Alcoves, tents, rocks, and general doodads will help differentiate your level from the rest.
 #### Set up goals.
 The goals are how you decide when a player has succeeded or failed. Is killing all the ogres required? Or is losing 0 humans? How about reaching a specific point in the map? There are many more ways to complete a level, but some might require custom scripting to get working correctly.
-* `instructions on where the goals are`
-* `instructions on complicated goals`
+* **Further Reading:** [Goals](https://github.com/codecombat/codecombat/wiki/Goals)
 
 #### Adjust script camera bounds.
 If you made any changes to the overall size of the level after creating the basic shape you'll want to go in and make sure the camera bounds are set up correct.
-* `instructions on how to do so`
+* **Further Reading:** [Scripts](https://github.com/codecombat/codecombat/wiki/Scripts)
 
 #### Publish.
 Once the previous tasks are complete, you're ready to publish the level. Your level isn't visible to the public until the level has been published.
@@ -65,21 +64,21 @@ i18n is shorthand for 'internationalization' ... Now you can see why we use the 
 The sample code i18n is a special i18n field that needs to be added after the sample comment field has been added. Just create the i18n object field under the comments and you are good to go.
 #### Add programming concepts covered.
 CodeCombat uses a category system for describing which topics are covered, per-level. Early on in the campaign the only skill being taught is *Basic Syntax*, but soon we introduce *While Loops* and *Conditionals*. We use these to keep track of which concepts are being taught.
-* `link for programming concept descriptions`
+* **Reference:** [Programming Concepts](https://github.com/codecombat/codecombat/wiki/Programming-Concepts)
 
 #### Remove/simplify unnecessary doodad collision.
 The Collision System is process heavy. Having 100+ doodads each with a collision group can significantly impact level render times as the number of Thangs increase. The more collision objects that can be simplified into squares, the better.
-* `link for separate document for collision best practices`
+* **Reference:** [Simplify Collision](https://github.com/codecombat/codecombat/wiki/Simplify-Collision)
 
 #### Choose leaderboard score types.
 There are a variety of leaderboard score types. Time until the level was beat, amount of gold earned, damage done, damage taken. Picking a score type allows players to compete against each other on the leaderboards!
 #### Choose music file in Introduction script.
 Choose a different music file if needed. Music helps set the mood, so be sure to check them all out!
-* `instructions on how to change music`
+* **Further Reading:** [Scripts](https://github.com/codecombat/codecombat/wiki/Scripts)
 
 #### Choose autoplay in Introduction script.
 Some levels are better if they start autoplaying or not. Often times, auto-playing with a failure is a good way of teaching how to solve a puzzle. Use Scripts to your advantage!
-* `instructions on how to change autoplay`
+* **Further Reading:** [Scripts](https://github.com/codecombat/codecombat/wiki/Scripts)
 
 ## Verify
 It is important to verify your levels work with heroes of varied speed and toughness.
