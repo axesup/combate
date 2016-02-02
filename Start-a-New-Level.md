@@ -14,7 +14,7 @@ There are a few additional things you should generally do when you first create 
 
 ## Generate Terrain
 
-When you have a blank level, there should be a "Generate Terrain" button for each type of campaign (Dungeon, Desert, Forest, etc), as well as a "Small" and "Large" version of each.
+When you have a blank level, there should be a "Generate Terrain" button, which opens a terrain generator for each type of campaign (Dungeon, Desert, Forest, etc), as well as a "Small" and "Large" version of each.
 
 This will get you started with some randomized floor tiles, and some scattered other terrain objects, which you can keep or remove.
 
@@ -22,7 +22,7 @@ Generally, you should use the "Small" size, unless you know you really need the 
 
 ## Add the Tasks List
 
-If you want to make a level that can be released as part of the Code Combat campaign, you should go to the "Settings" tab, then click the "+" button at the bottom of the settings, and add the "Tasks" property.
+If you want to make a level that can be released as part of the Code Combat campaign, you should go to the "Tasks" tab.
 
 This will give you a list of tasks you should be sure to do while making your level to get it ready for release!
 
