@@ -30,7 +30,7 @@ If you made any changes to the overall size of the level after creating the basi
 #### Publish.
 Once the previous tasks are complete, you're ready to publish the level. Your level isn't visible to the public until the level has been published.
 
-<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/publish.png"/>
+[<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/publish.png"/>](http://files.codecombat.com/wiki-images/publish.png)
 
 ## Improve
 With the level put to the public, feel free to share your level's URL with your friend, on the forums, and in the Slack channel. People will gladly give you feedback and you will ned to take that feedback and make meaningful changes to improve your level! Don't worry, no level is perfect on the first draft.
@@ -41,7 +41,7 @@ Describe your level. Once again, shortness is sweetness. Don't be afraid of bein
 #### Write the guide.
 This is where you will provide in detail help for players who may need it. It is your choice how detailed you will go into further hints, but we recommend not providing the full solution inside the guide. Instead reiterate the concepts the players will need to demonstrate to finish the level. Give a few level-specific code snippets that may lead the player to figuring out the solution.
 
-<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/guides.png"/>
+[<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/guides.png"/>](http://files.codecombat.com/wiki-images/guides.png)
 * **Reference:** [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 #### Choose the Existence System lifespan and frame rate.
@@ -73,7 +73,7 @@ Nearing release? Have you gotten it reviewed by friends and peers alike? Ready t
 #### Click the Populate i18n button.
 i18n is shorthand for 'internationalization' ... Now you can see why we use the short version! Pressing this button includes the necessary fields for the Diplomat team to translate the various strings inside your level.
 
-<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/populate_i18n.png"/>
+[<img align="center" width="50%"src="http://files.codecombat.com/wiki-images/populate_i18n.png"/>](http://files.codecombat.com/wiki-images/populate_i18n.png)
 
 #### Add i18n field for the sample code comments.
 The sample code i18n is a special i18n field that needs to be added after the sample comment field has been added. Just create the i18n object field under the comments and you are good to go.
