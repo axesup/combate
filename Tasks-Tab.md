@@ -15,7 +15,7 @@ Once the prototype has been made, it's time to finalize a few aspects of the lev
 The best level names aren't too long... **Destruction of the Evil OGre FORTRESS DOOM DAY!!!!** is no where as elegant as **Fortress Assault**. One of the best rules for a good name is not to over think it. Don't worry about giving it a placeholder name until that perfect name strikes you.
 #### Write the sample code.
 Since CodeCombat is a game about programming, the sample code plays an important part in how the level plays. Giving no sample code makes for a difficult level. Giving too much sample code means after a few lines the game plays itself. It is important to find the balance as to create an interesting challenge for players to solve.
-* **Note:** Comments in CodeCombat have the opportunity to dynamically insert i18n strings as well as provide further hints at run-time. Refer to our [Sample Code](https://github.com/codecombat/codecombat/wiki/Sample-Code) page.
+* **Further Reading:** [Sample Code](https://github.com/codecombat/codecombat/wiki/Sample-Code) page.
 
 #### Do basic set decoration.
 A different task from actually building the level. Once the prototype is established, you'll want to begin filling out some of the details that will make your level unique. Alcoves, tents, rocks, and general doodads will help differentiate your level from the rest.
@@ -64,11 +64,11 @@ i18n is shorthand for 'internationalization' ... Now you can see why we use the 
 The sample code i18n is a special i18n field that needs to be added after the sample comment field has been added. Just create the i18n object field under the comments and you are good to go.
 #### Add programming concepts covered.
 CodeCombat uses a category system for describing which topics are covered, per-level. Early on in the campaign the only skill being taught is *Basic Syntax*, but soon we introduce *While Loops* and *Conditionals*. We use these to keep track of which concepts are being taught.
-* **Reference:** [Programming Concepts](https://github.com/codecombat/codecombat/wiki/Programming-Concepts)
+* **Further Reading:** [Programming Concepts](https://github.com/codecombat/codecombat/wiki/Programming-Concepts)
 
 #### Remove/simplify unnecessary doodad collision.
 The Collision System is process heavy. Having 100+ doodads each with a collision group can significantly impact level render times as the number of Thangs increase. The more collision objects that can be simplified into squares, the better.
-* **Reference:** [Simplify Collision](https://github.com/codecombat/codecombat/wiki/Simplify-Collision)
+* **Further Reading:** [Simplify Collision](https://github.com/codecombat/codecombat/wiki/Simplify-Collision)
 
 #### Choose leaderboard score types.
 There are a variety of leaderboard score types. Time until the level was beat, amount of gold earned, damage done, damage taken. Picking a score type allows players to compete against each other on the leaderboards!
