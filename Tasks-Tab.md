@@ -1,5 +1,42 @@
 # Tasks
 Below you will find some information on default tasks for creating a level for CodeCombat. These have been resorted in order that they should occur during the natural progression of a level.
+## Table of Contents
+1. [Build the level](#Build the level.)
+2. [Create a Referee stub, if needed](#Create a Referee stub, if needed.)
+3. [Name the level](#Name the level)
+4. [Write the sample code](#Write the sample code.)
+5. [Do basic set decoration](#Do basic set decoration.)
+6. [Set up goals](#Set up goals.)
+7. [Adjust script camera bounds](#Adjust script camera bounds.)
+8. [Publish](#Publish.)
+9. [Do thorough set decoration](#Do thorough set decoration.)
+10. [Write the description](#Write the description.)
+11. [Write the guide](#Write the guide.)
+12. [Choose the Existence System lifespan and frame rate](#Choose the Existence System lifespan and frame rate.)
+13. [Choose the UI System paths and coordinate hover if needed](#Choose the UI System paths and coordinate hover if needed.)
+14. [Choose the AI System pathfinding and Vision System line of sight](#Choose the AI System pathfinding and Vision System line of sight.)
+15. [Click the Populate i18n button](#Click the Populate i18n button.)
+16. [Add i18n field for the sample code comments](#Add i18n field for the sample code comments.)
+17. [Add programming concepts covered](#Add programming concepts covered.)
+18. [Remove/simplify unnecessary doodad collision](#Remove/simplify unnecessary doodad collision.)
+19. [Choose leaderboard score types](#Choose leaderboard score types.)
+20. [Choose music file in Introduction script](#Choose music file in Introduction script.)
+21. [Choose autoplay in Introduction script](#Choose autoplay in Introduction script.)
+22. [Playtest with a slow/tough hero](#Playtest with a slow/tough hero.)
+23. [Playtest with a fast/weak hero](#Playtest with a fast/weak hero.)
+24. [Playtest with a couple random seeds](#Playtest with a couple random seeds.)
+25. [Make sure the level ends promptly on success and failure](#Make sure the level ends promptly on success and failure.)
+26. [Add Clojure/Lua/CoffeeScript](#Add Clojure/Lua/CoffeeScript.)
+27. [Write a loading tip, if needed](#Write a loading tip, if needed.)
+28. [Create achievements, including unlocking next level](#Create achievements, including unlocking next level.)
+29. [Add to a campaign](#Add to a campaign.)
+30. [Choose level options like required/restricted gear](#Choose level options like required/restricted gear.)
+31. [Release to adventurers via MailChimp](#Release to adventurers via MailChimp.)
+32. [Mark whether it requires a subscription](#Mark whether it requires a subscription.)
+33. [Release to everyone via MailChimp](#Release to everyone via MailChimp.)
+34. [Check completion/engagement/problem analytics](#Check completion/engagement/problem analytics.)
+35. [Add a walkthrough video](#Add a walkthrough video.)
+
 ## Prototyping
 #### Build the level.
 Building the level is often the first step in creating a new CodeCombat level. Survey the landscape. Place the floor. Add some trees. Add some ogres and a few humans and boom! You have the start of your own level.
