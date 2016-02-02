@@ -1,16 +1,29 @@
-### Adding Sample Code to your Level
+To add the sample code, first double-click the Hero Placeholder and navigate to their `programming.Programmable` component. Navigate through the component's tree:
+- *programming.Programmable*
+  - *programmableMethods*
+    - *plan*
+      - *languages*
+        * ***This is where the alternate language sample code will be filled in. Python is the important one!***
+      - *source*
+        * ***This is the Javascript sample code.***
+      - *i18n*
+        * ***Add this field after creating comments so Diplomats can add translations.***
+      - *Comments*
+        * ***This is where replacement comments will go.***
 
-This is the default code shown in the editor where the player types code while playing. When teaching a new concept, the sample code can be a complete solution to the level, with a few key lines left to the player. A practice level might only include a few comments with hints.
+When filling in the sample code for a level, there are a few neat tips to keep in mind.
 
-To add sample code:
+* Comments are always given a space between their commenting symbol and the comment itself.
+ * `// This is a comment!`
+ * `# This is a Python comment.`
+ * `-- <%= commentDeclaration %>`
 
-1. Edit the "Hero Placeholder" thang (double click on it in the level editor).
-1. Look for the programming.Programmable Component.
-1. Fill in the following properties:
+### Hint Arrow
+If the level is attempting to teach a concept or guide players through writing code, it is important to direct the player's attention to where the code should be inserted. In each blank area below a comment, an arrow will display.
+* **Note:** CodeCombat allows for one block of comments at the start of the sample code before adding an arrow below all comments with an empty space below them.
 
-- **programmableMethods**
-  - **plan:**
-    - **languages:** This is where you put sample source for languages other than Javascript. It's a good idea to include Python, at least.
-    - **name:** "plan"
-    - **source:** This is where your sample Javascript source code goes.
-    - **Comments:** this is a list of strings used to display comment text in your sample code. Put the actual text of your comment here, such as `attack_ogre`: `"Attack the ogre!"`, then in your sample code you include this comment with: `// <%= attack_ogre %>`. Using these Comments: properties (instead of hard-coding comments in the samples) makes translation into different languages easier.
+### Change Arrow
+There are some levels where the player is given a hint in the form of pre-existing code. Often times this code is wrong, or, generally should be changed or removed if the user is to progress. Use the `∆` (delta) symbol on the same line as the code and a hint arrow will point to the line until it has been changed.
+
+### i18n Strings
+Simply writing your sample code doesn't provide the Diplomats with access to the strings for translation. You will need to use a special string replacement structure to pull these comments out for translation.
