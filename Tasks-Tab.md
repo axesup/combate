@@ -8,6 +8,7 @@ Building the level is often the first step in creating a new CodeCombat level. S
 #### Create a Referee stub, if needed.
 If your level will require any custom logic (spawning ogres, calculating the final score, listening for specific commands,) you will want to create a referee which monitors the level and performs actions. Not all levels need a referee, but as level complexity goes up, it is often easier to script things inside a referee instead of trying to set up the logic by hand.
 * **Further Reading:** [Referee Scripting](https://github.com/codecombat/codecombat/wiki/Referee-Scripting)
+
 ## First Draft
 Once the prototype has been made, it's time to finalize a few aspects of the level before sharing it with the public. It's mostly about putting a good foot forward when demoing your level to the masses.
 #### Name the level
