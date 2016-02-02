@@ -7,15 +7,14 @@ Building the level is often the first step in creating a new CodeCombat level. S
 
 #### Create a Referee stub, if needed.
 If your level will require any custom logic (spawning ogres, calculating the final score, listening for specific commands,) you will want to create a referee which monitors the level and performs actions. Not all levels need a referee, but as level complexity goes up, it is often easier to script things inside a referee instead of trying to set up the logic by hand.
-
-`Probably include a special link for referee scripting here`
+* **Further Reading:** [Referee Scripting](https://github.com/codecombat/codecombat/wiki/Referee-Scripting)
 ## First Draft
 Once the prototype has been made, it's time to finalize a few aspects of the level before sharing it with the public. It's mostly about putting a good foot forward when demoing your level to the masses.
 #### Name the level
 The best level names aren't too long... **Destruction of the Evil OGre FORTRESS DOOM DAY!!!!** is no where as elegant as **Fortress Assault**. One of the best rules for a good name is not to over think it. Don't worry about giving it a placeholder name until that perfect name strikes you.
 #### Write the sample code.
 Since CodeCombat is a game about programming, the sample code plays an important part in how the level plays. Giving no sample code makes for a difficult level. Giving too much sample code means after a few lines the game plays itself. It is important to find the balance as to create an interesting challenge for players to solve.
-* **Further Reading:** [Sample Code](https://github.com/codecombat/codecombat/wiki/Sample-Code) page.
+* **Further Reading:** [Sample Code](https://github.com/codecombat/codecombat/wiki/Sample-Code)
 
 #### Do basic set decoration.
 A different task from actually building the level. Once the prototype is established, you'll want to begin filling out some of the details that will make your level unique. Alcoves, tents, rocks, and general doodads will help differentiate your level from the rest.
