@@ -10,7 +10,7 @@ div#foo(data-bar=helloWorld)
 ```
 Use jQuery's data function, we find the data assigned to `data-bar`.
 ```coffeescript
-elem = $('#foo')[0] # Returns a jQuery object.
+elem = $('#foo') # Returns a jQuery object.
 importantString = elem.data('bar') # Pulls the data from the 'bar' data field.
 console.log importantString # Output: Hello, World!
 ```
