@@ -10,3 +10,6 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Organize a complicated template]]
 * [[Add a subview to a view]]
 * [[Accessing data through data attribute]]
+
+### Forms
+* [[Add a form]]
