@@ -29,7 +29,7 @@ Download the [CodeCombat database](http://analytics.codecombat.com:8080/dump.tar
 
 1. **Start MongoDB**. From the codecombat folder, run `./bin/coco-mongodb`. You should now be able to, from another terminal, run `mongo` and connect.
 1. **Uncompress the dump**. Open a new terminal and navigate to the folder where you downloaded the dump.tar.gz file and run `tar xzvf [filename]`. This will create a `dump` folder.
-1. **Load the uncompressed dump folder into the database**. Run `mongorestore --drop [path to dump]`.
+1. **Load the uncompressed dump folder into the database**. At a normal command prompt run: `mongorestore --drop [path to dump]`.
 
 Following these same steps will also clear out all old data (including any local data you have created) and replace it with just the new data.
 
