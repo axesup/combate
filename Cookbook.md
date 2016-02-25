@@ -12,3 +12,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Accessing data through data attribute]]
 * [[Add a form]]
 * [[Inspect a view]]
+* [[Debug a template]]
