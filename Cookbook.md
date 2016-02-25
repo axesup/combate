@@ -11,3 +11,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Add a subview to a view]]
 * [[Accessing data through data attribute]]
 * [[Add a form]]
+* [[Inspect a view]]
