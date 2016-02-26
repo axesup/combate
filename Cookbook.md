@@ -12,4 +12,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Add a form]]
 * [[Inspect a view]]
 * [[Debug a template]]
-* [[Translate strings]]
+* [[Translate page strings]]
