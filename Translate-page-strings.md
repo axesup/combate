@@ -4,7 +4,7 @@ You want to set up a page for translation.
 
 ## Solution
 
-Within Jade, add the attribute `data-i18n` to the element to set its text. The value of the attribute should point to a string in `/app/locale/en.coffee`. To set the translated string to an attribute instead of the element's text value, preface the string with the attribute name in brackets. Within CoffeeScript, use `$.i18n.t()`. Mark sections of templates that are not to be translated with DNT.
+Within Jade, add the attribute `data-i18n` to the element to set its text. The value of the attribute should point to a string in `/app/locale/en.coffee`. To set the translated string to an attribute instead of the element's text value, preface the string with the attribute name in brackets. Within CoffeeScript, use `$.i18n.t()`. Mark sections of templates that are not to be translated with DNT. Do not leave English strings in the template.
 
 ## Details
 
