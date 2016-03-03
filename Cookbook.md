@@ -13,3 +13,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Inspect a view]]
 * [[Debug a template]]
 * [[Translate page strings]]
+* [[Add space between elements]]
