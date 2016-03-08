@@ -2,12 +2,12 @@ nb — Norwegian Bokmål
 
 ##Place Names
 
-Good place names are important to give the levels a sense of coherency and fluidity.  Try to make up names that aren't just transliterations, but instead translate the words and find a good name that fits with the rest of the level.
+Good place names are important to give the levels a sense of coherency and fluidity.  Try to make up names that aren't just transliterations, but instead translate the words and find a good name that fits with the rest of the levels.
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
 | Backwoods Forest | Villnisskogen   | A rough patch of dense forest |
-| Cloudrip         | Skybrudd        |                               |
+| Cloudrip         | Skybrudd        | "Skybrudd" means "a downpour of rain" |
 | Cloudrip Mountain| Skybruddfjellet | Place name                    |
 | Plainswood       | Flatskog        |                               |
 | Kithgard         | Kithgård        |                               |
@@ -27,13 +27,15 @@ Good place names are important to give the levels a sense of coherency and fluid
 |------------|----------------|------------------------|
 | Ambush     | Bakholdsangrep |                        |
 | Buildables | Byggbare ting  | "Ting som kan bygges" ?|
+| Clan       | Stamme         |                        |
+| Chieftain  | Høvding        |                        |
 | Casts      | Kaste          | as in "casts a spell"  |
 | DPS        | SPS            | Damage → "Skade"       |
 | Dungeon    | Fangehull      |                        |
 | Gem        | Juvel          |                        |
 | Hero       | Helt           |                        |
 | Ogre       | Troll          | "Uhyre"?               |
-| Spell      | Magisk formel  | See discussion below   |
+| Spell      | Magisk formel *or* Trylleformel  | See discussion below   |
 | Thang      | Thang          | ??? Should we translate this to "Tang" like "ting og tang"?|
 | Tharin Thunderfist          | Tharin Tordenneve      | (The Knight) |
 
