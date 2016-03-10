@@ -15,3 +15,7 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Translate page strings]]
 * [[Add space between elements]]
 * [[Edit page translations]]
+
+### Testing
+* [[Write client tests]]
+* [[Write server tests]]
