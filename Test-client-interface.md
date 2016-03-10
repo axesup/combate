@@ -66,5 +66,7 @@ describe 'FooView', ->
         jasmine.Ajax.requests.mostRecent().respondWith({status: 200, responseText: '{_id: "abc"}'})
 
       ...
-      
 ```
+
+## Resources
+* [jQuery Event triggers](http://api.jquery.com/category/events/)
