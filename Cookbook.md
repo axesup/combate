@@ -17,5 +17,6 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Edit page translations]]
 
 ### Testing
-* [[Write client tests]]
-* [[Write server tests]]
+* [[Test client]]
+* [[Test client interface]]
+* [[Test server]]
