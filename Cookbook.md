@@ -25,4 +25,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 ### Testing
 * [[Test client]]
 * [[Test client interface]]
-* [[Test server]]
+* [[Test server endpoint]]
