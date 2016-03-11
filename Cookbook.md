@@ -18,6 +18,10 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Add space between elements]]
 * [[Edit page translations]]
 
+### Server
+* [[Add a route]]
+* [[Handle an error]]
+
 ### Testing
 * [[Test client]]
 * [[Test client interface]]
