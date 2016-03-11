@@ -1,5 +1,7 @@
 Recipes of common patterns used throughout the CodeCombat codebase.
 
+**Question not answered here? Ask us in Slack! We'll answer there and add it here. [Get your invite](https://coco-slack-invite.herokuapp.com/).**
+
 ## Client
 
 ### Views
