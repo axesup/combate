@@ -20,7 +20,7 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 
 ### Server
 * [[Add a route]]
-* [[Handle an error]]
+* [[Handle a server error]]
 
 ### Testing
 * [[Test client]]
