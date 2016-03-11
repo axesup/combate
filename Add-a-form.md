@@ -68,7 +68,7 @@ if attrs.name.length is 42
 [Example](https://github.com/codecombat/codecombat/blob/5fffb2eefb80f6fb11a8dfcb9bb227eae611cb9f/app/views/RequestQuoteView.coffee#L54-L61)
 
 ### Submitting Data
-Data should be submitted through Backbone Models. Either use an existing Model or create one specifically for the task. When submitting data, disable the submit button and set its text to something appropriate like 'saving' or 'sending'. How the form handles a successful submission depends on the form, but a good rule of thumb is to show a success alert above the submit button. And if the form should generally not be resubmitted (like a contact form), keep the submit button disabled unless the form changes.
+Data should be submitted through Backbone Models. Either use an existing Model or create one specifically for the task. When submitting data, disable the submit button and set its text to something appropriate like 'saving' or 'sending'. If the form has multiple submission buttons, they should all be disabled. How the form handles a successful submission depends on the form, but a good rule of thumb is to show a success alert above the submit button. And if the form should generally not be resubmitted (like a contact form), keep the submit button disabled unless the form changes.
 
 ```coffeescript
 attrs = forms.formToObject(form)
