@@ -30,4 +30,5 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 ### Dev Environment
 * [[Access dev database]]
 * [[Make yourself admin]]
+* [[Access power-user features]]
 * [[Change player level]]
