@@ -28,5 +28,5 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Test server endpoint]]
 
 ### Dev Environment
-* [[Access MongoDB]]
+* [[Access dev database]]
 * [[Make yourself admin]]
