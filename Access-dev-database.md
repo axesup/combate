@@ -14,7 +14,14 @@ Having set up MongoDB on your machine, you should have the command line client s
 1. Run `mongo` in your terminal. This will start the client, and connect to your local mongodb instance by default.
 1. Run `use coco`. This will switch to the dev environment's database.
 
-That's it! You can now use any MongoDB commands. To see what collections there are, run `show collections`. To, for example, display users, run `db.users.find()`.
+That's it! You can now use any MongoDB commands.
+
+## Examples
+
+* `show collections`: List all collections in the current db
+* `db.users.find()`: List all users.
+* `db.levels.find({type: 'hero'})`: List levels of type `hero`.
+* `db.users.find({name: {$exists: true}}, {name: 1})`: Get all users with names, and only include names.
 
 ## Resources
 
