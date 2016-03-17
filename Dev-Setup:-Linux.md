@@ -2,6 +2,8 @@
 
 You will need to install MongoDB, Node.js, Git, cURL, "build essentials", and Python 2.7.
 
+**NOTE: These instructions are for installing Node v4, but currently CodeCombat uses v5**. Consider using [nvm](https://github.com/creationix/nvm) instead.
+
 Example for Ubuntu:
 
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
