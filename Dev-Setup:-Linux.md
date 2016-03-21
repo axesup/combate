@@ -99,6 +99,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see your local CodeComba
     sudo npm config set python python2.7
     sudo npm install -g bower --allow-root
     sudo npm install -g brunch
+    sudo npm install -g node-gyp
     sudo npm install --phantomjs_cdnurl=http://cnpmjs.org/downloads
     
     sleep 5s
