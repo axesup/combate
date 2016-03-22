@@ -64,7 +64,20 @@ This will start `brunch` (watches client files) and `nodemon` (watches server fi
 Visit [http://localhost:3000](http://localhost:3000) to see your local CodeCombat setup.
 
 ### Ubuntu 14.04.4 自动安装脚本
-演示网址:http://www.icodegame.com:3000
+在安装npm的时候，可能会遇到phantomjs下载失败的情况，所以安装时设置其镜像为国内
+
+    --phantomjs_cdnurl=http://cnpmjs.org/downloads
+
+codecombat根目录下面的package.js的scripts脚本中postinstall在安装即将完成时会执行失败，所以这一句实际上可以
+删除，手动执行，但执行前要将bower及brunch进行全局安装
+
+    npm install -g bower --allow-root
+    npm install -g brunch
+
+ubuntu 14.04.4默认已经安装python2.7，所以可以不必再次安装
+
+apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环境需求版本不符，所以我们直接下载源码进行安装
+
 将以下脚本内容保存为 install-coco.sh文件，上传至 root目录，运行脚本自动安装 sudo ./install-coco.sh
 
     #!/bin/bash
