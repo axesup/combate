@@ -1,6 +1,20 @@
 #Component Authoring Guide
 Contained within will be some tips and tricks as well as solutions for common "gotchas" that might afflict the inexperienced Artisan.
 
+##Your First Component
+###Component Setup
+1. Under the Hero Placeholder, go to programming.Programmable and add the method name under programmableProperties
+2. Go to the Components Tab
+3. Under the inventory.Item component (in the list) add the name of the method to the plannableMethods array
+4. Under the programming.Plans component (also in the list,) add the name of the method to the plannableMethods array, too
+5. Select any component. Select the arrow of the smaller box and choose 'Create New Component'
+6. Assign it to a system and give it a name.
+7. Go back to the Thangs Tab and add this component to the Hero Placeholder
+8. Test run the level and try using the method! (The hero should attack themselves, as that is the default code)
+###Making it an action
+1. Go to the combat.Bashes component, copy paste everything, and put it in your new component commented out (surround it by ### ### which is like /* */ in JS)
+2. Observe the 'attach', and 'bash' methods. 
+
 ##General Tips
 ###Structure
 The following is a broad overview of what occurs under the hood:
