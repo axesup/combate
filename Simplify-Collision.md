@@ -17,3 +17,15 @@ Now, finally, it's time to map out the basic square shapes to create a new, simp
 [<img width="50%" src="http://files.codecombat.com/wiki-images/numbered.jpg"/>](http://files.codecombat.com/wiki-images/numbered.jpg)
 
 Tada! Down from 200 to 11!
+
+## Walls
+
+Walls are a special case! You don't need to to this Collision Simplification for any Thang in the "Wall" category (Dungeon Wall, Ice Wall, etc)
+
+## Keyboard Shortcuts
+
+There are two keyboard shortcuts in the level editor that help with this process:
+
+**Ctrl+\**  will toggle display of collision boxes.
+
+**Alt+c** will toggle the selected Thang's collision box on and off.
