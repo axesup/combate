@@ -11,6 +11,7 @@ Contained within will be some tips and tricks as well as solutions for common "g
 6. Assign it to a system and give it a name.
 7. Go back to the Thangs Tab and add this component to the Hero Placeholder
 8. Test run the level and try using the method! (The hero should attack themselves, as that is the default code)
+
 ###Making it an action
 1. Go to the combat.Bashes component, copy paste everything, and put it in your new component commented out (surround it by ### ### which is like /* */ in JS)
 2. Observe the 'attach', and 'bash' methods. 
