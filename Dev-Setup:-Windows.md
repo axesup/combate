@@ -23,7 +23,7 @@ You'll then want to install the dependencies and build the asset files.
 
 Start MongoDB if you haven't, then download the database dump at http://analytics.codecombat.com:8080/dump.tar.gz, extract the contents ([7-Zip](http://www.7-zip.org/) is a good option), then
 
-    mongorestore --drop path/to/dump
+    mongorestore --drop path/to/dump --db coco
 
 *(If it says that there are no reachable servers but there is a mongod process running try adding `--host=127.0.0.1` to the end of the command.)*
 
