@@ -38,7 +38,7 @@ it 'is a jasmine test', utils.wrap (done) ->
   users = yield User.find({...})
   expect(...).toBe(...)
   done()
-``
+```
 
 Don't forget to use `utils.wrap` and `yield` in your tests, or they won't run properly.
 
