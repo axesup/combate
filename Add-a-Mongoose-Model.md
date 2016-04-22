@@ -18,8 +18,9 @@ mongoose = require 'mongoose'
 plugins = require '../plugins/plugins'
 jsonSchema = require '../../app/schemas/models/some-model.schema'
 
-# 1. Make the schema. Only include properties in the schema that should be cast: ObjectIds and Dates.
-#    The exhaustive schema for the documentation should be the JSON schema.
+# 1. Make the schema. Only include properties in the schema that should be
+#    cast: ObjectIds and Dates. The exhaustive schema for the documentation
+#    should be the JSON schema.
 SomeModelSchema = new mongoose.Schema({
   userID: mongoose.Types.ObjectId
 }, {strict: false})
