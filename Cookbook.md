@@ -37,3 +37,4 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Make yourself admin]]
 * [[Access power-user features]]
 * [[Change player level]]
+* [[Run dev client on prod db]]
