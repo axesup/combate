@@ -29,7 +29,9 @@ SomeModelSchema = new mongoose.Schema({
 # 2. Install plugins. These add common schema properties, indexes and
 #    functions to the schema.
 SomeModelSchema.plugin(plugins.NamedPlugin)
-SomeModelSchema.plugin(plugins.SearchablePlugin, {searchable: ['name', 'description']})
+SomeModelSchema.plugin(plugins.SearchablePlugin, {
+  searchable: ['name', 'description']
+})
 
 
 # 3. Add common static properties.
