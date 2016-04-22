@@ -19,6 +19,7 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Edit page translations]]
 
 ### Server
+* [[Add a collection]]
 * [[Add a route]]
 * [[Handle a server error]]
 
