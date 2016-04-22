@@ -30,14 +30,17 @@ SomeModelSchema.plugin(plugins.NamedPlugin)
 SomeModelSchema.plugin(plugins.SearchablePlugin, {searchable: ['name', 'description']})
 
 
-# 3. Add editableProperties and jsonSchema. Common logic require on these properties being defined. 
-#   * editableProperties: whitelist of properties that may be edited through the collection's standard PUT endpoint
+# 3. Add common static properties.
+#   * editableProperties: whitelist of properties that may be edited through 
+#     the collection's standard PUT endpoint
 #   * jsonSchema: used in POST and PUT to validate data before saving to the db
 SomeModelSchema.statics.editableProperties = ['name', 'description', 'userID']
 SomeModelSchema.statics.jsonSchema = jsonSchema 
 
 
-# 4. Create the model from the schema and export it. The first argument should be the all-lowercase, dot-separated, singular version of the collection name. Mongoose will pluralize that for the collection name.
+# 4. Create the model from the schema and export it. The first argument should be 
+#    the all-lowercase, dot-separated, singular version of the collection name. Mongoose
+#    will pluralize that for the collection name.
 module.exports = mongoose.model('some.model', SomeModelSchema)
 ```
 
