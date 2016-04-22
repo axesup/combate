@@ -20,10 +20,10 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 
 ### Server
 * [[Add a collection]]
-* [[Add a collection schema]]
-* [[Add a Mongoose Model]]
-* [[Add basic REST endpoints for a collection]]
-* [[Connect Backbone to new collection]]
+  * [[Add a collection schema]]
+  * [[Add a Mongoose Model]]
+  * [[Add basic REST endpoints for a collection]]
+  * [[Connect Backbone to new collection]]
 * [[Add a route]]
 * [[Handle a server error]]
 
