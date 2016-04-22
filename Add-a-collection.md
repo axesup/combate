@@ -13,8 +13,7 @@ Here are the key things you need to add a collection to the website:
 1. JSON schema file in `/app/schemas/models`. This defines what properties of documents in the collection, and is used by both server and client.
 1. Mongoose Model in `/server/models`. This is the server's active record interface with MongoDB for the collection.
 1. Node/Express REST endpoints in `/server/routes/index.coffee`. Typically need POST, PUT, GET one and GET many, although each collection's may need more or less.
-1. Backbone Model in `/app/models`. This is the client's active record interface for a single document in the collection.
-1. Backbone Collection in `/app/collections`. This is the client's active record interface for any number of documents in the collection.
+1. Backbone Model and Collection in `/app/models` and `/app/collections`, respectively. These are the client's active record interface for a document or set of documents in the collection.
 
 ## Resources
 
