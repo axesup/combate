@@ -10,4 +10,4 @@
 
 # Notes On Git Rebase
 
-**Set up your text editor beforehand.** This process involves git opening up a text editor, and if you're not familiar with emacs or vim you might have trouble. If you're on Mac, you can run in the terminal `git config --global core.editor open`. This will tell git to open up TextEdit by default during interactive rebases and any other time git needs you to edit a file for input. `open` may be substituted with `atom`, `subl`, `vim`, etc depending on your editor of choice, if you have the command set up.
+**Set up your text editor beforehand.** This process involves git opening up a text editor, and if you're not familiar with emacs or vim you might have trouble. If you're on Mac, you can run in the terminal `git config --global core.editor open`. This will tell git to open up TextEdit by default during interactive rebases and any other time git needs you to edit a file for input. `open` may be substituted with `atom`, `subl`, `vim`, etc depending on your editor of choice, if you have the corresponding command set up.
