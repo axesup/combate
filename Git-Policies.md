@@ -6,7 +6,7 @@
   1. Do not end the subject line with a period
   1. Use the imperative mood in the subject line
   1. Wrap the body at 72 characters
-  1. Use the body to explain what and why vs
+  1. Use the body to explain what and why vs. how
 
 # Notes On Git Rebase
 
