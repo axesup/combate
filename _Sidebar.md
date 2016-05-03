@@ -9,6 +9,7 @@
  * [[Mission statement]]
  * [[Coco Models]]
  * [[Coding Guidelines]]
+ * [[Cookbook]]
  * [[File system]]
  * [[JSON Schema]]
  * [[Technical overview]]
