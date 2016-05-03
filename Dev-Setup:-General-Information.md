@@ -27,6 +27,15 @@ After installation, to run the site locally, enter the following commands in sep
 
 You can also use the command `npm run dev` to both run brunch and the server in one terminal. If you don't need nodemon or brunch to restart on changes or build files, you can simply run `npm run start` instead.
 
+### Running The Proxy
+
+If you are working solely on the website, not the server, you can run your development environment as a proxy to CodeCombat's production servers. This allows you to see your changes using live data, rather than downloading or building a local database. To run the proxy:
+
+1. `npm run proxy`
+1. `npm run brunch watch`
+
+Note that you do not need to run or even set up MongoDB to develop on the proxy.
+
 ***
 
 ### Issues
