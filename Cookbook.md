@@ -9,13 +9,18 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Add events to a view]]
 * [[Access url params in a view]]
 * [[Show data in a view]]
-* [[Organize a complicated template]]
 * [[Accessing data through data attribute]]
 * [[Add a form]]
 * [[Inspect a view]]
+
+### Templates
 * [[Debug a template]]
-* [[Translate page strings]]
+* [[Organize a complicated template]]
 * [[Add space between elements]]
+
+### I18N
+
+* [[Translate page strings]]
 * [[Edit page translations]]
 
 ### Server
