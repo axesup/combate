@@ -23,7 +23,7 @@ As long as the view subclasses CocoView or one of its subclasses (RootView, Moda
     template: require 'templates/foos-view'
     initialize: (options, doodadID) ->
       @foos = new Foos()
-      @supermodel.loadCollection(@foos)
+      @supermodel.trackRequest(@foos.fetchForDoodad(doodadID))
   ```
 
 *foos-view.jade*
