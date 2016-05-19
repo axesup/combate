@@ -28,7 +28,7 @@ module.exports =
 h1(data-i18n="common.info") // Will display "Information" in English.
 input(data-i18n="[placeholder]common.enter_name") // Placeholder will be "Enter name here" in English.
 button(data-i18n="common.send") // Button starts as "Send", but onSubmit, is changed to "Sending"
-p Just have this in English # DNT
+p Just have this in English // DNT
 ```
 
 ### View
