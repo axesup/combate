@@ -16,9 +16,9 @@ If cloning on Windows, the Git section of the [Windows setup guide](https://gith
 
 ## Setup
 
-Git Bash is recommended, however, a regular Windows command prompt works too. On Linux and Mac, of course there is already a Terminal application available.
+Terminal / Git Bash is recommended, however, a regular Windows command prompt works too.
 
-First open a command prompt, change directory to where you cloned CodeCombat, then run `vagrant up` to start the virtual machine: 
+First open a Terminal window, change directory to where you cloned CodeCombat, then run `vagrant up` to start the virtual machine: 
 
 `path/to/your/project$ vagrant up`
 
@@ -28,14 +28,14 @@ If there are errors during the process, you can try `vagrant provision` to run t
 
 ## Running CodeCombat
 
-Once the VM is up and running, change directory in your command prompt to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
+Once the VM is up and running, change directory in your Terminal windows to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
 
 * Git Bash:
   * `path/to/your/project$ scripts/vagrant/npm.sh run dev` 
 * Windows command prompt:
   * `path\to\your\project\> scripts/vagrant/npm.bat run dev`
 
-Once the Brunch window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:13000) in your browser and see CodeCombat running.
+Once the window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:13000) in your browser and see CodeCombat running.
 
 ## Shutting down
 
