@@ -18,11 +18,11 @@ If cloning on Windows, the Git section of the [Windows setup guide](https://gith
 
 Git Bash is recommended, however, a regular Windows command prompt works too. On Linux and Mac, of course there is already a Terminal application available.
 
-First open a command prompt, change directory to where you cloned CodeCombat, then run: 
+First open a command prompt, change directory to where you cloned CodeCombat, then run `vagrant up` to start the virtual machine: 
 
 `path/to/your/project$ vagrant up`
 
-This will start the virtual machine. The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If running on Windows, you might have to give VirtualBox firewall access as requested.
+The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If running on Windows, you might have to give VirtualBox firewall access as requested.
 
 If there are errors during the process, you can try `vagrant provision` to run the setup script again or `vagrant destroy` followed by `vagrant up` to totally dispose and recreate the virtual machine. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
 
