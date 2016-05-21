@@ -8,44 +8,40 @@ Vagrant supports a number of virtual machine environments. For this setup we wil
 
 ## Installation
 
-Start by installing [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org/), and [Git](http://git-scm.com/). If running on Windows, either Git for Windows or [GitHub for Windows](https://windows.github.com/) may be used.
+Start by installing [Vagrant](https://www.vagrantup.com), [VirtualBox](https://www.virtualbox.org/), and [Git](http://git-scm.com/). If running on Windows, either [Git for Windows](https://git-scm.com/download/win) or [GitHub for Windows](https://windows.github.com/) may be used.
 
-Choose a folder on your computer for CodeCombat and clone the repository from GitHub. If you are intending to contribute, it is a good idea to fork the repository on GitHub first, then clone your fork.
+Choose a folder on your computer for CodeCombat and clone the repository from GitHub. If you are intending to contribute, it is a good idea to fork the repository on GitHub first, then clone your fork. 
 
 If cloning on Windows, the Git section of the [Windows setup guide](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-Windows#repository-setup) may be helpful. You only need to do the steps related to `git clone`.
 
 ## Setup
 
-If you installed Git Bash, you can use it for these steps. Otherwise a regular Windows command prompt works too. On Linux and Mac, of course there is already a Terminal application available.
+Git Bash is recommended, however, a regular Windows command prompt works too. On Linux and Mac, of course there is already a Terminal application available.
 
-First open two copies of a command prompt. In each of them, change directory to where you cloned CodeCombat.
+First open a command prompt, change directory to where you cloned CodeCombat, then run: 
 
-Enter the command `vagrant up`.
+`path/to/your/project$ vagrant up`
 
-This will start the virtual machine. The first time you run it, it will download a copy of the vagrant "box", which is a copy of Ubuntu Linux that we will use to run CodeCombat. This box file is stored in your home directory in a subdirectory called `.vagrant.d` so it does not have to be downloaded every time.
+This will start the virtual machine. The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If running on Windows, you might have to give VirtualBox firewall access as requested.
 
-If running on Windows and this is the first time you have used a VirtualBox virtual machine, you may get a firewall prompt. Be sure to allow VirtualBox access as requested, or we will not be able to connect to CodeCombat running inside the virtual machine.
-
-The first time you do `vagrant up`, it will take much longer, because it will install the various dependencies, like Node, Bower, and MongoDB.
-
-If there are errors during the setup, you can try `vagrant destroy` followed by `vagrant up` again. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
+If there are errors during the process, you can try `vagrant provision` to run the setup script again or `vagrant destroy` followed by `vagrant up` to totally dispose and recreate the virtual machine. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
 
 ## Running CodeCombat
 
-Once the `vagrant up` command has completed successfully, change directory in each of your two command windows to where you cloned CodeCombat, and run these two commands:
+Once the VM is up and running, change directory in your command prompt to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
 
-* Linux / Mac / Windows with Git Bash:
-  * scripts/vagrant/brunch.sh
-  * scripts/vagrant/dev-server.sh
+* Git Bash:
+  * `path/to/your/project$ scripts/vagrant/npm.sh run dev` 
 * Windows command prompt:
-  * scripts\vagrant\brunch.bat
-  * scripts\vagrant\dev-server.bat
+  * `path\to\your\project\> scripts/vagrant/npm.bat run dev`
 
-Once the Brunch window shows that it has compiled the files, you can visit [http://localhost:3000](http://localhost:3000) in your browser and see CodeCombat running.
+Once the Brunch window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:13000) in your browser and see CodeCombat running.
 
 ## Shutting down
 
-First, hit `Ctrl-C` in each of the two command windows to stop Brunch and the dev server. Then, run `vagrant halt` in either window. This will stop the virtual machine but keep it available for future use. To start the VM again, just run `vagrant up`.
+Run `vagrant halt` to turn off the VM. To start again, just run `vagrant up`.
+
+`path/to/your/project$ vagrant halt`
 
 ## Updating the MongoDB database
 
