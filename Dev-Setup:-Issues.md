@@ -2,6 +2,16 @@
 
 If you are having a problem not listed here, jump into [our dev chat](https://coco-slack-invite.herokuapp.com/) and let's get it fixed and then documented here. You might want to check your versions of node, npm, MongoDB, and Python, and also make sure your GitHub copy of CodeCombat is [up-to-date](https://help.github.com/articles/syncing-a-fork/).
 
+### Database
+
+If you get an error like this:
+
+> Failed: restore error: coco.media.chunks: error restoring from /root/data/dump/coco/media.chunks.bson: insertion error: EOF
+
+Then try using the `--batchSize=100` option:
+
+> mongorestore --drop --batchSize=100 /root/data/dump
+
 ### Bower
 
 If you get errors with bower not being able to clone git repositories, try [cloning over https](http://stackoverflow.com/questions/1722807/git-convert-git-urls-to-http-urls/11383587#11383587).
