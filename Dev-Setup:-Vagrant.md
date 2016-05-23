@@ -45,16 +45,16 @@ Run `vagrant halt` to turn off the VM. To start again, just run `vagrant up`.
 
 ## Updating the MongoDB database
 
-The first time `vagrant up` is run, it runs a provisioning script that installs dependencies. This script then runs `fillMongo.sh`, which downloads the latest [database dump](http://analytics.codecombat.com:8080/dump.tar.gz) and installs it into MongoDB.
+The first time `vagrant up` is run, it installs the latest [database dump](http://analytics.codecombat.com:8080/dump.tar.gz) into MongoDB.
 
-To update the database to the latest version, there is an update script in `scripts/vagrant`. However, note that this update script drops the existing contents of the MongoDB database. If you wish to save user and achievement data, first run the backup script, which will make a copy of these MongoDB collections. The update script will look for this backup and load it into MongoDB after loading the latest dump of the production database.
+To update your database a later point of time, it is recommended to backup your local database first with `backup-mongo`, and then run `sync-mongo.sh` to sync with the latest dump of the production database.
 
-* Linux / Mac / Windows with Git Bash:
-  * scripts/vagrant/backup.sh
-  * scripts/vagrant/update.sh
+* Git Bash:
+  * `path/to/your/project$ scripts/vagrant/backup-mongo.sh` 
+  * `path/to/your/project$ scripts/vagrant/sync-mongo.sh` 
 * Windows command prompt:
-  * scripts\vagrant\backup.bat
-  * scripts\vagrant\update.bat
+  * `path\to\your\project\> scripts/vagrant/backup-mongo.bat`
+  * `path\to\your\project\> scripts/vagrant/sync-mongo.bat`
 
 ## Rebuilding the virtual machine
 
