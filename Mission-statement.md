@@ -1,9 +1,10 @@
 ```coffee
 missionStatement = """
-CodeCombat is an integral part of the programming community, like StackOverflow and GitHub.
-It's where newcomers learn how useful, rewarding, and fun coding can be, and where
-programmers of every skill level come to challenge and expand their abilities. It reflects
-the best parts of the community: openness, collaboration, and continual learning.
+CodeCombat is an integral part of the programming community, like
+StackOverflow and GitHub.  It's where newcomers learn how useful, rewarding,
+and fun coding can be, and where programmers of every skill level come to
+challenge and expand their abilities.  It reflects the best parts of the 
+community: openness, collaboration, and continual learning.
 
 It's also the funnest game in the universe.
 """
