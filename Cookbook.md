@@ -14,6 +14,9 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Accessing data through data attribute]]
 * [[Inspect a view]]
 
+### Models
+* [[Add methods for special server endpoints]]
+
 ### Templates
 * [[Debug a template]]
 * [[Organize a complicated template]]
