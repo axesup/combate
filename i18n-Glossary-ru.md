@@ -16,8 +16,9 @@ I suppose target users of the game are mostly children so it is ok.
 6. common nouns in Level names should start from lowercase except the first word:  
 Touch of Death -> Прикосновение смерти  
 Defense of Plainswood -> Защита лесной равнины
-7. Achivements. Use "название: завершено":  
-Ogres of Hanoi Completed -> Ханойские огры: завершено
+7. Achivements. For Achivement Name use "_название_: пройден":  
+Ogres of Hanoi Completed -> Ханойские огры: пройден
+However I am not sure where it is shown in game...
 8. Use "ё" where needed.
 
 For discussions please go to [here](https://discourse.codecombat.com/t/russian-dictionary-and-standards/6434).
