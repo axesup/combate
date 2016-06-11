@@ -17,7 +17,7 @@ I suppose target users of the game are mostly children so it is ok.
 Touch of Death -> Прикосновение смерти  
 Defense of Plainswood -> Защита лесной равнины
 7. Achivements. For Achivement Name use "_название_: пройден":  
-Ogres of Hanoi Completed -> Ханойские огры: пройден
+Ogres of Hanoi Completed -> Ханойские огры: пройден  
 However I am not sure where it is shown in game...
 8. Use "ё" where needed.
 
