@@ -20,6 +20,8 @@ Defense of Plainswood -> Защита лесной равнины
 Ogres of Hanoi Completed -> Ханойские огры: пройден  
 However I am not sure where it is shown in game...
 8. Use "ё" where needed.
+9. **!IMPORTANT** If you see a thang's type or name mention, then add the original English writing of it. Also if some names or words are required for the user solution, then don't remove the original writing.
+"Collect only items with type 'potion'. Kill only skeletons (enemy.type is "skeleton")." -> "Собирай только предметы с типом 'зелье' ('potion'). Убивай только скелетов (enemy.type равен "skeleton")."
 
 For discussions please go to [here](https://discourse.codecombat.com/t/russian-dictionary-and-standards/6434).
 
@@ -29,17 +31,19 @@ Common terms appear in many levels and should be translated always the same way.
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| code | код   |  |
-| Intro | Введение | Guide article name |
-| Overview | Описание | Guide article name |
-| No code problems. | Код без ошибок. | Goal name |
+| code             | код   |  |
+| Intro            | Введение | Guide article name |
+| Overview         | Описание | Guide article name |
+| No code problems.| Код без ошибок. | Goal name |
 | If you're stuck, check the Guide for tips. | Если ты застрял, ищи подсказки в руководстве (кнопка Помощь). | |
-| lower right | под редактором | |
+| lower right      | под редактором  | |
 | Ogres | Огры | |
 
 ###ThangType
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| Sense Stone | камень ощущений |  |
-| gem | самоцвет |  |
+| Ogres            | Огры            | Может быть type или team.
+| Humans           | Люди            | Может быть type или team.
+| Sense Stone      | камень ощущений |  |
+| gem              | самоцвет        |  |
