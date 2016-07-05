@@ -20,3 +20,4 @@
 |shift+up                    |Make Thang Taller                  |
 |shift+down                  |Make Thang Shorter                 |
 |ctrl+\, ⌘+\                 |Toggle Debug Mode                  |
+|alt+click                   |Create clone, click again to place |
