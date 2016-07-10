@@ -39,6 +39,12 @@ Common terms appear in many levels and should be translated always the same way.
 | lower right      | под редактором  | |
 | Ogres | Огры | |
 
+### Locations
+
+| Original         | Translation     | Comments                      |
+|------------------|-----------------|-------------------------------|
+| BackWoods | Темнолесье | |
+
 ###ThangType
 
 | Original         | Translation     | Comments                      |
