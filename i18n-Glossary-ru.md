@@ -34,6 +34,8 @@ Common terms appear in many levels and should be translated always the same way.
 | code             | код   |  |
 | Intro            | Введение | Guide article name |
 | Overview         | Обзор | Guide article name |
+| Hint | Совет | |
+| Hints Guide | Вспомогательное руководство |
 | No code problems.| Код без ошибок. | Goal name |
 | If you're stuck, check the Guide for tips. | Если ты застрял, ищи подсказки в руководстве (кнопка Помощь). | |
 | lower right      | под редактором  | |
