@@ -9,7 +9,7 @@ Hello [Diplomats](https://codecombat.com/contribute/diplomat)! Welcome to the de
 
 ######Useful Links
 * [[i18n]]
-* [CodeCombat i18n](https://codecombat.com/i18n)
+* [CodeCombat i18n](http://direct.codecombat.com/i18n)
 * [Information](https://codecombat.com/contribute/diplomat)
 * [Github locale files](https://github.com/codecombat/codecombat/tree/master/app/locale)
 
