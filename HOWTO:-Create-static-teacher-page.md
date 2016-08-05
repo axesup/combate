@@ -72,15 +72,13 @@ Replace the example names within the file with your own.
 
 Open this file: `app/core/Router.coffee`
 
-Add this entry to roughly line 153, alphabetized in the /teachers section.
+Add this entry to roughly line 153, alphabetized in the /teachers section. Remember that the directory should NOT have a forward slash before it. 
 
     'teachers/example': go('teachers/ExampleTeacherView')
 
 ### 6. Add teacher dashboard menu item (OPTIONAL)
 
 Open this file: `app/templates/courses/teacher-dashboard-nav.jade`
-
-Add this entry to roughly line 153, alphabetized in the /teachers section.
 
     li(class= path.indexOf('/teachers/example') === 0 ? 'active' : '')
       a(href='/teachers/example')
