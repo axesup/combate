@@ -21,11 +21,11 @@ Names chosen for this example:
 
     ExampleTeacherView
     example-teacher-view
-    /example-view
+    /example
 
 ### 2. Create .jade page (HTML)
 
-Put your new HTML file here: `app/templates/teachers/foo-bar-view.jade`
+Put your new HTML file here: `app/templates/teachers/example-teacher-view.jade`
 
 File contents:
 
@@ -41,7 +41,7 @@ File contents:
 
 ### 3. Create .sass page (CSS)
 
-Put your new CSS file here: `app/styles/teachers/foo-bar-view.sass`
+Put your new CSS file here: `app/styles/teachers/example-teacher-view.sass`
 
 File contents:
 
@@ -56,7 +56,7 @@ File contents:
 
 ### 4. Create .coffee page (code)
 
-Put your new code file here: `app/views/teachers/FooBarView.coffee`
+Put your new code file here: `app/views/teachers/ExampleTeacherView.coffee`
 
 File contents:
 
@@ -74,7 +74,7 @@ Open this file: `app/core/Router.coffee`
 
 Add this entry to roughly line 153, alphabetized in the /teachers section.
 
-    'teachers/foo-bar': go('teachers/FooBarView')
+    'teachers/example': go('teachers/ExampleTeacherView')
 
 ### 6. Add teacher dashboard menu item (OPTIONAL)
 
@@ -82,13 +82,13 @@ Open this file: `app/templates/courses/teacher-dashboard-nav.jade`
 
 Add this entry to roughly line 153, alphabetized in the /teachers section.
 
-    li(class= path.indexOf('/teachers/foo-bar') === 0 ? 'active' : '')
-      a(href='/teachers/foo-bar')
-        small.label Foo Bar
+    li(class= path.indexOf('/teachers/example') === 0 ? 'active' : '')
+      a(href='/teachers/example')
+        small.label Example
 
 ### Done!
 
-You should now be able to navigate to `http://localhost:3000/teachers/foo-bar`
+You should now be able to navigate to `http://localhost:3000/teachers/example`
 
 **Changed files in your local GitHub repository**
 
