@@ -72,7 +72,7 @@ codecombat根目录下面的package.js的scripts脚本中postinstall在安装即
 删除，手动执行，但执行前要将bower及brunch进行全局安装
 
     npm install -g bower --allow-root
-    npm install -g brunch@1.8.5
+    npm install -g brunch
 
 ubuntu 14.04.4默认已经安装python2.7，所以可以不必再次安装
 
@@ -93,16 +93,13 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
     sudo git clone https://github.com/codecombat/codecombat.git
     
     sleep 5s
-    sudo wget http://nodejs.org/dist/v5.9.0/node-v5.9.0.tar.gz
-    sudo tar xfz node-v5.9.0.tar.gz
-    cd node-v5.9.0
+    sudo wget http://nodejs.org/dist/v5.1.1/node-v5.1.1.tar.gz
+    sudo tar xfz node-v5.1.1.tar.gz
+    cd node-v5.1.1
     sudo ./configure
     sudo make
     sudo make install
     
-    cd ~/coco
-    sudo curl -L https://npmjs.org/install.sh | sudo sh
-    node -v
     sleep 5s
     npm -v
     sleep 5s
@@ -111,13 +108,15 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
     sudo npm config set registry https://registry.cnpmjs.org
     sudo npm config set python python2.7
     sudo npm install -g bower --allow-root
-    sudo npm install -g brunch
+    sudo npm install -g geoip-lite
+    sudo npm install -g nodemon
+    sudo npm install -g coffee-script@1.9.x
+    sudo npm install -g uglify-js@2.5.0
     sudo npm install -g node-gyp
-    sudo npm install --phantomjs_cdnurl=http://cnpmjs.org/downloads
+    sudo SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install --phantomjs_cdnurl=http://cnpmjs.org/downloads
     
     sleep 5s
     sudo bower --allow-root install
-    sudo bower --allow-root update
     sudo brunch build --env fast
     sleep 5s
     cd ~/coco && mkdir -p mongodl
@@ -215,3 +214,13 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
     @import url(//fonts.useso.com/css?family=Arvo:400,700);
     @import url(//fonts.useso.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext,cyrillic,vietnamese,cyrillic-ext,greek-ext,greek);
     @import url(//fonts.useso.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic);
+
+编辑 server_setup.coffee 178、179行
+
+      setupCountryRedirectMiddleware app, "china", "CN", "zh", config.chinaDomain
+      setupCountryRedirectMiddleware app, "brazil", "BR", "pt-BR", config.brazilDomain
+
+替换为(实际是注释掉这两行,解决访问自建网站会跳转到其它codecombat网站问题)
+
+      #setupCountryRedirectMiddleware app, "china", "CN", "zh", config.chinaDomain
+      #setupCountryRedirectMiddleware app, "brazil", "BR", "pt-BR", config.brazilDomain
