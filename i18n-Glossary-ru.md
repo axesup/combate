@@ -55,8 +55,23 @@ Common terms appear in many levels and should be translated always the same way.
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
+| Anya Weston | Аня Вестон | |
 | Tharin Thunderfist | Тарин Тсандерфист | |
-| Omarn Brewstone | Омарн Брюстоун |
+| Alejandro the Duelist | Алехандро "Дуэлянт" | |
+| Ida Justhearth | Ида Джастхас | |
+| Amara Arrowhead | Амара Ароухэд | |
+| Hushbaum | Хашбаум | |
+| Hatori Hanzo | Хатори Ханзо | |
+| Senick Steelclaw | Сеник Стилклоу | |
+| Omarn Brewstone | Омарн Брюстоун | |
+| Naria of the Leaf | Нарья из Листа | |
+| Pender Spellbane | Пендер Спеллбейн | |
+| Arryn Stonewall | Аррин Стоунвол | |
+| Nalfar Cryptor | | |
+| Okar Stompfoot | | |
+| Ritic the Cold | | |
+| Illia Shieldsmith | | |
+
 
 #### Ogres
 | Original         | Translation     | Comments                      |
