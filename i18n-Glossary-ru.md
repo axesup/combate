@@ -20,7 +20,7 @@ Defense of Plainswood -> Защита лесной равнины
 Ogres of Hanoi Completed -> Ханойские огры: пройден  
 However I am not sure where it is shown in game...
 8. Use "ё" where needed.
-9. Don't translate names. Use transliteration for them. For example:
+9. Don't translate names of characters/heroes/locations. Use transliteration/transcription for them. For example:
 Omarn Brewstone -> Омарн Брюстон (not "Вареный камень" or "Зельекамень" or "Варокамень" etc)
 10. **!IMPORTANT** If you see a thang's type or name mention, then add the original English writing of it. Also if some names or words are required for the user solution, then don't remove the original writing.
 "Collect only items with type 'potion'. Kill only skeletons (enemy.type is "skeleton")." -> "Собирай только предметы с типом 'зелье' ('potion'). Убивай только скелетов (enemy.type равен "skeleton")."
@@ -47,7 +47,11 @@ Common terms appear in many levels and should be translated always the same way.
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| BackWoods | Темнолесье | |
+| Kithgard Dungeon| Подземелье Китгарда| Kithgard library -> Библиотека Китгарда |
+| BackWoods Forest | Лес Беквуд | Backwoods warrior -> Бэквудский воин |
+| Sarven Desert | Пустыня Сарвен | Sarven scout -> Разведчики Сарвена |
+| Cloudrip Mountain | Гора Клаудрип | Cloudrip commander -> Командир Клаудрипа |
+| Kelvintaph Glacier | Ледник Кельвинтаф | Kelvintaph peak -> Кельвинтафский пик |
 
 ### ThangType
 
