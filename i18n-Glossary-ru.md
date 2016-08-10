@@ -20,7 +20,9 @@ Defense of Plainswood -> Защита лесной равнины
 Ogres of Hanoi Completed -> Ханойские огры: пройден  
 However I am not sure where it is shown in game...
 8. Use "ё" where needed.
-9. **!IMPORTANT** If you see a thang's type or name mention, then add the original English writing of it. Also if some names or words are required for the user solution, then don't remove the original writing.
+9. Don't translate names. Use transliteration for them. For example:
+Omarn Brewstone -> Омарн Брюстон (not "Вареный камень" or "Зельекамень" or "Варокамень" etc)
+10. **!IMPORTANT** If you see a thang's type or name mention, then add the original English writing of it. Also if some names or words are required for the user solution, then don't remove the original writing.
 "Collect only items with type 'potion'. Kill only skeletons (enemy.type is "skeleton")." -> "Собирай только предметы с типом 'зелье' ('potion'). Убивай только скелетов (enemy.type равен "skeleton")."
 
 For discussions please go to [here](https://discourse.codecombat.com/t/russian-dictionary-and-standards/6434).
@@ -53,6 +55,8 @@ Common terms appear in many levels and should be translated always the same way.
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
+| Tharin Thunderfist | Тарин Тсандерфист | |
+| Omarn Brewstone | Омарн Брюстоун |
 
 #### Ogres
 | Original         | Translation     | Comments                      |
