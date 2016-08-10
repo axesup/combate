@@ -110,5 +110,6 @@ Common terms appear in many levels and should be translated always the same way.
 #### Items
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| Sense Stone      | камень ощущений |  |
-| gem              | самоцвет        |  |
+| Sense Stone      | Камень ощущений |  |
+| Gem              | Самоцвет        |  |
+| Boss Star I/II/III/IV/V | Звезда командира I/II/III/IV/V | |
