@@ -67,10 +67,10 @@ Common terms appear in many levels and should be translated always the same way.
 | Naria of the Leaf | Нарья из Листа | |
 | Pender Spellbane | Пендер Спеллбейн | |
 | Arryn Stonewall | Аррин Стоунвол | |
-| Nalfar Cryptor | | |
-| Okar Stompfoot | | |
-| Ritic the Cold | | |
-| Illia Shieldsmith | | |
+| Nalfar Cryptor | Налфар Криптор | |
+| Okar Stompfoot | Окар Стомпфут | |
+| Ritic the Cold | Ритик "Холод" | |
+| Illia Shieldsmith | Илия Шилдсмит | |
 
 
 #### Ogres
