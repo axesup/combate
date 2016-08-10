@@ -47,11 +47,45 @@ Common terms appear in many levels and should be translated always the same way.
 |------------------|-----------------|-------------------------------|
 | BackWoods | Темнолесье | |
 
-###ThangType
+### ThangType
+
+#### Heroes
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| Ogres            | Огры            | Может быть type или team.
-| Humans           | Люди            | Может быть type или team.
+
+#### Ogres
+| Original         | Translation     | Comments                      |
+|------------------|-----------------|-------------------------------|
+| Ogres            | Огры            | Может быть type или team. |
+| Peon             | Батрак          | |
+| Munchkin         | Манчкин         | |
+| Thrower          | Метатель | |
+| Brawler          | Драчун | |
+| Shaman           | Шаман | |
+| Head Hunter      | Охотник за головами | |
+
+#### Humans
+| Original         | Translation     | Comments                      |
+|------------------|-----------------|-------------------------------|
+| Humans           | Люди            | Может быть type или team.     |
+| Peasant          | Крестьянин      | |
+| Soldier          | Солдат          | |
+| Archer           | Лучник/лучница  | |
+| Artillery        | Артиллерия      | |
+| Paladin          | Паладин         | |
+
+
+#### Neutrals
+| Original         | Translation     | Comments                      |
+|------------------|-----------------|-------------------------------|
+| Neutral          | Нейтральные     | Может быть type или team.     |
+| Burl             | Бурл            |                               |
+| Yak              | Як              | |
+| Yeti             | Йети | |
+
+#### Items
+| Original         | Translation     | Comments                      |
+|------------------|-----------------|-------------------------------|
 | Sense Stone      | камень ощущений |  |
 | gem              | самоцвет        |  |
