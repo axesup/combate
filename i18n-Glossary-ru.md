@@ -48,7 +48,7 @@ Common terms appear in many levels and should be translated always the same way.
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
 | Kithgard Dungeon| Подземелье Китгарда| Kithgard library -> Библиотека Китгарда |
-| BackWoods Forest | Лес Беквуд | Backwoods warrior -> Бэквудский воин |
+| BackWoods Forest | Беквудский лес | Backwoods warrior -> Бэквудский воин |
 | Sarven Desert | Пустыня Сарвен | Sarven scout -> Разведчики Сарвена |
 | Cloudrip Mountain | Гора Клаудрип | Cloudrip commander -> Командир Клаудрипа |
 | Kelvintaph Glacier | Ледник Кельвинтаф | Kelvintaph peak -> Кельвинтафский пик |
