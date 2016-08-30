@@ -10,7 +10,7 @@ Hello [Archmages](http://codecombat.com/contribute/archmage)! Welcome to the dev
 
 ####Contact Us
 
-There are a variety of ways to get help with CodeCombat related things. We have [a developer chat room on Slack](https://coco-slack-invite.herokuapp.com/).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.
+There are a variety of ways to get hack on CodeCombat related things. We have [a developer chat room on Slack](https://coco-slack-invite.herokuapp.com/).  Most people are in US Pacific Time (~GMT-8) but there are usually a few other players awake at other times.
 
 The [Discourse Forum](http://discourse.codecombat.com/) is another useful place to get help.  For more information check out the [main chat page](https://github.com/codecombat/codecombat/wiki/Chat-Room).
 
@@ -22,6 +22,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 1. Browse the wiki to learn something new!
 1. Fix [bugs](https://github.com/codecombat/codecombat/labels/bug).
 1. Bring up new ideas in our [Slack channel](https://coco-slack-invite.herokuapp.com).
+1. Hack to the max!
 
 ####Reading Material
 ######General:
