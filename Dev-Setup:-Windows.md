@@ -15,7 +15,7 @@ You'll want to fork the repo on Github, then clone it to your machine.
 
     git clone https://github.com/$GITHUB_USERNAME/codecombat.git
     cd codecombat
-    git remote add -f origin https://github.com/codecombat/codecombat.git
+    git remote add -f upstream https://github.com/codecombat/codecombat.git
 
 You'll then want to install the dependencies and build the asset files.
 
