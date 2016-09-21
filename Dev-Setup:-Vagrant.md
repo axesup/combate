@@ -22,13 +22,13 @@ First open a Terminal window, change directory to where you cloned CodeCombat, t
 
 `path/to/your/project$ vagrant up`
 
-The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If running on Windows, you might have to give VirtualBox firewall access as requested.
+The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If you're running on Windows, you might have to give VirtualBox firewall access as requested.
 
 If there are errors during the process, you can try `vagrant provision` to run the setup script again or `vagrant destroy` followed by `vagrant up` to totally dispose and recreate the virtual machine. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
 
 ## Running CodeCombat
 
-Once the VM is up and running, change directory in your Terminal windows to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
+Once the VM is up and running, change directory in your Terminal window to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
 
 * Git Bash:
   * `path/to/your/project$ scripts/vagrant/npm.sh run dev` 
@@ -47,7 +47,7 @@ Run `vagrant halt` to turn off the VM. To start again, just run `vagrant up`.
 
 The first time `vagrant up` is run, it installs the latest [database dump](http://analytics.codecombat.com:8080/dump.tar.gz) into MongoDB.
 
-To update your database a later point of time, it is recommended to backup your local database first with `backup-mongo`, and then run `sync-mongo.sh` to sync with the latest dump of the production database.
+To update your database at a later point in time, it is recommended to backup your local database first with `backup-mongo`, and then run `sync-mongo.sh` to sync with the latest dump of the production database.
 
 * Git Bash:
   * `path/to/your/project$ scripts/vagrant/backup-mongo.sh` 
