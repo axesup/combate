@@ -7,7 +7,7 @@ Any given software project does well to follow certain common rules. It's not so
 We follow the [CoffeeScript Style Guide](https://github.com/polarmobile/coffeescript-style-guide) and [CSS Style Guide](https://github.com/styleguide/css) with these additions:
 
 * For the sake of brevity, names that need to incorporate "CodeCombat" can be abbreviated to "Coco" (for CS) or "coco" (for Sass).
-* Names that have acronyms such as "id" or "html" should be all uppercase except as the first word of an identifier. So `getID()` instead of `getId()`, `ajaxToHTML` instead of `ajaxToHtml`. (Is `id` an acronym? ... Sure!)
+* Names that have acronyms such as "id" or "html" should be capitalized the same as word for CamelCase names. So `getId()` instead of `getID()`, `ajaxToHtml` instead of `ajaxToHTML`. (Is `id` an acronym? ... Sure!)
 * Lines should generally be no more than 119 characters, but for long comments or lengthy data, it's fine to exceed this amount. We recommend enabling soft-wraps on your editor.
 * We don't use [spaces around default parameter values](https://github.com/polarmobile/coffeescript-style-guide#whitespace-in-expressions-and-statements): `containsPoint: (p, withRotation=true)` instead of `containsPoint: (p, withRotation = true)`. (We did a lot of Python in our youth.)
 * We carelessly mix single and double quotes. Guess we could [fix this](https://github.com/polarmobile/coffeescript-style-guide#strings).
