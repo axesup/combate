@@ -108,6 +108,7 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
     sudo npm config set registry https://registry.cnpmjs.org
     sudo npm config set python python2.7
     sudo npm install -g bower --allow-root
+    sudo npm install -g brunch
     sudo npm install -g geoip-lite
     sudo npm install -g nodemon
     sudo npm install -g coffee-script@1.9.x
