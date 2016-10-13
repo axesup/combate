@@ -18,29 +18,29 @@ We're teaching people [JavaScript](http://en.wikipedia.org/wiki/JavaScript). The
 
 ## TLDR
 We understand that you're very busy. Here is a big example that summarizes most of the things that you should know. Note that we recommend that you read through the entire wiki page for a complete and definitive overview of our **Coding Guidelines for Artisans**.
-```
+```javascript
 // Hello World
 ```
 
 [Go back to the top of this page.](https://github.com/codecombat/codecombat/wiki/Coding-Guidelines-for-Artisans#coding-guidelines-for-artisans)
 
 ## Whitespace
-* The basic indention is **two** spaces. Tabs are not to be used at all.
+* The basic indention is **four** spaces. Tabs are not to be used at all.
 * Try to keep lines to 80 characters or less.
 * When wrapping lines, try to indent to line up with a related item on the previous line. Example:
-```
+```javascript
 // Note: this is how we recommend it.
 var result =
-  prompt(
-    aMessage,
-    aInitialValue,
-    aCaption
+    prompt(
+        aMessage,
+        aInitialValue,
+        aCaption
     );
 
 // This is also acceptable:
 var result = prompt(
-  aMessage, aInitialValue, aCaption
-  );
+    aMessage, aInitialValue, aCaption
+);
 ```
   * The important thing to remember is that you're writing code for humans
     * Keep the code **clear** and **consistent**!
@@ -54,50 +54,50 @@ var result = prompt(
 
 ## Symbols
 * Spaces around braces used for in-line functions or objects, except before commas or semicolons, e.g. 
-```
+```javascript
 function valueObject(aValue) { return { value: aValue }; };
 ```
 * Braces for functions and logical statements are acceptable in the following 4 styles:
-```
+```javascript
 // Style #0
 function foo(a, b)
 {
-  if(a < b)
-  {
-    a += b;
-  }
-  else
-  {
-    a -= b;
-  }
+    if(a < b)
+    {
+        a += b;
+    }
+    else
+    {
+        a -= b;
+    }
 
-  return a * 100;
+    return a * 100;
 }
 
 // Style #1
 function foo(a, b) {
-  if(a < b) {
-    a -= b;
-  }
-  else {
-    a += b;
-  }
+    if(a < b) {
+        a -= b;
+    }
+    else {
+        a += b;
+    }
 
-  return a * 100;
+    return a * 100;
 }
 
 // Style #2 (Extra for logical statements only)
 if(a < b) {
-  a -= b;
+    a -= b;
 } else {
-  a += b;
+    a += b;
 }
 
 // Style #3 (Extra for logical statements only)
 if(a < b)
-  a -= b;
+    a -= b;
 else
-  a += b;
+    a += b;
 ```
   * You can choose either style, but don't mix multiple styles in one file.
   * We recommend Style #0 and will use it in our levels.
@@ -108,11 +108,11 @@ else
 
 ## Properties
 * Use dot notation when accessing properties.
-```
+```javascript
 var luke =
 {
-  jedi: true,
-  age: 28
+    jedi: true,
+    age: 28
 };
 
 // bad
@@ -122,16 +122,16 @@ var isJedi = luke['jedi'];
 var isJedi = luke.jedi;
 ```
 * Use subscript notation `[]` when accessing properties with a variable.
-```
+```javascript
 var luke =
 {
-  jedi: true,
-  age: 28
+    jedi: true,
+    age: 28
 };
 
 function getProp(prop)
 {
-  return luke[prop];
+    return luke[prop];
 }
 
 var isJedi = getProp('jedi');
@@ -148,37 +148,37 @@ var isJedi = getProp('jedi');
   * **Booleans** evaluate to **the value of the boolean**
   * **Numbers** evaluate to **false if +0, -0, or NaN**, otherwise **true**
   * **Strings** evaluate to **false** if an empty string `''`, otherwise **true**
-```
+```javascript
 if ([0])
 {
-  // true
-  // An array is an object, objects evaluate to true
+    // true
+    // An array is an object, objects evaluate to true
 }
 ```
 * Use shortcuts.
-```
+```javascript
 // bad
 if (name !== '')
 {
-  // ...stuff...
+    // ...stuff...
 }
 
 // good
 if (name)
 {
-  // ...stuff...
+    // ...stuff...
 }
 
 // bad
 if (collection.length > 0)
 {
-  // ...stuff...
+    // ...stuff...
 }
 
 // good
 if (collection.length)
 {
-  // ...stuff...
+    // ...stuff...
 }
 ```
 * Do not compare `x == true` or `x == false`. Use `(x)` or `(!x)` instead. `x == true`, in fact, is different from `if (x)!`
@@ -189,53 +189,53 @@ if (collection.length)
 ## Code style
 * Always put else on its own line, as shown above.
 * Don't use else after return, i.e.
-```
+```javascript
 if (x < y)
-  return -1;
+    return -1;
 if (x > y)
-  return 1;
+    return 1;
 return 0;
 ```
 * Both `i++` and `++i` are acceptable.
 * Name inline functions, this makes it easier to debug them. Just assigning a function to a property doesn't name the function, you should to do this:
-```
+```javascript
 var offlineObserver = {
-  observe: function offlineObserve(aSubject, aTopic, aState)
-  {
-    if (aTopic == "network:offline-status-changed")
-      setOfflineUI(aState == "offline");
-  }
+    observe: function offlineObserve(aSubject, aTopic, aState)
+    {
+        if (aTopic == "network:offline-status-changed")
+            setOfflineUI(aState == "offline");
+    }
 }
 ```
 * Avoid single letter names. Be descriptive with your naming.
 * Leading commas: **Nope**.
-```
+```javascript
 // bad
 var once
-  , upon
-  , aTime;
+    , upon
+    , aTime;
 
 // good
 var once,
-    upon,
-    aTime;
+        upon,
+        aTime;
 
 // bad
 var hero =
 {
-    firstName: 'Bob'
-  , lastName: 'Parr'
-  , heroName: 'Mr. Incredible'
-  , superPower: 'strength'
+        firstName: 'Bob'
+    , lastName: 'Parr'
+    , heroName: 'Mr. Incredible'
+    , superPower: 'strength'
 };
 
 // good
 var hero =
 {
-  firstName: 'Bob',
-  lastName: 'Parr',
-  heroName: 'Mr. Incredible',
-  superPower: 'strength'
+    firstName: 'Bob',
+    lastName: 'Parr',
+    heroName: 'Mr. Incredible',
+    superPower: 'strength'
 };
 ```
 
@@ -248,29 +248,29 @@ var hero =
   * in particular try to use the names `onLoad`, `onDialogueAccept`, `onDialogueCancel` etc. where this is unambiguous.
 * Function names, local variables and object members have no prefix.
 * Try to declare local variables as near to their use as possible; try to initialize every variable.
-```
+```javascript
 // Bad
 function foo(x)
 {
-  var a = 5;
-  if(x < 5)
-  {
-    return x * x;
-  }
+    var a = 5;
+    if(x < 5)
+    {
+        return x * x;
+    }
 
-  return x + a;
+    return x + a;
 }
 
 // Good
 function foo(x)
 {
-  if(x < 5)
-  {
-    return x * x;
-  }
+    if(x < 5)
+    {
+        return x * x;
+    }
 
-  var a = 5;
-  return x + a;
+    var a = 5;
+    return x + a;
 }
 ```
 * Use inline comments liberally.
@@ -281,7 +281,7 @@ function foo(x)
 
 * Accessor functions for properties are not required.
 * If you do make Accessor functions use `getVal()` and `setVal('hello')`.
-```
+```javascript
 // bad
 dragon.age();
 
@@ -295,15 +295,15 @@ dragon.age(25);
 dragon.setAge(25);
 ```
 * If the property is a _boolean_, use `isVal()` or `hasVal()`.
-```
+```javascript
 // bad
 if (!dragon.age()) {
-  return false;
+    return false;
 }
 
 // good
 if (!dragon.hasAge()) {
-  return false;
+    return false;
 }
 ```
 * It's okay to create `get()` and `set()` functions, but be consistent.
@@ -313,7 +313,7 @@ if (!dragon.hasAge()) {
 ## Type Casting and Coercion
 * Perform type coercion at the beginning of the statement.
 * Strings:
-```
+```javascript
 this.reviewScore = 9;
 
 // bad
@@ -329,7 +329,7 @@ var totalScore = '' + this.reviewScore + ' total score';
 var totalScore = this.reviewScore + ' total score';
 ```
 * Use `parseInt` for Numbers and always with a radix for type casting.
-```
+```javascript
 var inputValue = '4';
 
 // bad
@@ -352,7 +352,7 @@ var val = parseInt(inputValue, 10);
 ```
 * If for whatever reason you are doing something wild and `parseInt` is your bottleneck and need to use Bitshift for [performance reasons](http://jsperf.com/coercion-vs-casting/3), leave a comment explaining why and what you're doing.
 * **Note:** Be careful when using bitshift operations. Numbers are represented as [64-bit values](http://es5.github.io/#x4.3.19), but Bitshift operations always return a 32-bit integer ([source](http://es5.github.io/#x11.7)). Bitshift can lead to unexpected behavior for integer values larger than 32 bits. [Discussion](https://github.com/airbnb/javascript/issues/109)
-```
+```javascript
 // good
 /**
  * parseInt was the reason my code was slow.
@@ -362,7 +362,7 @@ var val = parseInt(inputValue, 10);
 var val = inputValue >> 0;
 ```
 * Booleans:
-```
+```javascript
 var age = 0;
 
 // bad
@@ -393,17 +393,17 @@ var hasAge = !!age;
   * a useful advantage over `new Object()` is the ability to create initial properties
 * Use extended JavaScript syntax to define getters and setters.
 * If having defined a constructor you need to assign default properties it is preferred to assign an object literal to the prototype property. For example:
-```
+```javascript
 function SupportsString(data)
 {
-  this.data = data;
+    this.data = data;
 }
 SupportsString.prototype =
 {
-  toString: function toString()
-  {
-    return data;
-  }
+    toString: function toString()
+    {
+        return data;
+    }
 };
 ```
 * Use regular expressions, but use them wisely.
