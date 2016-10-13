@@ -14,7 +14,7 @@ Just basically follow [the Node style guide](https://github.com/felixge/node-sty
 
 ## Function and variable naming
 * Avoid single letter names. Be descriptive with your naming.
-* Event handler functions should be prefixed with the word `on`, like `onLoad`
+* Event handler functions should be prefixed with the word `on`, like `onPetSpawn`
 * Try to declare local variables as near to their use as possible; try to initialize every variable.
 ```javascript
 // Bad
