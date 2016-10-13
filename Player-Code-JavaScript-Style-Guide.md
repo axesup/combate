@@ -1,4 +1,4 @@
-We're teaching people [JavaScript](http://en.wikipedia.org/wiki/JavaScript). Therefore it is important that we have a consistent and clear coding style that is as close to standard JavaScript as possible. Every [Artisan](http://www.codecombat.com/contribute/artisan) should apply this coding standard in his levels to keep the code through all the levels consistent. This will lead to nice code, that can easily be read and prevents any form of confusion for players.
+We're teaching people [JavaScript](http://en.wikipedia.org/wiki/JavaScript). Therefore it is important that we have a consistent and clear coding style that is as close to standard JavaScript as possible. Every [Artisan](http://www.codecombat.com/contribute/artisan) should apply this coding standard in her levels to keep the code through all the levels consistent.
 
 Just basically follow [the Node style guide](https://github.com/felixge/node-style-guide), but with these exceptions:
 
@@ -6,11 +6,23 @@ Just basically follow [the Node style guide](https://github.com/felixge/node-sty
 * The basic indention is **four** spaces. Tabs are not to be used at all.
 * Try to keep lines to 60 characters or less. (We are working with very narrow code editors sometimes.)
 * Use double quotes.
+* Single spaces between binary operators, like `food < 5`.
+* No extra spaces in array or object literals, except between object keys and values.
+```javascript
+// Bad
+var array = [ 1, 2, 3 ];
+var object = { x:30, y:30 };
+
+// Good
+var array = [1, 2, 3];
+var object = {x: 30, y: 30};
+```
 
 ## Code style
 * Always put `else` on its own line.
 * Use `index++`, not `++index`.
 * Don't use the ternary operator.
+* Capitalize comments like sentences.
 
 ## Function and variable naming
 * Avoid single letter names. Be descriptive with your naming.
@@ -41,22 +53,22 @@ function foo(x) {
 * Compare objects to `null`, numbers to `0` or strings to `""` if there is chance for confusion.
 * Use shortcuts.
 ```javascript
-// bad
+// Bad
 if (name !== '') {
     // ...stuff...
 }
 
-// good
+// Good
 if (name) {
     // ...stuff...
 }
 
-// bad
+// Bad
 if (collection.length > 0) {
     // ...stuff...
 }
 
-// good
+// Good
 if (collection.length) {
     // ...stuff...
 }
