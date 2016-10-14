@@ -1,6 +1,6 @@
 We're teaching people [JavaScript](http://en.wikipedia.org/wiki/JavaScript). Therefore it is important that we have a consistent and clear coding style that is as close to standard JavaScript as possible. Every [Artisan](http://www.codecombat.com/contribute/artisan) should apply this coding standard in her levels to keep the code through all the levels consistent.
 
-Just basically follow [the Node style guide](https://github.com/felixge/node-style-guide), but with these exceptions:
+Just basically follow [the Node style guide](https://github.com/felixge/node-style-guide), but with these exceptions and additions:
 
 ## Formatting
 * The basic indention is **four** spaces. Tabs are not to be used at all.
