@@ -25,7 +25,7 @@ var object = {x: 30, y: 30};
 * Capitalize comments like sentences.
 
 ## Function and variable naming
-* Avoid single letter names. Be descriptive with your naming.
+* Avoid single letter names (`x`, `i`, etc.), unless you need to do a for-loop on one line and a longer name won't fit into 60 characters. Be descriptive with your naming.
 * Event handler functions should be prefixed with the word `on`, like `onPetSpawn`
 * Try to declare local variables as near to their use as possible; try to initialize every variable.
 ```javascript
