@@ -5,6 +5,7 @@ Just basically follow [PEP 8](https://www.python.org/dev/peps/pep-0008/), but wi
 ## Formatting
 * Try to keep lines to 60 characters or less. (We are working with very narrow code editors sometimes.)
 * Use double quotes.
+* Put placeholder `pass` statements at the end of empty blocks.
 
 ## Code style
 * Use camelCase, not snake_case, for compatibility with CodeCombat APIs.
