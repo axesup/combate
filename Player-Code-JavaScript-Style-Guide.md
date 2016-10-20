@@ -51,10 +51,11 @@ function foo(x) {
 ## Booleans
 * Do not compare `x == true` or `x == false`. Use `x` or `!x` instead.
 * Compare objects to `null`, numbers to `0` or strings to `""` if there is chance for confusion.
+* Use `==` and `!=` instead of `===` and `!==`.
 * Use shortcuts.
 ```javascript
 // Bad
-if (name !== '') {
+if (name != '') {
     // ...stuff...
 }
 
@@ -93,7 +94,6 @@ if (collection.length) {
 * Only quote Object keys when necessary.
 
 ## Conditionals
-* Use the === operator.
 * Use descriptive conditions.
 
 ## Functions
