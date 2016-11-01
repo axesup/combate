@@ -173,7 +173,7 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
     echo ----------ok!
     echo -------------------------------------------------------------------------
 
-如果搭建实验学习环境有任何疑问，欢迎邮件至 icodegame@blianw.com 交流，如果你是中国用户，也可以加入我们的QQ群：192252941 一起讨论。
+如果搭建实验学习环境有任何疑问，欢迎邮件至 icodegame@blianw.com 交流。
 
 编辑 app/assets/main.html 第39至45行
 
