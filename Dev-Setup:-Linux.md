@@ -175,14 +175,7 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
 
 如果搭建实验学习环境有任何疑问，欢迎邮件至 icodegame@blianw.com 交流，如果你是中国用户，也可以加入我们的QQ群：192252941 一起讨论。
 
-网站加载缓慢的问题，是由于谷歌在国内被墙，所以导致无法访问，解决办法：编辑 app/assets/main.html第30行
-    
-    <link href='//fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-替换为360CDN
-
-    <link href='//fonts.useso.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
-
-编辑 app/assets/main.html 第32至39行
+编辑 app/assets/main.html 第39至45行
 
     <!-- Google Analytics -->
     <script>
@@ -204,19 +197,7 @@ apt-get install nodejs-legacy 默认安装的是0.X的版本，与codecombat环�
         ga('create', 'UA-39724129-1', 'auto');
       </script> -->
 
-编辑 app/styles/bootstrap/_bootswatch.scss中9、10、11行
-
-    @import url(//fonts.googleapis.com/css?family=Arvo:400,700);
-    @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext,cyrillic,vietnamese,cyrillic-ext,greek-ext,greek);
-    @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic);
-
-替换为360CDN
-
-    @import url(//fonts.useso.com/css?family=Arvo:400,700);
-    @import url(//fonts.useso.com/css?family=Open+Sans:400,300,700&subset=latin,latin-ext,cyrillic,vietnamese,cyrillic-ext,greek-ext,greek);
-    @import url(//fonts.useso.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic);
-
-编辑 server_setup.coffee 178、179行
+编辑 server_setup.coffee 217、218行
 
       setupCountryRedirectMiddleware app, "china", "CN", "zh", config.chinaDomain
       setupCountryRedirectMiddleware app, "brazil", "BR", "pt-BR", config.brazilDomain
