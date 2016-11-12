@@ -113,3 +113,15 @@ Common terms appear in many levels and should be translated always the same way.
 | Sense Stone      | Камень ощущений |  |
 | Gem              | Самоцвет        |  |
 | Boss Star I/II/III/IV/V | Звезда командира I/II/III/IV/V | |
+
+#### Event handling-related terms
+|Original          |Translation      |Comments                       |
+|------------------|-----------------|-------------------------------|
+|Event handler|Обработчик события|  |
+|Event handling|Обработка событий|  |
+|Event listner|Обработчик события|  |
+|Event firing|Возникновение события|  |
+|Event occuring|Возникновение события|  |
+|Event source|Источник события|  |
+|Event calling|Вызов обработчика события|  |
+|Event monitoring|Наблюдение за событиями|  |
