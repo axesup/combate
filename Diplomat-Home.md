@@ -20,3 +20,4 @@ Hello [Diplomats](https://codecombat.com/contribute/diplomat)! Welcome to the de
 * [Norsk Bokmål](https://github.com/codecombat/codecombat/wiki/i18n-Glossary-nb)
 * [русский](https://github.com/codecombat/codecombat/wiki/i18n-Glossary-ru)
 * [Spanish (Latin America)](https://github.com/codecombat/codecombat/wiki/i18n-Glossary-es-419)
+* [українська](https://github.com/codecombat/codecombat/wiki/i18n-Glossary-uk)
