@@ -29,13 +29,16 @@ Common terms should be translated everywhere in the same way.
 | gem | самоцвіт |  |
 
 ### Locations
+| Original | Translation | Comments |
+|----------|-------------|----------|
 
 ### Game Terms
-| Original | Translation | Description |
-|----------|-------------|-------------|
+| Original | Translation | Comments |
+|----------|-------------|----------|
 | Warrior | Воїн |  |
 | Ranger | Рейнджер |  |
 | Wizard | Чаклун |  |
+| Ogre | Оґр |  |
 
 ### Programming
 | Original | Translation | Comments |
