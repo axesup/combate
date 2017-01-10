@@ -12,7 +12,7 @@
 * Correctly use apostrophe ( ' ), ґ, ї.
 
 ## Additional Resources
-* [Discussions and suggestions are here](https://discourse.codecombat.com/t/ukrainian-translation/10239)
+* [Forum topic for discussions and suggestions](https://discourse.codecombat.com/t/ukrainian-translation/10239)
 * [i18n Glossary ru](https://github.com/codecombat/codecombat/wiki/i18n-Glossary-ru)
 
 ## Glossary
