@@ -56,7 +56,7 @@ If Brunch is running and you make code changes, Brunch will reload the page auto
 
 The link to the database dump is: http://analytics.codecombat.com:8080/dump.tar.gz
 
-To import the database into MongoDB, unpack the archive and run: `mongorestore --drop /path/to/dump`
+To import the database into MongoDB, unpack the archive and run: `mongorestore --drop --noIndexRestore /path/to/dump`
 
 When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. To keep the database dump small, we only include a handful of testing levels, so the first two levels show up, but not the third. If you need to work on a specific level, let us know and we can provide you with more levels.
 
