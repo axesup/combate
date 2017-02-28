@@ -1,15 +1,15 @@
 # This is a WIP
 
-Wondering how we do things with Vue instead of with Backbone? Here's the cheat sheet for you!
+Wondering how to do something with Vue instead of with Backbone? Here's the cheat sheet for you!
 
 ## Me (and other global objects)
 
 Instead of a global `me` object, use the [Vuex](https://vuex.vuejs.org/en/intro.html) `me` [module](https://vuex.vuejs.org/en/modules.html), with its logged-in-user specific [getters](https://vuex.vuejs.org/en/getters.html) and [actions](https://vuex.vuejs.org/en/actions.html).
 
 ```coffeescript
-me.get('name')          -> store.state.me.name
-me.isAdmin()            -> store.getters['me/isAdmin']
-me.sendRecoveryEmail()  -> store.dispatch('me/sendRecoveryEmail')
+me.get('name')          ->  store.state.me.name
+me.isAdmin()            ->  store.getters['me/isAdmin']
+me.sendRecoveryEmail()  ->  store.dispatch('me/sendRecoveryEmail')
 ```
 
 Note that in the context of components, you'll have [helpers](https://vuex.vuejs.org/en/api.html#component-binding-helpers) like `mapState`, `mapGetters`, etc, so each call doesn't have to be so long.
@@ -21,26 +21,35 @@ MyComponent = {
 }
 ```
 
-**In-between times**: Changes to `me` User automatically get pushed to `me` store module. New pages, even backbone pages, should use the store instead. Actions on the user module should update the `me` global object until it's fully deprecated, to keep them in sync.
+While both systems are in use, changes to `me` User automatically get pushed to `me` store module. New or changed logic, even in backbone views, can use the store to speed migration. Actions and mutations on the user module should update the `me` global object until it's fully deprecated, to keep them in sync.
 
-Other globals, such as `features` and `serverConfig` will also move to the global vuex store, either at the root level or as their own modules, as needed.
+Other globals, such as `features` and `serverConfig` can also be added to the global vuex store, either at the root level or as their own modules, as needed.
 
 ## Page Layout
 
 Instead of extending `base.jade` and `base-flat.jade`, include the `page-layout` component and put content inside it.
 
-Before:
+With Backbone:
+
+```coffeescript
+# View
+RootView = require 'views/core/RootView'
+class MyView extends RootView
+  template: require('templates/my-view')
+```
 
 ```jade
+// Template
 extends /templates/base-flat
 
 block content
   div Content...
 ```
 
-Do this:
+With Vue:
 
 ```coffeescript
+# Component
 FlatLayout = require 'core/components/FlatLayout'
 MyComponent = Vue.extend
   template: require('templates/my-component')()
@@ -49,17 +58,18 @@ MyComponent = Vue.extend
 ```
 
 ```jade
+// Template
 flat-layout
   div Content...
 ```
 
-This is using [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Currently, it doesn't include footer and header pieces (handled by `RootVue` described later), but eventually FlatLayout will handle the entire page.
+This setup uses [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Currently, it doesn't include footer and header pieces (handled by `RootVue` described later), but eventually FlatLayout will handle the entire page.
 
 ## RootView -> RootVue
 
 In order to keep using the Backbone router as-is, use a RootVue as a wrapper for your component. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added upon navigating to the page.
 
-Before:
+Backbone:
 
 ```coffeescript
 RootView = require 'views/core/RootView'
@@ -67,30 +77,26 @@ module.exports = class HomeView extends RootView
   ...
 ```
 
-Now:
+Vue:
 
 ```coffeescript
 RootVue = require 'views/core/RootVue'
-FlatLayout = require 'core/components/FlatLayout'
 
 MyComponent = Vue.extend
-  template: require('templates/some-page')
+  ...
 
-module.exports = RootVue
+module.exports = class MyView extends RootVue
   VueComponent: MyComponent
   vuexModule: -> {
     namespaced: true # module will be namespaced to 'page/'
-    state: { ... }
+    ...
   }
+  ...
 ```
 
-As shown above, you can include your own module definition, which RootVue will add dynamically as the 'page' module. RootVue will remove that module and all its data when the Router navigates away.
+As shown above, you can include your own vuex module definition, which RootVue will add dynamically as the 'page' module. RootVue will remove that module and all its data when the Router navigates away. This is so that larger pages can take advantage of the vuex store, but also automatically clear any loaded data when no longer needed.
 
-Presumably we'll eventually want to move entirely away from the Backbone Router and use the [vue-router](http://router.vuejs.org/en/essentials/getting-started.html) or something like it instead. The (long) path to do this includes:
-
-* Set up the Backbone Router to handle Vue components without an intermediary wrapper Backbone View
-* Migrate all pages to Vue components
-* Switch routers in one commit
+The next step is to set up the Router to handle vue components directly, rather than needing the `RootVue`.
 
 ## Internal components
 
@@ -106,24 +112,24 @@ module.exports = class MyView extends CocoView
     super(arguments...)
 ```
 
-Data which needs to be shared between Backbone and vue can be:
+Ways data can be shared between Backbone and vue components, the Backbone view can:
 
-* put in a vuex store and have the Backbone view grab it directly through the store object (`require('core/store')`)
-* set by the Backbone view to the component's [$data](https://vuejs.org/v2/api/#vm-data)
-* listen to the vue component with [$watch](https://vuejs.org/v2/api/#vm-watch)
+* grab data through the vuex store object (`require('core/store')`)
+* set the vue component's [$data](https://vuejs.org/v2/api/#vm-data)
+* listen to vue component changes with [$watch](https://vuejs.org/v2/api/#vm-watch)
 
 ## Network Requests
 
 Instead of using `$.ajax` or Backbone model/collection methods, call `api` functions which are wrapped around the [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
 
 ```coffeescript
-# Before
+# Backbone Collections/Models
 Users = require('collections/Users')
 users = new Users()
 jqxhr = users.fetch({data: {project:'name'}})
 jqxhr.done (rawResponse) -> ...
 
-# Now
+# Fetch API
 api = require('core/api')
 promise = api.users.fetch({data: {project:'name'}})
 promise.then (rawResponse) -> ...
@@ -133,14 +139,15 @@ Network errors generated by the API are rejected as objects in the promise. Thes
 
 ## Page Errors
 
-One of the things the SuperModel does is handle page load errors, re-rendering the page with a generic load error if a necessary resource fails to load. So if you try to go to a classroom page where you don't have access to the page, it'll show a "Forbidden" error. The PageLayout component can do this as well.
+One of the things the SuperModel does is handle page load errors, re-rendering the page with a generic load error if a necessary resource fails to load. So if you try to go to a classroom page where you don't have access to the page, the SuperModel shows a "Forbidden" error. The PageLayout component can do this as well. However, it's explicit instead of automatic, and it's more easily customizable.
 
 ```coffeescript
-# Before
+# SuperModel
 users = new Users()
-@supermodel.trackRequest(users.fetch())
+@supermodel.trackRequest(users.fetch()) # shows an error if this resource fails to load
+...
 
-# Now
+# Vue
 api.users.fetch({data: {project:'name'}})
 .then (users) ->
   ...
@@ -148,24 +155,30 @@ api.users.fetch({data: {project:'name'}})
   @$store.commit('addPageError', e)
 ```
 
-This appends the error to a list of errors in the global store, and the PageLayout is set to show the PageErrors component if there are errors, otherwise the given page content. But you can handle these errors however you like for any given page, either by using a different layout component, or doing something else within the `catch`. If network errors are not caught, they show up the same way as they do now: as noty's when in development or logged in as an admin.
+This appends the error to a list of errors in the global store, and the PageLayout is set to show the PageErrors component instead of the page content if there are errors. But you can handle these errors however you like for any given page, either by using a different layout component, or doing something else within the `catch`. If network errors are not caught, they show up the same way as they do now: as noty's when in development or logged in as an admin.
 
 ## Page Load Progress
-There is no generic system for tracking page-load progress to replace the SuperModel. It can easily be replicated, though:
+There is no generic system for tracking page-load progress to replace the SuperModel. Instead, try using the FontAwesome spinner.
 
 ```coffeescript
+# Component
 MyComponent = Vue.extend
   data: -> {
-    progress: 0 # have a bootstrap progress bar width keyed off this
+    loading: true # have a bootstrap progress bar width keyed off this
   }
   created: ->
-    p1 = api.thing.fetch().then(=> this.progress += 0.5)
-    p2 = api.otherThing.fetch().then(=> this.progress += 0.5)
-    Promise.all([p1,p2]).then ([res1, res2]) ->
-      ...
+    p1 = api.thing.fetch()
+    p2 = api.otherThing.fetch()
+    Promise.all([p1,p2]).then ([res1, res2]) =>
+      this.loading = false
 ```
 
-Something like this could be generalized with a [Vue mixin](https://vuejs.org/v2/guide/mixins.html).
+```jade
+// Template
+div
+  i.fa.fa-spinner.fa-spin.fa-3x(v-if="loading")
+  div(v-else) Content...
+```
 
 ## Bootstrap
 
@@ -211,12 +224,9 @@ Where to find/put all these new files?
 
 ## Translations
 
-```jade
-// Before
-div(data-i18n="some.key")
-
-// Now
-div {{ $t("some.key") }}
-```
-
 Instead of passing data through `data-i18n` parameters, call the `i18n.t` function directly through `$t`. It's also available on the vue component instance as `@$t`.
+
+```jade
+div(data-i18n="some.key") // with Backbone
+div {{ $t("some.key") }} // with Vue
+```
