@@ -181,3 +181,30 @@ ul.nav.nav-tabs
 ## Handy Tools
 
 Install the [Vue.js Devtools Chrome Extension](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=en). Use it to see what components are on the page and the state of the vuex store.
+
+## File Structure
+
+Where to find/put all these new files?
+
+```
+/app
+  /core
+    /api
+      fetch-json.coffee: improved Fetch API function
+      index.coffee: puts all the other modules in this folder together, makes it possible to require('/core/api')
+      <collection>.coffee: all network endpoints for this collection
+
+    /core
+      /components: all non-root-level, common components
+
+    /store
+      /modules
+        me.coffee: Replacement to global "me"
+      index.coffee: Where all the global store pieces and modules are put together. Might get broken down later.
+
+    /templates: where all component templates go
+
+    /views: where all root-level components go
+      /core
+        RootVue.coffee: shims page-level components to the Router
+```
