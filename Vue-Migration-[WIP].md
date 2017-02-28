@@ -226,5 +226,6 @@ Instead of passing data through `data-i18n` parameters, call the `i18n.t` functi
 
 ```jade
 div(data-i18n="some.key") // with Backbone
+
 div {{ $t("some.key") }} // with Vue
 ```
