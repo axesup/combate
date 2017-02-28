@@ -61,11 +61,11 @@ flat-layout
   div Content...
 ```
 
-This setup uses [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Currently, it doesn't include footer and header pieces (handled by `RootVue` described later), but eventually FlatLayout will handle the entire page.
+This setup uses [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Currently, it doesn't include footer and header pieces (handled by `RootComponent` described later), but eventually FlatLayout will handle the entire page.
 
-## RootView -> RootVue
+## RootView -> RootComponent
 
-In order to keep using the Backbone router as-is, use a RootVue as a wrapper for your component. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added upon navigating to the page.
+In order to keep using the Backbone router as-is, use a RootComponent as a wrapper for your component. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added upon navigating to the page.
 
 Backbone:
 
@@ -78,12 +78,12 @@ module.exports = class MyView extends RootView
 Vue:
 
 ```coffeescript
-RootVue = require 'views/core/RootVue'
+RootComponent = require 'views/core/RootComponent'
 
 MyComponent = Vue.extend
   ...
 
-module.exports = class MyView extends RootVue
+module.exports = class MyView extends RootComponent
   VueComponent: MyComponent
   vuexModule: -> {
     namespaced: true # module will be namespaced to 'page/'
@@ -92,25 +92,30 @@ module.exports = class MyView extends RootVue
   ...
 ```
 
-As shown above, you can include your own vuex module definition, which RootVue will add dynamically as the 'page' module. RootVue will remove that module and all its data when the Router navigates away. This is so that larger pages can take advantage of the vuex store, but also automatically clear any loaded data when no longer needed.
+As shown above, you can include your own vuex module definition, which RootComponent will add dynamically as the 'page' module. RootComponent will remove that module and all its data when the Router navigates away. This is so that larger pages can take advantage of the vuex store, but also automatically clear any loaded data when no longer needed.
 
-The next step is to set up the Router to handle vue components directly, rather than needing the `RootVue`.
+The next step is to set up the Router to handle vue components directly, rather than needing the `RootComponent`.
 
 ## Internal components
 
-Say you want to take a smaller piece of a Backbone view and make it a Vue component. To do this, create the vue component instance in the Backbone view's `afterRender` method.
+Say you want to take a smaller piece of a Backbone view and make it a Vue component. To do this, create (or update) the vue component instance in the Backbone view's `afterRender` method, and destroy it in the view's `destroy` method.
 
 ```coffeescript
 module.exports = class MyView extends CocoView
   afterRender: ->
-    @myComponent = new MyComponent({
-      el: @$el.find('#small-corner')[0]
-      store
-    })
+    if @myComponent
+      @$el.find('#target').replaceWith(@myComponent.$el)
+    else
+      @myComponent = new MyComponent({
+        el: @$el.find('#target')[0]
+      })
     super(arguments...)
+
+  destroy: ->
+    @myComponent.$destroy()
 ```
 
-Ways data can be shared between Backbone and vue components, the Backbone view can:
+To share data between Backbone and vue components, the Backbone view can:
 
 * grab data through the vuex store object (`require('core/store')`)
 * set the vue component's [$data](https://vuejs.org/v2/api/#vm-data)
@@ -217,7 +222,7 @@ Where to find/put all these new files?
 
     /views: where all root-level components go
       /core
-        RootVue.coffee: shims page-level components to the Router
+        RootComponent.coffee: shims page-level components to the Router
 ```
 
 ## Translations
@@ -229,3 +234,7 @@ div(data-i18n="some.key") // with Backbone
 
 div {{ $t("some.key") }} // with Vue
 ```
+
+## window.currentView -> window.rootComponent
+
+RootComponent will put its vue component in the global namespace as `rootComponent` to aid development. Don't use this in code, though! A component can access its root component with `@$root`, but as much as possible use the Vuex store to communicate between disparate pieces of logic.
