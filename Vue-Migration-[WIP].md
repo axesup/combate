@@ -1,5 +1,3 @@
-# This is a WIP
-
 Wondering how to do something with Vue instead of with Backbone? Here's the cheat sheet for you!
 
 ## Me (and other global objects)
@@ -73,7 +71,7 @@ Backbone:
 
 ```coffeescript
 RootView = require 'views/core/RootView'
-module.exports = class HomeView extends RootView
+module.exports = class MyView extends RootView
   ...
 ```
 
