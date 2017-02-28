@@ -208,3 +208,15 @@ Where to find/put all these new files?
       /core
         RootVue.coffee: shims page-level components to the Router
 ```
+
+## Translations
+
+```jade
+// Before
+div(data-i18n="some.key")
+
+// Now
+div {{ $t("some.key") }}
+```
+
+Instead of passing data through `data-i18n` parameters, call the `i18n.t` function directly through `$t`. It's also available on the vue component instance as `@$t`.
