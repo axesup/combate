@@ -25,10 +25,14 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 1. Hack to the max!
 
 ####Reading Material
+
+**Note**! This material is for Backbone on the frontend. A migration to Vue is ongoing, and gradually code and this wiki will evolve to match. See [[Vue Migration]] for more details.
+
 ######General:
 * [[Mission Statement]]
 * [Developer Environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information) - Start here to get CodeCombat set up on your computer.
 * [[Developer Organization]]
+* [[Vue Migration]]
 * [[Cookbook]]
 * [[Coding Guidelines]]
 * [[Technical Overview]]
