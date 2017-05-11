@@ -7,7 +7,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
 | Backwoods Forest | Backwoods Wald  | A rough patch of dense forest |
-| Cloudrip         |        | "Skybrudd" means "a downpour of rain" |
+| Cloudrip         |        |  |
 | Cloudrip Mountain|  | Place name                    |
 | Plainswood       |        |                               |
 | Kithgard         | Kithgard        |                               |
@@ -21,6 +21,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 |----------|-------------|----------|
 | Array    | Array       | Wird in der Literatur noch verwendet|
 
+#Wörter
 
 | Original   | Translation    | Comments               |
 |------------|----------------|------------------------|
@@ -29,7 +30,8 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Clan       |          |                        |
 | Chieftain  |        |                        |
 | Casts      |         | as in "casts a spell"  |
-| DPS        |           | Damage → "Skade"       |
+|Challenge level||Herausforderungs-Level? |
+| DPS        |           |       |
 | Dungeon    |                |                        |
 | Gem        | Juwelen        |                        |
 | Hero       | Held/Heldin    |                        |
