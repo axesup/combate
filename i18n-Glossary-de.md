@@ -35,6 +35,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Dungeon    |                |                        |
 | Gem        | Juwelen        |                        |
 | Hero       | Held/Heldin    |                        |
+|munchkins   | Zwerg-Oger     |Zwerge könnte missverständlich sein|
 | Ogre       | Oger           |               |
 | Spell      | Zauberspruch   |     |
 | Thang      | Thang          | |
