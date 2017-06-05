@@ -1,4 +1,4 @@
-This is not an exhaustive list, but these are the most important for you to know about. We rely heavily on open source code and high quality services to speed development and focus on building CodeCombat, and these tools are what inspire us to open source our own work as well, to give back to the community that has given us all this. 
+This is not an exhaustive list, but these are the most important for you to know about. We rely heavily on open source code and high quality services to speed development and focus on building CodeCombat, and these tools are what inspire us to open source our own work as well: to give back to the community that has given us all this. 
 
 You don't need to learn how to use all of these tools, but please take some time to familiarize yourself with at least the ones you'll be using for the area(s) you'd like to work on.
 
