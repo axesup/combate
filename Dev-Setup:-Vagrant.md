@@ -22,7 +22,7 @@ First open a Terminal window, change directory to where you cloned CodeCombat, t
 
 `path/to/your/project$ vagrant up`
 
-The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually a Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If you're running on Windows, you might have to give VirtualBox firewall access as requested.
+The first time you run, it takes time because it will download a copy of [vagrant "box"](https://www.vagrantup.com/docs/boxes.html), which is actually an Ubuntu Linux VM, along with various required dependencies that we will use to run CodeCombat. If you're running on Windows, you might have to give VirtualBox firewall access as requested.
 
 If there are errors during the process, you can try `vagrant provision` to run the setup script again or `vagrant destroy` followed by `vagrant up` to totally dispose and recreate the virtual machine. If you aren't able to figure it out, try asking in the [CodeCombat chat room](https://www.hipchat.com/gkaufqwnj).
 
