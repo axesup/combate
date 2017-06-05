@@ -4,7 +4,7 @@
 
 CodeCombat has [a developer chat room on Slack](https://coco-slack-invite.herokuapp.com/) (or [HipChat](https://www.hipchat.com/gkaufqwnj) if you prefer not to register), where we hang out when we're awake. Stop by, say hi, and ask a question any time. Although the core devs are asleep during the night (US Pacific time), there are usually a few other players awake.  
 
-There is absolutely no inappropriate messages allowed in the rooms. If you would like to see the rules please go [here](https://github.com/codecombat/codecombat/wiki/Chat-Room-Rules).
+There are absolutely no inappropriate messages allowed in the rooms. If you would like to see the rules please go [here](https://github.com/codecombat/codecombat/wiki/Chat-Room-Rules).
 
 There's also an off-topic room at [http://www.hipchat.com/gaXOD7lQ8](http://www.hipchat.com/gaXOD7lQ8).
 
