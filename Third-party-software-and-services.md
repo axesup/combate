@@ -19,7 +19,7 @@ You don't need to learn how to use all of these tools, but please take some time
 * [Passport](http://passportjs.org/guide/): Authentication. Right now we just use it for authentication through passwords, but one project is to expand the site's login options through it.
 * [Mongoose](http://mongoosejs.com/docs/guide.html): An interface for MongoDB that turns documents into active records. We mainly use their plugin system to share certain logic between multiple collections, for versioning, naming, searching and permissions.
 * [TV4](https://github.com/geraintluff/tv4): JSON-Schema validation. Whole other article on this subject.
-* [Request](https://github.com/mikeal/request): Simpler request handling, used in testing to test query the test server, and on the production server to interact with HTTP APIs for services like Facebook and Google.
+* [Request](https://github.com/mikeal/request): Simpler request handling, used in testing to query the test server, and on the production server to interact with HTTP APIs for services like Facebook and Google.
 * [Lo-Dash](http://lodash.com/docs) and [Underscore.String](https://github.com/epeli/underscore.string#readme): Great utility libraries.
 * [Async](https://github.com/caolan/async): Various utility methods for doing all sorts of fun asynchronous tricks. We mainly have used its waterfall method to do a serial string of checks on User documents when they are changed.
 * [Winston](https://github.com/flatiron/winston): Logging library for Node.js.
