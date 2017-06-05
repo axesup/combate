@@ -71,7 +71,7 @@ To rebuild the virtual machine from scratch, run `vagrant destroy` followed by `
   * This uses VirtualBox shared folders, using the VirtualBox Guest Additions. 
   * If the Guest Additions are a different version from the installed VirtualBox (a common occurrence), then symbolic links will not work on Windows. 
   * This is problematic because `npm` likes to make symlinks to executables in `node_modules/.bin`. 
-  * To work around this, a directory `/node_modules` is made inside the virtual machine and is mounted over top of `/vagrant/node_modules`.
+  * To work around this, a directory `/node_modules` is made inside the virtual machine and is mounted over  `/vagrant/node_modules`.
   * This means that the `node_modules` directory will appear empty from outside the virtual machine. It should not be deleted.
 * [Brunch](http://brunch.io/) is used by CodeCombat to watch for changes to Coffeescript files and recompile them automatically. In order to allow Brunch running in the virtual machine to detect changes made on the "host" machine, "polling" mode is used. This results in higher CPU usage.
   * In order to avoid this and run Brunch in regular mode, you can start Brunch manually inside the VM by `vagrant ssh`, `cd /vagrant`, and `brunch w`. You will need to have an SSH client installed (e.g. the one installed by Git for Windows).
