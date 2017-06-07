@@ -4,15 +4,15 @@ Welcome [Artisans](http://codecombat.com/contribute/artisan)! This wiki is the m
 
 Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com) while contributing because there is no CDN which means that updates are immediate.
 
-####Reading Material
+#### Reading Material
 
-######General
+###### General
 
 * [[Important Artisan Concepts]]
 * [[Building A Level]]
 * [[Component Authoring Guide]]
 
-######Level Editor
+###### Level Editor
 
 * [[Thangs Tab]]
 * [[Editing Thang Components]]
@@ -27,7 +27,7 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 
 * [[Artisan How-To Index]]
 
-######More Resources
+###### More Resources
 
 * [Public Slack Channel](https://coco-slack-invite.herokuapp.com/)
 * [Artisan Forum](http://discourse.codecombat.com/category/artisan)
