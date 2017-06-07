@@ -10,7 +10,7 @@ Quick notes:
 
 1. Don't worry about localization (i18n stuff)
 2. Indentation is important, always.
-3. Changes should be made the main codecombat branch, in a new feature branch
+3. Changes should be made to the main codecombat branch, in a new feature branch
 4. Assumes you have a [working dev environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information)
 
 ### 1. Name your page (harder than it sounds)
