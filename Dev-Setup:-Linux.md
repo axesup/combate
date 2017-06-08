@@ -63,3 +63,12 @@ This will start `brunch` (watches client files) and `nodemon` (watches server fi
 
 Visit [http://localhost:3000](http://localhost:3000) to see your local CodeCombat setup.
 
+## Gotchas
+
+On Ubuntu 16.04, the instructions for starting MongoDB fails with an error like
+
+`failed to start mongod.service: unit mongod.service not found`
+
+Follow the instructions in the article below to create a systemd unit file for MongoDB
+
+https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04
