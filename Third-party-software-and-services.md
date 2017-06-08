@@ -5,9 +5,9 @@ You don't need to learn how to use all of these tools, but please take some time
 ## Core Languages
 
 * [CoffeeScript](http://coffeescript.org/): Used throughout the site instead of JavaScript. If you're familiar with Python or Ruby then you'll feel right at home. If you're familiar with JavaScript, you'll find CoffeeScript seeks to fix many of JavaScript's faults and, we think, does a pretty good job.
-* [Jade](http://jade-lang.com/): HTML needs to be rendered on the client. Jade files get compiled into JavaScript functions that, given a context object, returns an HTML string. All our pages are written in Jade; use it rather than other HTML generation methods like jQuery.
+* [Pug (formerly called Jade)](https://pugjs.org/api/getting-started.html): HTML needs to be rendered on the client. Pug(Jade) files get compiled into JavaScript functions that, given a context object, returns an HTML string. All our pages are written in Pug; use it rather than other HTML generation methods like jQuery.
 * [Sass](http://sass-lang.com/guide): These are compiled in to CSS files and provide many nice features CSS does not have.
-* [Markdown](http://daringfireball.net/projects/markdown/basics): Used for static HTML strings, such as in database text documents or incorporated in some text-heavy Jade templates (see the legal page for an example). We use [Marked](https://github.com/chjj/marked) as our Markdown processor.
+* [Markdown](http://daringfireball.net/projects/markdown/basics): Used for static HTML strings, such as in database text documents or incorporated in some text-heavy Pug templates (see the legal page for an example). We use [Marked](https://github.com/chjj/marked) as our Markdown processor.
 
 ## Server-side
 
