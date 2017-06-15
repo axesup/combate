@@ -33,7 +33,8 @@ Good place names are important to give the levels a sense of coherency and fluid
 |Challenge level||Herausforderungs-Level? |
 | DPS        |           |       |
 | Dungeon    |                |                        |
-| Gem        | Juwelen        |                        |
+| Fangrider  | Fangrider      | Google kennt's :-/     |
+| Gem        | Edelsteine     |                        |
 | Hero       | Held/Heldin    |                        |
 |munchkins   | Zwerg-Oger     |Zwerge könnte missverständlich sein|
 | Ogre       | Oger           |               |
