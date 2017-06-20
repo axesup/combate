@@ -38,7 +38,7 @@ This will take care of installing npm and bower dependencies, as well as buildin
 
 ## Database Import
 
-    (cd $(mktemp -d /tmp/coco.XXXXXXXX) && curl http://analytics.codecombat.com:8080/dump.tar.gz | tar xzf - && mongorestore --drop --host 127.0.0.1)
+    (cd $(mktemp -d /tmp/coco.XXXXXXXX) && curl http://analytics.codecombat.com:8080/dump.tar.gz | tar xzf - && mongorestore --drop --noIndexRestore --host 127.0.0.1)
 
 This will download the latest [development database](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#database) and overwrite your current development database with it.
 ## Running
