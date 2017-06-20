@@ -29,10 +29,8 @@ Download the [CodeCombat database](http://analytics.codecombat.com:8080/dump.tar
 
 1. **Start MongoDB**. From the codecombat folder, run `./bin/coco-mongodb`. You should now be able to, from another terminal, run `mongo` and connect.
 1. **Uncompress the dump**. Open a new terminal and navigate to the folder where you downloaded the dump.tar.gz file and run `tar xzvf [filename]`. This will create a `dump` folder.
-1. **Load the uncompressed dump folder into the database**. At a normal command prompt run: `mongorestore --drop --noIndexRestore [path to dump]`.
+1. **Load the uncompressed dump folder into the database**. At a normal command prompt run: `mongorestore --drop --noIndexRestore --batchSize=100 [path to dump]`.
 
 Following these same steps will also clear out all old data (including any local data you have created) and replace it with just the new data.
 
 *If you see an error like `no reachable servers` when running mongorestore, and mongo is running, try adding `--host=127.0.0.1` to the command line options.*
-
-*In version 3.0.7 of mongoDB is a bug in mongorestore. If you see an error like `Failed: restore error: [some file name]: error restoring from dump/[some file name]: insertion error: EOF` when running mongorestore, then try adding `--batchSize=100` to the command. (try 1000, or 100, or even smaller)* [see here for a discussion on that](https://jira.mongodb.org/browse/TOOLS-939)
