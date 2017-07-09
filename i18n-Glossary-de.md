@@ -35,14 +35,17 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Dungeon    |                |                        |
 | Fangrider  | Fangrider      | Google kennt's :-/     |
 | Gem        | Edelsteine     |                        |
+|Griffinrider| Greifenreiter? |
 | Hero       | Held/Heldin    |                        |
 |munchkins   | Zwerg-Oger     |Zwerge könnte missverständlich sein|
 | Ogre       | Oger           |               |
 | Spell      | Zauberspruch   |     |
+| summon     | rekrutieren, herbeirufen |
 | Thang      | Thang          | |
 | Tharin Thunderfist          |    | (The Knight) |
 
 #Hard to translate phrases
+* loop over an array
 
 
 |English                  |German                             |Translation Back|
