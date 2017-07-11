@@ -27,6 +27,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 |------------|----------------|------------------------|
 | Ambush     |  |                        |
 | Buildables |   | "Ting som kan bygges" ?|
+| Brawler    | Brawler        | Schläger? 
 | Clan       |          |                        |
 | Chieftain  |        |                        |
 | Casts      |         | as in "casts a spell"  |
@@ -40,6 +41,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 |munchkins   | Zwerg-Oger     |Zwerge könnte missverständlich sein|
 | Ogre       | Oger           |               |
 | Spell      | Zauberspruch   |     |
+| Scout      | Scout          | Späher? Aufklärer? |
 | summon     | rekrutieren, herbeirufen |
 | Thang      | Thang          | |
 | Tharin Thunderfist          |    | (The Knight) |
