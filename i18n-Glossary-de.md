@@ -33,6 +33,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Casts      |         | as in "casts a spell"  |
 |Challenge level||Herausforderungs-Level? |
 | DPS        |           |       |
+| decoy      | Lockvogel      |
 | Dungeon    |                |                        |
 | Fangrider  | Fangrider      | Google kennt's :-/     |
 | Gem        | Edelsteine     |                        |
