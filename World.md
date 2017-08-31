@@ -2,7 +2,7 @@ Looming inside `/app/lib/world` is the base code for our [[Thang Component Syste
 
 Because Worlds simulate deterministically based on the player's code, we can simulate the entire history of a World all at once in a Web Worker whenever the code changes and the player casts their spell. When the simulation is done, we swap out the old World with the new one. We try to make this really fast to get as close to live-coding as possible. Our game engine might simulate 1800 frames for 60 seconds at 30 frames per second, but we want it to happen in around a second, not a minute. This can be a challenge on large, long levels.
 
-![An example performance breakdown of various world serialization stages for Break the Prison](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/world_simulation.png)
+![An example performance breakdown of various world serialization stages for Break the Prison](https://s3.amazonaws.com/files.codecombat.com/wiki-images/world_simulation.png)
 
 During the simulation, the World just advances time and updates each System in order to get the next frame until one of the Systems ends the world or its maximum lifespan is met. Each System also returns a simple hash based on what happened that frame--we can combine the hashes and determine whether this frame is the same as it was the last simulation and figure out which frame is the first that actually changed as a result of the user's code change, allowing us to automatically fast-forward past the boring parts.
 

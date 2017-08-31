@@ -6,7 +6,7 @@ In our [[Thang Component System]] architecture, the Thangs are the units, the th
 
 A very simple Thang might be a land. Let's look at a default Dungeon Floor Thang. Its `id` might be `"DungeonFloor3"` if there were a few other floors placed before it. Or you could rename it to `"Top Left Floor"`--doesn't matter, as long as it's unique. Its `thangType` will point to [the latest Dungeon Floor ThangType](http://codecombat.com/editor/thang/dungeon-floor). And it'll just have three Components:
 
-![Dungeon Floor Thang example](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/dungeon_floor_thang.png)
+![Dungeon Floor Thang example](https://s3.amazonaws.com/files.codecombat.com/wiki-images/dungeon_floor_thang.png)
 
 Represented as JSON, these Components are simply:
 

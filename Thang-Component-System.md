@@ -2,7 +2,7 @@ CodeCombat uses something like an [Entity-Component-System architecture](http://
 
 But instead of "Entities", we call them "Thangs", since ain't no one got time for such a long, boring, irregularly pluralizable words as "Entitity". I mean, "Entity." (See?) So it's a Thang-Component-System architecture instead.
 
-![Configuring the Tharin Thang with some Components](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/thang_component_system.png)
+![Configuring the Tharin Thang with some Components](https://s3.amazonaws.com/files.codecombat.com/wiki-images/thang_component_system.png)
 
 Thangs live inside Levels, where they are configured with Components, and the levels are similarly configured with Systems. In addition to Components, Thangs point to [[ThangType]]s, which hold all the art and sound information needed to display them--but ThangTypes have no impact on the Level's [[World]] simulation itself. You can make all the Ogres look like trees and they'll still crush the human soldiers--it'll just look hilarious when you go to play the level. For details, check the full article on [[Thang]]s.
 

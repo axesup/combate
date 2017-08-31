@@ -2,7 +2,7 @@ From the beginning, we knew we wanted to make CodeCombat into a multiplayer prog
 
 CodeCombat's multiplayer collaborative code editing is done. It uses [Firepad in the spell editor](https://github.com/codecombat/codecombat/wiki/Tome#multiplayer-and-firepad), which adds operational transform support to ACE. We turn it on when a player enables multiplayer in their session from the Multiplayer button at the top, after which they can just send their multiplayer link to anyone to join.
 
-![Preliminary multiplayer game list](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/multiplayer_00.png)
+![Preliminary multiplayer game list](https://s3.amazonaws.com/files.codecombat.com/wiki-images/multiplayer_00.png)
 
 Top improvements would include:
 

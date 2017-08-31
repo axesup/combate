@@ -1,6 +1,6 @@
 CodeCombat uses [EaselJS](http://www.createjs.com/#!/EaselJS) for graphics, which is part of the CreateJS suite for rich HTML5 web apps. It mimics the Adobe Flash APIs and can do many of the things Flash can do. The **Surface** is what we call the thing that manages the EaselJS Stage on top of an HTML5 canvas. It handles updating all of our 2.5D sprite graphics.
 
-![Sprites!](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/surface_00.png)
+![Sprites!](https://s3.amazonaws.com/files.codecombat.com/wiki-images/surface_00.png)
 
 Each LevelView has a Surface, and each LevelEditView's ThangsTabView has one, but you don't need one to display a CocoSprite--you can just put those on top of an EaselJS stage, as is done in the ThangAvatarView, Thang Editor, and the home page. It's only when you want to take a [[World]] and display its [[Thang]]s that you need a Surface.
 
@@ -44,7 +44,7 @@ It's also possible to convert to screen coordinates, but we never ended up needi
 
 CodeCombat's sprite art is all stored in the database in vector format, which lets us go resolution independent and save a lot of download time compared to our old raster art system. The sprite sheets are built on the fly from the vector data when you go to play a level. See [app/lib/LevelLoader.coffee](https://github.com/codecombat/codecombat/blob/master/app/lib/LevelLoader.coffee) for how that's done. The vector art files are exported from Adobe Flash Creative Cloud targeted at CreateJS, and we wrote a custom parser to pull the animation data from the exported JavaScript files. That stuff is in the [app/lib/sprites](https://github.com/codecombat/codecombat/blob/master/app/lib/sprites). Then there's the [[Thang Editor]], which provides a GUI for turning those vector sprites into a usable ThangType that can be used in the [[Level Editor]]. Since the sprite export and Thang Editor import are a bit tricky, you probably don't need to know about them; unless someone really wants to work on them, they'll be an undocumented internal use tool.
 
-![Ogre Brawler in the Thang Editor](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/thang_editor_00.png)
+![Ogre Brawler in the Thang Editor](https://s3.amazonaws.com/files.codecombat.com/wiki-images/thang_editor_00.png)
 
 As far as the art style: we just wanted to make it look like [Kingdom Rush](http://www.kingdomrush.com/). We all loved that game, and our wives loved it, too. So instead of making something covered in explosions and blood that would look even more awesome but also shout this-game-is-for-boys, we went for a more universally appealing style, while still making something we ourselves liked and that wasn't too kiddified.
 
@@ -76,7 +76,7 @@ Labels are like Marks, but for text, since we don't want the text to actually sc
 
 ### Paths
 
-![Paths example](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/surface_01.png)
+![Paths example](https://s3.amazonaws.com/files.codecombat.com/wiki-images/surface_01.png)
 
 CodeCombat uses these path indicators to give hints to the past and future positions, actions, and targets of Thangs, since otherwise you'd have to manually scrub through time to figure out what's going to happen or has happened each time you change the code. The visual styling can get overwhelming sometimes, and the performance is often horrendous, so we want to try another approach that scales better. If we could find a way to do animated, fading-out footprint trails, that would be awesome.
 

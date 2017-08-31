@@ -2,7 +2,7 @@
 
 # Chief Artisan Level Audition
 
-![](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/recruiting_banner.png)
+![](https://s3.amazonaws.com/files.codecombat.com/wiki-images/recruiting_banner.png)
 
 You've read the blog post, you've asked us any questions about the job, and you're ready to try building a level, both to see if you like it and to prove that you've got what it takes even in the face of undocumented, horrifyingly complex tools like the CodeCombat level editor. Perfect! Here's the level design that you should implement. We normally design big batches of levels at a time with about this level of detail, so apart from working with us during the design sessions, this is how you'll do it if we hire you.
 
@@ -59,4 +59,4 @@ Common gotcha/bug: if you see a problem with the level ending early and you have
 
 When you're ready to start, go to [the level editor](http://codecombat.com/editor/level), hit 'Create New Level', and have fun!
 
-![](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/artisan_banner.png)
+![](https://s3.amazonaws.com/files.codecombat.com/wiki-images/artisan_banner.png)

@@ -22,11 +22,11 @@ Let's do a series of examples. We'll start with a Thang named William with [[Tha
 
 I don't want William to be able to hear, say, or see anything, so I might just delete those Components. I do, however, want him to jump. A lot. So I'll go and add the `ai.JumpsTooMuch` Component. When I do that, the editor also adds the `movement.JumpsStraightUp` Component, since that's listed as a dependency of the `ai.JumpsTooMuch` Component.
 
-![movement.JumpsStraightUp Component configuration](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/jumps_straight_up_component.png)
+![movement.JumpsStraightUp Component configuration](https://s3.amazonaws.com/files.codecombat.com/wiki-images/jumps_straight_up_component.png)
 
 Let's make him be able to jump twenty meters in the air. Cool. But what if I didn't like the way he was jumping? After all, wouldn't it be cooler if he jumped *really fast*, hovered at the top, and then fell faster than gravity? Let's go and edit the `movement.JumpsStraightUp` Component code itself in the Components tab of the level editor.
 
-![Code for the movement.JumpsStraightUp Component](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/jumps_straight_up_component_code.png)
+![Code for the movement.JumpsStraightUp Component](https://s3.amazonaws.com/files.codecombat.com/wiki-images/jumps_straight_up_component_code.png)
 
 I can see the default code has this `update` method:
 
@@ -53,7 +53,7 @@ I can then just press Play in the upper right to test out my new code in a child
 
 But maybe I don't want all units to jump dramatically--it should be an option in the Component configuration for each Thang. Let's add it:
 
-![Adding a jumpsDramatically property to the Component config](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/jumps_straight_up_component_config.png)
+![Adding a jumpsDramatically property to the Component config](https://s3.amazonaws.com/files.codecombat.com/wiki-images/jumps_straight_up_component_config.png)
 
 See our [[JSON Schema]] info for more on how to structure these. Then I can update my code just like this:
 

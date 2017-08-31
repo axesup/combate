@@ -1,6 +1,6 @@
 The TomeView contains all the spell editors within a challenge:
 
-![An example SpellView inside the TomeView for Zone of Danger](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/tome_00.png)
+![An example SpellView inside the TomeView for Zone of Danger](https://s3.amazonaws.com/files.codecombat.com/wiki-images/tome_00.png)
 
 You can see it in [app/views/play/level/tome](https://github.com/codecombat/codecombat/tree/master/app/views/play/level/tome). It contains subviews like:
 
@@ -23,7 +23,7 @@ You can see it in [app/views/play/level/tome](https://github.com/codecombat/code
 
 Each Spell has a SpellView and a SpellListTabEntryView associated with it, and it might have multiple Thangs. This is because sometimes Thangs can share a spell, like if you want Max, Jax, and Dax to all run Max's code. They might have different runtime information, though--Jax might throw an error when Max doesn't with the same code, because maybe Max dies before he gets to the point where the code errors out, say. Or Dax might execute different if-else statements because he's too far away. The SpellView displays control flow and problems, so even though Thangs may share Spells and SpellViews, you still always have to know which Thang is selected so you know which runtime information to show.
 
-![Example of multiple Thangs sharing a spell: TomeView -> SpellListView -> SpellListEntryView -> ThangAvatarView + SpellListEntryThangsView -> More ThangAvatarViews](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/tome_01.png)
+![Example of multiple Thangs sharing a spell: TomeView -> SpellListView -> SpellListEntryView -> ThangAvatarView + SpellListEntryThangsView -> More ThangAvatarViews](https://s3.amazonaws.com/files.codecombat.com/wiki-images/tome_01.png)
 
 Phew! If you think that's fun, you can watch Nick spend a couple days coding it during his [epic coding time-lapse video](http://www.youtube.com/watch?v=E0qlr22cF14).
 
@@ -57,7 +57,7 @@ The `createOnCodeChangeHandlers` section is interesting. There are various low- 
 
 When has the code significantly changed? This can be hard to determine; the code actually lies within [[Aether]]. Generally, it's when the abstract syntax tree that you get when you parse with Esprima changes--so we ignore things like whitespace and comments as best we can. There are some complications in that Aether's linting output might change even though the AST doesn't change, so we actually do `updateAether` on any change, but try to return early before transpiling the whole thing again if we realize that we don't need to. `updateAether` gets you to the full-blown error message display, and if the code is significantly the same as the last time it was actually cast, it'll also include runtime information, like highlighting the lines which have run and the current line.
 
-![Example of the runtime information and error display](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/tome_02.png)
+![Example of the runtime information and error display](https://s3.amazonaws.com/files.codecombat.com/wiki-images/tome_02.png)
 
 But often the code isn't the same as when it was cast, so in those cases, we hide most of the runtime information, since it might not be accurate. We do display lint problems, but only with the gutter annotations, not the error alert, since we don't want to be in the player's face with potential problems when they haven't cast the spell yet.
 

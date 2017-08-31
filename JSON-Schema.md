@@ -14,7 +14,7 @@ It's important if you are working with data in any way on CodeCombat to understa
 
 The schema returned by [http://codecombat.com/db/level_component/schema](http://codecombat.com/db/level_component/schema) is too long to include here, but basically it lets us generate a UI like this:
 
-![Treema for the LevelComponent schema](https://dl.dropboxusercontent.com/u/138899/GitHub%20Wikis/level_component_treema.png)
+![Treema for the LevelComponent schema](https://s3.amazonaws.com/files.codecombat.com/wiki-images/level_component_treema.png)
 
 See the "Configuration Schema" part toward the bottom? We can use the Treema GUI to generate another JSON Schema that then can be made into another Treema GUI which can let anyone configure anything with a GUI!
 
