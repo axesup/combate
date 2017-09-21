@@ -10,21 +10,21 @@ es-419 - Spanish (Latin America)
 ## Place Names
 | Original | Translation | Description |
 |-----|-----|-----|
-| Kithgard Dungeon |||
-| Backwoods Forest |||
-| Sarven Desert |||
-| Cloudrip Mountain |||
-| Kelvintaph Glacier |||
+| Kithgard Dungeon | Mazmorra Kithgard ||
+| Backwoods Forest | Bosque Maderatrás ||
+| Sarven Desert | Desierto Sarven ||
+| Cloudrip Mountain | Montaña Nuberrasgada ||
+| Kelvintaph Glacier | Glaciar Kelvintaph ||
 
 ## Multiplayer Arenas
 | Original | Translation | Description |
 |-----|-----|-----|
 | Ace of Coders |||
-| Zero Sum |||
-| Cavern Survival |||
-| Dueling Grounds |||
-| Multiplayer Treasure Grove |||
-| Harrowland |||
+| Zero Sum | Suma Cero ||
+| Cavern Survival | Supervivencia Troglodita||
+| Dueling Grounds | Campos de Duelo ||
+| Multiplayer Treasure Grove | Arboleda del Tesoro Multijugador ||
+| Harrowland | Escarificadorlandia ||
 
 ## Programming Concepts
 | Original | Translation | Description |
@@ -33,15 +33,15 @@ es-419 - Spanish (Latin America)
 | Arguments | Argumentos ||
 | Arrays | Arreglos ||
 | Boolean | Booleano ||
-| Break | Break | Significa "Romper" (el bucle) |
+| Break | Break* | Significa "Romper" (el bucle) |
 | Classes | Clases ||
-| Continue | Continue | Significa "Continuar" |
+| Continue | Continue* | Significa "Continuar" |
 | Counters | Contadores ||
-| Else | Else| Significa "Si No"|
+| Else | Else* | Significa "Si No"|
 | For loops | Bucles For | Significa "Para" |
 | Functions | Funciones ||
-| If | If | Significa "Si" |
-| Input Handling | Manejo de Entradas||
+| If | If* | Significa "Si" |
+| Input Handling | Manejo de Entradas ||
 | Loops | Bucles ||
 | Methods | Métodos ||
 | Modulo | Módulo ||
