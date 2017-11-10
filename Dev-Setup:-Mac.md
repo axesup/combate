@@ -13,12 +13,13 @@ These steps are our **recommended approach** to setting up CodeCombat's developm
 1. **[Install Homebrew](http://brew.sh/).** This will help install MongoDB, CodeCombat's database.
 1. **[Install MongoDB with HomeBrew]((https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)).** `brew install mongodb`.
 1. **[Install NVM](https://github.com/creationix/nvm#install-script)**. This will help in installing Node, the server and NPM, the Node package manager. There are multiple ways to install Node, so if you install the latest Stable version some other way, skip down to setting up GitHub.
-1. **Install Node and NPM with NVM.** As of writing, we're using Node 5.1.1, so the command is `nvm install 5.1.1`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
-1. **Use Node 5 (Stable) By Default**. `nvm alias default 5.1.1`. This way Node 5.1.1 is used for every new terminal. Otherwise you'll need to run `nvm use 5.1.1` before running any dev environment commands.
+1. **Install Node and NPM with NVM.** As of writing, we're using Node 5.12, so the command is `nvm install 5.12`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
+1. **Use Node 5 (Stable) By Default**. `nvm alias default 5.12`. This way Node 5.12 is used for every new terminal. Otherwise you'll need to run `nvm use 5.12` before running any dev environment commands.
+1. **Update npm to 3.10.10**. `npm install -g npm@3.10.10`. We need this version for some of our dependencies to install correctly.
 1. **[Create an account on GitHub](https://github.com/join).** This is where our code repository is hosted.
 1. **[Configure Git to connect with your GitHub account](https://help.github.com/articles/set-up-git/).**
-1. **[Clone the CodeCombat repository](https://help.github.com/articles/cloning-a-repository/).** This will copy our source code and all its history to your computer to be run and modified.
-1. **Install and compile CodeCombat source files.** Navigate into the folder where you downloaded the CodeCombat repository and run `npm install`. This will install npm and bower (client library) dependencies, as well as building the public directory, which is what the server... serves.
+1. **[Clone the CodeCombat repository](https://help.github.com/articles/cloning-a-repository/).** `git clone https://github.com/codecombat/codecombat`. This will copy our source code and all its history to your computer to be run and modified.
+1. **Install and compile CodeCombat source files.** Navigate into the folder where you downloaded the CodeCombat repository (`cd codecombat`) and run `npm install`. This will install the npm (server library) and bower (client library) dependencies, as well as building the `public` directory, which is what the server... serves.
 1. **Add data to MongoDB.** [See below](#installing-the-database).
 1. **[Run the dev environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#running-the-environment)**.
 1. **Visit [[http://localhost:3000/]]** to see your CodeCombat development environment!
