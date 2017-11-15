@@ -1,5 +1,7 @@
 ## About This Method
 
+NOTE: As we have migrated from Brunch to Webpack, some parts of this setup may be broken. We welcome any contributions to this!
+
 [Vagrant](https://www.vagrantup.com) is a tool for rapidly creating and configuring [virtual machines](http://en.wikipedia.org/wiki/Virtual_machine).
 
 By using Vagrant, we can quickly create an environment for CodeCombat with all the necessary dependencies. Vagrant also simplifies rebuilding the environment and upgrading to newer versions of dependencies.
@@ -28,7 +30,7 @@ If there are errors during the process, you can try `vagrant provision` to run t
 
 ## Running CodeCombat
 
-Once the VM is up and running, change directory in your Terminal window to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `brunch` (watches client files) and `nodemon` (watches server files):
+Once the VM is up and running, change directory in your Terminal window to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `webpack` (watches client files) and `nodemon` (watches server files):
 
 * Git Bash:
   * `path/to/your/project$ scripts/vagrant/npm.sh run dev` 
@@ -73,7 +75,7 @@ To rebuild the virtual machine from scratch, run `vagrant destroy` followed by `
   * This is problematic because `npm` likes to make symlinks to executables in `node_modules/.bin`. 
   * To work around this, a directory `/node_modules` is made inside the virtual machine and is mounted over  `/vagrant/node_modules`.
   * This means that the `node_modules` directory will appear empty from outside the virtual machine. It should not be deleted.
-* [Brunch](http://brunch.io/) is used by CodeCombat to watch for changes to Coffeescript files and recompile them automatically. In order to allow Brunch running in the virtual machine to detect changes made on the "host" machine, "polling" mode is used. This results in higher CPU usage.
+* [Brunch](http://brunch.io/) was used by CodeCombat to watch for changes to Coffeescript files and recompile them automatically. In order to allow Brunch running in the virtual machine to detect changes made on the "host" machine, "polling" mode is used. This results in higher CPU usage.
   * In order to avoid this and run Brunch in regular mode, you can start Brunch manually inside the VM by `vagrant ssh`, `cd /vagrant`, and `brunch w`. You will need to have an SSH client installed (e.g. the one installed by Git for Windows).
   * When running Brunch in regular mode, changes must be made from inside the virtual machine (i.e. via `vagrant ssh`). The virtual machine is running Ubuntu Linux, so any of the normal text mode editors may be installed and used.
   * When running on a Mac, if you stop the brunch process from running and then try and start it again, it may throw and error complaining about port forwarding to port 3000. To resolve this issue, find the process running it ``sudo lsof -i :3000`` and kill it: ``sudo kill -9 3267``
