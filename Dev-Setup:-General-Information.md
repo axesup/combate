@@ -23,16 +23,16 @@ After installation, to run the site locally, enter the following commands in sep
 
 1. `./bin/coco-mongodb` (runs the MongoDB server)
 1. `npm run nodemon` (runs the server, automatically restarting on server-side changes)
-1. `npm run brunch watch` (compiles app files to public folder continuously, refreshing the browser window on changes)
+1. `npm run webpack -- --watch` (compiles app files to public folder continuously, refreshing the browser window on changes)
 
-You can also use the command `npm run dev` to both run brunch and the server in one terminal. If you don't need nodemon or brunch to restart on changes or build files, you can simply run `npm run start` instead.
+You can also use the command `npm run dev` to both run webpack and the server in one terminal. If you don't need nodemon or webpack to restart on changes or build files, you can simply run `npm run start` instead.
 
 ### Running The Proxy
 
 If you are working solely on the website, not the server, you can run your development environment as a proxy to CodeCombat's production servers. This allows you to see your changes using live data, rather than downloading or building a local database. To run the proxy:
 
 1. `npm run proxy`
-1. `npm run brunch watch`
+1. `npm run webpack -- --watch`
 
 Note that you do not need to run or even set up MongoDB to develop on the proxy.
 
@@ -50,7 +50,7 @@ Whichever editor you use, **be sure to disable removing trailing whitespace from
 
 ### Live-coding
 
-If Brunch is running and you make code changes, Brunch will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating. If you edit just the styling, Brunch will apply the new styling without refreshing.
+If Webpack is running and you make code changes, Webpack will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating.
 
 ### Database
 
