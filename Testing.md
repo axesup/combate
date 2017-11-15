@@ -10,11 +10,6 @@ To run tests in just one file, run `npm run jasmine spec/server/path/to/some.spe
 * Start the [dev environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#running-the-environment)
 * Navigate to [[http://localhost:3000/test]]
 
-## Run smoke tests (on dev server)
-
-* Make sure to start your dev environment first, and that it includes the database dump.
-* Run `npm run smoke-local`
-
 ## TravisCI
 
 The CodeCombat GitHub account is hooked up to TravisCI, which runs all server and client side tests for each commit and pull request. You can see results of tests [here](https://travis-ci.org/codecombat/codecombat).
