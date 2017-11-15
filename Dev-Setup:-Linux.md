@@ -59,7 +59,7 @@ On other distros with `systemd` you can try something like:
 
     npm run dev
 
-This will start `brunch` (watches client files) and `nodemon` (watches server files). (You can also just use `npm start` to run the server without keeping brunch watching for changes.)
+This will start `webpack` (watches client files) and `nodemon` (watches server files). (You can also just use `npm start` to run the server without keeping webpack watching for changes.)
 
 Visit [http://localhost:3000](http://localhost:3000) to see your local CodeCombat setup.
 
