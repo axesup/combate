@@ -59,6 +59,6 @@ You don't need to learn how to use all of these tools, but please take some time
 * [Jasmine](http://jasmine.github.io/2.0/introduction.html): Used for testing.
 * [BrowserStack](http://browserstack.com): Used for browser compatibility testing and [Nightwatch](http://nightwatchjs.org/) automation.
 * [Karma](https://github.com/karma-runner/karma): Test runner.
-* [Brunch](https://github.com/brunch/brunch): Assembles the project, and is pretty much central to everything development.
+* [webpack](https://webpack.js.org/): Assembles the project, and is pretty much central to everything development.
 * [Discourse](http://www.discourse.org/): Actually good forum software. CodeCombat is blessed by Jeff Atwood and Discourse.
 * [SETT](http://sett.com): High-engagement blogging software. [Good for startup blogging.](http://blog.nickwinter.net/startup-blogging)
