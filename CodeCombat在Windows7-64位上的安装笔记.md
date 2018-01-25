@@ -45,6 +45,8 @@
 
   以下这部为安装构建游戏具体文件所需的SASS工具
 
+  `gem install ffi -f` 这行主要是因为sass需要的ffi模块不支持ruby 2.0以上的版本
+
   `gem i sass`
 
 3. 修改可能出错的esper.js配置。打开codecombat目录下的packags.json文件，查找字符串
