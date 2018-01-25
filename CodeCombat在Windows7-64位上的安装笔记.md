@@ -79,7 +79,7 @@
 1. 下载最新的游戏关卡数据库导出文件：`http://analytics.codecombat.com:8080/dump.tar.gz`
 2. 解压这个文件，可以使用7-Zip软件，会得到一个dump目录
 3. 运行MongoDB。需要你先建立一个数据库目录，如“d:\db”，然后运行命令`mongod --dbpath d:\db`。如果报告mongod找不到，就在命令中加上这个文件的路径前缀，这个文件在一般在你安装的MongoDB目录下的“Server\3.6\bin\”下。注意这里的“3.6”是我安装的MongoDB版本，可能会是其他版本号数字。
-4. 向MongoDB导入下载回来的数据：`mongorestore --drop --noIndexRestore path/to/dump --db coco`，注意命令中的“path/to/dump”是你解压出来的dump目录的路径。
+4. 向MongoDB导入下载回来的数据：`mongorestore --drop --noIndexRestore path/to/dump/coco --db coco`，注意命令中的“path/to/dump”是你解压出来的dump目录的路径。
 
 ## 运行游戏
 
