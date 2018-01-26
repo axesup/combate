@@ -86,3 +86,31 @@
 1. 启动数据库：`mongod --dbpath \path\to\dbdir`，这里的\path\to\dbpath是你自己的数据库内容目录
 2. 启动游戏服务器：先进入codecombat目录，然后运行命令`npm start`
 3. 用浏览器访问 http://localhost:3000/ 就可以玩游戏了
+
+
+## 在代理后面的设置
+
+1. npm代理：
+
+  `npm config set proxy http://xx.xx.xx.xx:8080`
+
+  `npm config set https-proxy http://xx.xx.xx.xx:8080`
+
+2. Git代理：
+
+    `git config --global http.proxy http://xx.xx.xx.xx:8080`
+
+    `git config --global https.proxy http://xx.xx.xx.xx:8080`
+
+3. Git协议换成http
+
+  `git config --global url."http".insteadOf git://`
+
+4. Bower代理：
+
+  修改bower的配置文件.bowerrc（一般在codecombat目录下），添加：
+
+  `"proxy": "http://xx.xx.xx.xx:8080",
+   "https-proxy": "http://xx.xx.xx.xx:8080"`
+
+   或者在系统变量中添加HTTP_PROXY和HTTPS_PROXY
