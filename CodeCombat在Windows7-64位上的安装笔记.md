@@ -51,7 +51,9 @@
 
 3. 修改可能出错的esper.js配置。打开codecombat目录下的packags.json文件，查找字符串
 “esper.js”，可能看到这样一行：
+
     `"esper.js": "codecombat/esper.js"`
+
     这里的"codecombat/esper.js"描述的是从本地的esper包进行安装，但clone下来的文件并没有这个包，
     所以修改成`"esper.js": "*"`，用来从网上下载最新的版本。根据错误提示好像原作者用到是0.3.0-dev这个版本。
 
