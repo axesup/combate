@@ -75,6 +75,9 @@
      - 报告bower命令不存在的问题，安装npm install bower解决，见步骤2
      - 报告webpack命令不存在的问题，安装npm install webpack解决，见步骤2
      - 报告大量sass的vendo文件找不到的问题，通过npm rebuild node-sass解决，见步骤4
+     - 报告各种"is not a package"的原因是node.js版本太低。升级到6.x
+     - 报告contextify编译出错的原因是，这个已经在node.js 7.0版本移除了支持，所以不可能安装成功，所以要把nodejs的版本降级到6.x
+
 
 ## 安装游戏数据库
 
