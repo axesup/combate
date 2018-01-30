@@ -41,7 +41,7 @@
 
     `gem source -r https://rubygems.org/`
 
-    `gem source -a https://rub.taobao.org`
+    `gem source -a https://ruby.taobao.org`
 
     以下这部为安装构建游戏具体文件所需的SASS工具
 
