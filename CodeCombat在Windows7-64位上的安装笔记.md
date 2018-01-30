@@ -109,7 +109,7 @@
 
 3. Git协议换成http
 
-    `git config --global url."http".insteadOf git://`
+    `git config --global url."http:".insteadOf "git:"`
 
 4. Bower代理：
 
