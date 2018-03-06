@@ -13,8 +13,8 @@ These steps are our **recommended approach** to setting up CodeCombat's developm
 1. **[Install Homebrew](http://brew.sh/).** This will help install MongoDB, CodeCombat's database.
 1. **[Install MongoDB with HomeBrew]((https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/)).** `brew install mongodb`.
 1. **[Install NVM](https://github.com/creationix/nvm#install-script)**. This will help in installing Node, the server and NPM, the Node package manager. There are multiple ways to install Node, so if you install the latest Stable version some other way, skip down to setting up GitHub.
-1. **Install Node and NPM with NVM.** As of writing, we're using Node 5.12, so the command is `nvm install 5.12`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
-1. **Use Node 5 (Stable) By Default**. `nvm alias default 5.12`. This way Node 5.12 is used for every new terminal. Otherwise you'll need to run `nvm use 5.12` before running any dev environment commands.
+1. **Install Node and NPM with NVM.** As of writing, we're using Node 6.12.2, so the command is `nvm install 6.12.2`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
+1. **Use Node 6 (Stable) By Default**. `nvm alias default 6.12.2`. This way Node 6.12.2 is used for every new terminal. Otherwise you'll need to run `nvm use 6.12.2` before running any dev environment commands.
 1. **Update npm to 3.10.10**. `npm install -g npm@3.10.10`. We need this version for some of our dependencies to install correctly.
 1. **[Create an account on GitHub](https://github.com/join).** This is where our code repository is hosted.
 1. **[Configure Git to connect with your GitHub account](https://help.github.com/articles/set-up-git/).**
