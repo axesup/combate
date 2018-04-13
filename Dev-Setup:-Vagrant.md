@@ -1,6 +1,6 @@
 ## About This Method
 
-NOTE: As we have migrated from Brunch to Webpack, some parts of this setup may be broken. We welcome any contributions to this!
+NOTE: As we have migrated from Brunch to Webpack, some parts of this setup may be broken (for example, need to update the Vagrant provision script to use Node 6 and make sure your version of Vagrant uses a box from vagrantcloud.com instead of atlas.hashicorp.com). We welcome any contributions to this!
 
 [Vagrant](https://www.vagrantup.com) is a tool for rapidly creating and configuring [virtual machines](http://en.wikipedia.org/wiki/Virtual_machine).
 
