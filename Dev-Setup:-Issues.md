@@ -2,6 +2,17 @@
 
 If you are having a problem not listed here, jump into [our dev chat](https://coco-slack-invite.herokuapp.com/) and let's get it fixed and then documented here. You might want to check your versions of node, npm, MongoDB, and Python, and also make sure your GitHub copy of CodeCombat is [up-to-date](https://help.github.com/articles/syncing-a-fork/).
 
+### NPM Install
+
+If your `npm install` step fails, try running these commands to install the environment more piecemeal:
+
+```
+npm install node-sass
+npm install --ignore-scripts
+bower install
+npm install
+```
+
 ### Database
 
 If you get an error like this:
