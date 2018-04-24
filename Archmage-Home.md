@@ -44,7 +44,6 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 
 ###### Frontend Development:
 
-* [[Webpack Build System]]
 * [[Client Models]]
 * [[Views]]
 * [[Events, Subscriptions, Shortcuts]]
