@@ -30,7 +30,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 
 ###### General:
 * [[Mission Statement]]
-* [Developer Environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information) - Start here to get CodeCombat set up on your computer.
+* [Developer Setup](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information) - Start here to get CodeCombat set up on your computer.
 * [[Developer Organization]]
 * [[Vue Migration]]
 * [[Cookbook]]
@@ -44,6 +44,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 
 ###### Frontend Development:
 
+* [[Webpack Build System]]
 * [[Client Models]]
 * [[Views]]
 * [[Events, Subscriptions, Shortcuts]]
