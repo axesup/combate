@@ -1,8 +1,4 @@
-Documents from the database are loaded into the system through [Backbone](http://backbonejs.org/) [Models](http://backbonejs.org/#Model) and [Collections](http://backbonejs.org/#Collection). These are extended in the CocoModel class. There's also the Supermodel class which coordinates the loading and populating of these models.
-
-## Supermodel
-
-This class uses [JSON-Schema](https://github.com/codecombat/codecombat/wiki/JSON-Schema) to figure out, for a given model, what other models ought to be loaded. The logic for this is spread between Supermodel.coffee and CocoModel.coffee. This is used, for example, to load all documents required for a given Level model.
+Documents from the database are loaded into the application through [Backbone](http://backbonejs.org/) [Models](http://backbonejs.org/#Model) and [Collections](http://backbonejs.org/#Collection). These are extended in the [CocoModel class](https://github.com/codecombat/codecombat/blob/master/app/models/CocoModel.coffee). There's also the [SuperModel class](https://github.com/codecombat/codecombat/blob/master/app/models/SuperModel.coffee) which coordinates the loading and populating of these models.
 
 ## Saving
 
