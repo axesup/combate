@@ -19,6 +19,7 @@ You'll want to fork the repo on Github, then clone it to your machine.
 
 You'll then want to install the dependencies and build the asset files.
 
+    npm install --global --production windows-build-tools
     npm install
 
 Start MongoDB if you haven't, then download the database dump at http://analytics.codecombat.com:8080/dump.tar.gz, extract the contents ([7-Zip](http://www.7-zip.org/) is a good option), then
