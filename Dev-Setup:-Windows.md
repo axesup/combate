@@ -22,11 +22,11 @@ You'll then want to install the dependencies and build the asset files.
     npm install --global --production windows-build-tools
     npm install
 
-Start MongoDB if you haven't, then download the database dump at http://analytics.codecombat.com:8080/dump.tar.gz, extract the contents ([7-Zip](http://www.7-zip.org/) is a good option), then
+Start MongoDB if you haven't ([service script](https://docs.mongodb.org/master/tutorial/install-mongodb-on-windows/#manually-create-a-windows-service-for-mongodb), or create a `db` directory anywhere and run `mongod --dbpath=db`), then download the database dump at http://analytics.codecombat.com:8080/dump.tar.gz, extract the contents ([7-Zip](http://www.7-zip.org/) is a good option), then, from any directory:
 
     mongorestore --drop --noIndexRestore path/to/dump --db coco
 
-*(If it says that there are no reachable servers but there is a mongod process running try adding `--host=127.0.0.1` to the end of the command.)*
+*(If it says that there are no reachable servers but there is a mongod process running, try adding `--host=127.0.0.1` to the end of the command.)*
 
 ### Running
 
