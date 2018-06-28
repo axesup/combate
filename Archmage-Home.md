@@ -16,7 +16,7 @@ The [Discourse Forum](http://discourse.codecombat.com/) is another useful place 
 
 #### Starting Off
 1. Set up the [Developer Environment](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information).
-1. Make a small first commit such as [creating a new Thang name](https://github.com/codecombat/codecombat/issues/53), [adding tips to the loading screen](https://github.com/codecombat/codecombat/issues/710) or [adding documentation](https://github.com/codecombat/codecombat/issues/1237).
+1. Make a small first commit such as [adding tips to the loading screen](https://github.com/codecombat/codecombat/issues/710) or [adding documentation](https://github.com/codecombat/codecombat/issues/1237).
 1. Check out the [[Cookbook]] for answering all your CodeCombat-specific coding questions.
 1. Check out the [Good for Newbies Issues](https://github.com/codecombat/codecombat/labels/good-for-newbies).
 1. Browse the wiki to learn something new!
