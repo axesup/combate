@@ -1,6 +1,6 @@
 ## Requirements
 
-You will need to install MongoDB, Node.js, Git, cURL, "build essentials", and Python 2.7.
+You will need to install Node.js, Git, cURL, "build essentials", and Python 2.7.
 
 **NOTE: These instructions are for installing Node v4, but currently CodeCombat uses v5**. Consider using [nvm](https://github.com/creationix/nvm) instead.
 
@@ -35,40 +35,13 @@ First fork and clone the [CodeCombat repository][repo], and track upstream.
     npm install
 
 This will take care of installing npm and bower dependencies, as well as building the asset files.
-
-## Database Import
-
-    (cd $(mktemp -d /tmp/coco.XXXXXXXX) && curl http://analytics.codecombat.com:8080/dump.tar.gz | tar xzf - && mongorestore --drop --noIndexRestore --host 127.0.0.1)
-
-This will download the latest [development database](https://github.com/codecombat/codecombat/wiki/Dev-Setup:-General-Information#database) and overwrite your current development database with it.
 ## Running
-
-### Database
-
-Your MongoDB server should be running; if not you can start it with a service script.
-
-For example on Ubuntu:
-
-    sudo service mongod start
-
-On other distros with `systemd` you can try something like:
-
-    sudo systemctl start mongodb
 
 ### Development Server
 
-    npm run dev
+    npm run webpack -- --watch
+    npm run proxy
 
-This will start `webpack` (watches client files) and `nodemon` (watches server files). (You can also just use `npm start` to run the server without keeping webpack watching for changes.)
+This will start `webpack` (watches client files) and `proxy` (routes all server calls to CodeCombat's production servers). (You can also just use `npm run proxy` to run the server without keeping webpack watching for changes.)
 
 Visit [http://localhost:3000](http://localhost:3000) to see your local CodeCombat setup.
-
-## Gotchas
-
-On Ubuntu 16.04, the instructions for starting MongoDB fails with an error like
-
-`failed to start mongod.service: unit mongod.service not found`
-
-Follow the instructions in the article below to create a systemd unit file for MongoDB
-
-https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-16-04

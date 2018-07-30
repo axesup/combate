@@ -30,33 +30,22 @@ If there are errors during the process, you can try `vagrant provision` to run t
 
 ## Running CodeCombat
 
-Once the VM is up and running, change directory in your Terminal window to where you cloned CodeCombat, run `scripts/vagrant/npm run dev` in order to start `webpack` (watches client files) and `nodemon` (watches server files):
+Once the VM is up and running, change directory in your Terminal window to where you cloned CodeCombat, run `scripts/vagrant/npm run webpack -- --watch` (watches client files) and `scripts/vagrant/npm run proxy` in order to start and connect to CodeCombat's production server:
 
 * Git Bash:
-  * `path/to/your/project$ scripts/vagrant/npm.sh run dev` 
+  * `path/to/your/project$ scripts/vagrant/npm.sh run webpack -- --watch`
+  * `path/to/your/project$ scripts/vagrant/npm.sh run proxy`
 * Windows command prompt:
-  * `path\to\your\project\> scripts/vagrant/npm.bat run dev`
+  * `path\to\your\project\> scripts/vagrant/npm.bat run webpack -- --watch`
+  * `path\to\your\project\> scripts/vagrant/npm.bat run proxy`
 
-Once the window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:13000) in your browser and see CodeCombat running.
+Once the window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:3000) in your browser and see CodeCombat running.
 
 ## Shutting down
 
 Run `vagrant halt` to turn off the VM. To start again, just run `vagrant up`.
 
 `path/to/your/project$ vagrant halt`
-
-## Updating the MongoDB database
-
-The first time `vagrant up` is run, it installs the latest [database dump](http://analytics.codecombat.com:8080/dump.tar.gz) into MongoDB.
-
-To update your database at a later point in time, it is recommended to backup your local database first with `backup-mongo`, and then run `sync-mongo.sh` to sync with the latest dump of the production database.
-
-* Git Bash:
-  * `path/to/your/project$ scripts/vagrant/backup-mongo.sh` 
-  * `path/to/your/project$ scripts/vagrant/sync-mongo.sh` 
-* Windows command prompt:
-  * `path\to\your\project\> scripts/vagrant/backup-mongo.bat`
-  * `path\to\your\project\> scripts/vagrant/sync-mongo.bat`
 
 ## Rebuilding the virtual machine
 

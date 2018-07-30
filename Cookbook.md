@@ -27,23 +27,11 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 * [[Translate page strings]]
 * [[Edit page translations]]
 
-### Server
-* [[Add a collection]]
-  * [[Add a collection schema]]
-  * [[Add a Mongoose Model]]
-  * [[Add basic REST endpoints for a collection]]
-  * [[Connect Backbone to new collection]]
-* [[Add a route]]
-* [[Handle a server error]]
-
 ### Testing
 * [[Test client]]
 * [[Test client interface]]
-* [[Test server endpoint]]
 
 ### Dev Environment
-* [[Access dev database]]
 * [[Make yourself admin]]
 * [[Access power-user features]]
 * [[Change player level]]
-* [[Run dev client on prod db]]

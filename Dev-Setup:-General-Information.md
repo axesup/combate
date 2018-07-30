@@ -12,29 +12,19 @@ Our installation guides are split into per-OS guides which will give you step-by
 
 This is the general overview for what you need in order to set up the development environment. For more specific instructions with recommended paths to success, see the installation guides listed above.
 
-1. Install [MongoDB](https://www.mongodb.org/downloads#production), [Node.js 6](https://nodejs.org/en/download/), npm 3.10.10, and [Git](https://desktop.github.com/)
+1. Install [Node.js 6](https://nodejs.org/en/download/), npm 3.10.10, and [Git](https://desktop.github.com/)
 1. `git clone` [this repository](https://github.com/codecombat/codecombat).
 1. `npm install` in the repository's root directory.
 1. Start MongoDB and import the [database dump](#database)
 
 ### Running The Environment
 
-After installation, to run the site locally, enter the following commands in separate terminals:
+After installation, you can run your development environment as a proxy to CodeCombat's production servers. Enter the following commands in separate terminals:
 
-1. `./bin/coco-mongodb` (runs the MongoDB server)
-1. `npm run nodemon` (runs the server, automatically restarting on server-side changes)
+1. `npm run proxy` (routes all server calls to CodeCombat's production servers)
 1. `npm run webpack -- --watch` (compiles app files to public folder continuously, refreshing the browser window on changes)
 
-You can also use the command `npm run dev` to both run webpack and the server in one terminal. If you don't need nodemon or webpack to restart on changes or build files, you can simply run `npm run start` instead.
-
-### Running The Proxy
-
-If you are working solely on the website, not the server, you can run your development environment as a proxy to CodeCombat's production servers. This allows you to see your changes using live data, rather than downloading or building a local database. To run the proxy:
-
-1. `npm run proxy`
-1. `npm run webpack -- --watch`
-
-Note that you do not need to run or even set up MongoDB to develop on the proxy.
+If you don't need webpack to restart on changes or build files, you can simply run `npm run proxy` instead.
 
 ***
 
@@ -51,16 +41,6 @@ Whichever editor you use, **be sure to disable removing trailing whitespace from
 ### Live-coding
 
 If Webpack is running and you make code changes, Webpack will reload the page automatically. So open the page you are working on in your browser, make changes in your editor, save, and the page will refresh so you can see the changes. Try to make whatever you're working on be the first thing you see when you open the page, so you don't have to lose focus on your editor while iterating.
-
-### Database
-
-The link to the database dump is: http://analytics.codecombat.com:8080/dump.tar.gz
-
-To import the database into MongoDB, unpack the archive and run: `mongorestore --drop --noIndexRestore /path/to/dump`
-
-When building in the dev environment, you have a filtered copy of the live database with just the publicly available data. It may look like what you'll find on the site, but changes you make won't show up on the site. To keep the database dump small, we only include a handful of testing levels, so the first two levels show up, but not the third. If you need to work on a specific level, let us know and we can provide you with more levels.
-
-Currently, there's no easy way to transfer data you make on your dev environment back to production, so be sure to build levels you want to share on [direct.codecombat.com](http://direct.codecombat.com/editor/level), not on the dev server.
 
 ### Third Party Services
 

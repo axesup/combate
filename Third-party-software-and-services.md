@@ -9,22 +9,6 @@ You don't need to learn how to use all of these tools, but please take some time
 * [Sass](http://sass-lang.com/guide): These are compiled in to CSS files and provide many nice features CSS does not have.
 * [Markdown](http://daringfireball.net/projects/markdown/basics): Used for static HTML strings, such as in database text documents or incorporated in some text-heavy Pug templates (see the legal page for an example). We use [Marked](https://github.com/chjj/marked) as our Markdown processor.
 
-## Server-side
-
-* [Node.js](http://nodejs.org/api/): The web server.
-* [Express](http://expressjs.com): The web framework.
-* [MongoDB](http://docs.mongodb.org/manual/): The database. Beyond standard collections, we also use the MongoDB search indexing and GridFS.
-
-### Libraries available on the server
-* [Passport](http://passportjs.org/guide/): Authentication. Right now we just use it for authentication through passwords, but one project is to expand the site's login options through it.
-* [Mongoose](http://mongoosejs.com/docs/guide.html): An interface for MongoDB that turns documents into active records. We mainly use their plugin system to share certain logic between multiple collections, for versioning, naming, searching and permissions.
-* [TV4](https://github.com/geraintluff/tv4): JSON-Schema validation. Whole other article on this subject.
-* [Request](https://github.com/mikeal/request): Simpler request handling, used in testing to query the test server, and on the production server to interact with HTTP APIs for services like Facebook and Google.
-* [Lo-Dash](http://lodash.com/docs) and [Underscore.String](https://github.com/epeli/underscore.string#readme): Great utility libraries.
-* [Async](https://github.com/caolan/async): Various utility methods for doing all sorts of fun asynchronous tricks. We mainly have used its waterfall method to do a serial string of checks on User documents when they are changed.
-* [Winston](https://github.com/flatiron/winston): Logging library for Node.js.
-* [Bayesian Battle](https://github.com/codecombat/bayesian-battle): A library Michael wrote for ranking multiplayer skill based on one-on-one matches.
-
 ## Browser-side
 
 ### Site-wide Libraries
@@ -44,7 +28,8 @@ You don't need to learn how to use all of these tools, but please take some time
 * [nanoScroller.js](https://github.com/jamesflorentino/nanoScrollerJS): For when you need those scrollbars to get out of the way until you use them.
 * [Modernizr](https://github.com/Modernizr/Modernizr): Helps with browser feature detection and fallbacks.
 * [Flying Focus](https://github.com/NV/flying-focus): Makes it easier to see what your browser focus is doing.
-* Lo-Dash, Underscore.String, and TV4 are also available in the browser.
+* [Lo-Dash](http://lodash.com/docs) and [Underscore.String](https://github.com/epeli/underscore.string#readme): Great utility libraries.
+* [TV4](https://github.com/geraintluff/tv4): JSON-Schema validation. Whole other article on this subject.
 
 ### Gameplay Libraries and Services
 
