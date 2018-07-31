@@ -39,7 +39,7 @@ Once the VM is up and running, change directory in your Terminal window to where
   * `path\to\your\project\> scripts/vagrant/npm.bat run webpack -- --watch`
   * `path\to\your\project\> scripts/vagrant/npm.bat run proxy`
 
-Once the window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:3000) in your browser and see CodeCombat running.
+Once the window shows that it has compiled the files, you can visit [http://localhost:13000](http://localhost:13000) in your browser and see CodeCombat running.
 
 ## Shutting down
 

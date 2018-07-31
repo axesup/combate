@@ -30,8 +30,3 @@ Recipes of common patterns used throughout the CodeCombat codebase.
 ### Testing
 * [[Test client]]
 * [[Test client interface]]
-
-### Dev Environment
-* [[Make yourself admin]]
-* [[Access power-user features]]
-* [[Change player level]]

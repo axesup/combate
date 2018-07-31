@@ -1,15 +1,14 @@
 ## Requirements
 
-You will need to install Node.js, Git, cURL, "build essentials", and Python 2.7.
+You will need to install Node.js, Git, "build essentials", and Python 2.7.
 
 **NOTE: These instructions are for installing Node v4, but currently CodeCombat uses v5**. Consider using [nvm](https://github.com/creationix/nvm) instead.
 
 Example for Ubuntu:
 
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-    echo "deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen" | sudo tee /etc/apt/sources.list.d/mongodb.list
     sudo apt-get update
-    sudo apt-get install build-essential python2.7 git curl mongodb-org nodejs-legacy
+    sudo apt-get install build-essential python2.7
 
 If your default Python version is 3, then you'll also want to
 
