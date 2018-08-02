@@ -34,7 +34,6 @@ There's so much fun stuff to do! The blessing of working on a game is that game 
 
 You can **check the issues list** or just [talk to us](http://discourse.codecombat.com/) about some improvement you'd like to make. This is a very large project, so we imagine most contributors will pick one or two areas of interest and focus on those, instead of understanding the whole system. Here are a few areas:
 
-* **Server**: improving the Node.js server and database code
 * **Play view**: everything you see when playing a level, and possibly the most concrete stuff to work on
 * **[[Tome]] (spell editor)**: within the play view lurks CodeCombat's beating heart, which can be made much more amazing
 * **[[Level editor]]**: some concrete parts, some abstract parts, some parts so meta they'll blow your mind
