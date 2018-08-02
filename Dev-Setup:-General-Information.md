@@ -15,7 +15,6 @@ This is the general overview for what you need in order to set up the developmen
 1. Install [Node.js 6](https://nodejs.org/en/download/), npm 3.10.10, and [Git](https://desktop.github.com/)
 1. `git clone` [this repository](https://github.com/codecombat/codecombat).
 1. `npm install` in the repository's root directory.
-1. Start MongoDB and import the [database dump](#database)
 
 ### Running The Environment
 
