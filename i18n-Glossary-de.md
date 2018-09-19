@@ -7,13 +7,13 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
 | Backwoods Forest | Backwoods Wald  | A rough patch of dense forest |
-| Cloudrip         |        |  |
-| Cloudrip Mountain|  | Place name                    |
-| Plainswood       |        |                               |
+| Cloudrip         | Wolkenreißer    |  |
+| Cloudrip Mountain| Wolkenreißerberge| Place name                    |
+| Plainswood       | Flachlandwald   |                               |
 | Kithgard         | Kithgard        |                               |
-| Kithmaze         |    |                               |
-| Thornbush        | Dornbusch        |                 |
-| Thornbush farm   | Dornbuschfarm |                               |
+| Kithmaze         | Kithirrgarten   |                               |
+| Thornbush        | Dornbusch       |                 |
+| Thornbush farm   | Dornbuschfarm   |                               |
 
 ##Programming concepts
 
@@ -25,21 +25,21 @@ Good place names are important to give the levels a sense of coherency and fluid
 
 | Original   | Translation    | Comments               |
 |------------|----------------|------------------------|
-| Ambush     |  |                        |
+| Ambush     | Hinterhalt     |                        |
 | Buildables |   | "Ting som kan bygges" ?|
 | Brawler    | Brawler        | Schläger? 
-| Clan       |          |                        |
+| Clan       | Clan         |                        |
 | Chieftain  |        |                        |
 | Casts      |         | as in "casts a spell"  |
-|Challenge level||Herausforderungs-Level? |
-| DPS        |           |       |
-| decoy      | Lockvogel      |
-| Dungeon    |                |                        |
+| Challenge level| Herausforderungs-Level|             |
+| DPS        | SpS          | Schaden pro Sekunde      |
+| decoy      | Lockvogel      |                        |
+| Dungeon    | Verlies        |                        |
 | Fangrider  | Fangrider      | Google kennt's :-/     |
 | Gem        | Edelsteine     |                        |
-|Griffinrider| Greifenreiter? |
+| Griffinrider| Greifenreiter |                        |
 | Hero       | Held/Heldin    |                        |
-|munchkins   | Zwerg-Oger     |Zwerge könnte missverständlich sein|
+| munchkins  | Zwerg-Oger     |Zwerge könnte missverständlich sein|
 | Ogre       | Oger           |               |
 | Spell      | Zauberspruch   |     |
 | Scout      | Scout          | Späher? Aufklärer? |
@@ -59,6 +59,6 @@ Good place names are important to give the levels a sense of coherency and fluid
 
 |English               |Translation|                    Issues / Comments                                   |
 |----------------------|-------------------------------|----------------------------------------------------|
-|Defeat the Ogres      |Oger müssen sterben            | sehr martialisch. Alternative: Besiege die Oger    |
-|Hero                  |Held / Heldin                  | generisches Maskulinum? Abwechseln? Binnen_I?      |
-Defat all ogres 
+|Defeat the Ogres      | Oger müssen sterben           | sehr martialisch. Alternative: Besiege die Oger    |
+|Hero                  | Held / Heldin                 | generisches Maskulinum? Abwechseln? Binnen_I?      |
+|Defat all ogres       | Besiege alle Oger             | identisch mit "Defeat the Ogres"?                  |
