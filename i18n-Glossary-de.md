@@ -6,7 +6,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 
 | Original         | Translation     | Comments                      |
 |------------------|-----------------|-------------------------------|
-| Backwoods Forest | Backwoods Wald  | A rough patch of dense forest |
+| Backwoods Forest | Backwoodwald    | A rough patch of dense forest |
 | Cloudrip         | Wolkenreißer    |                               |
 | Cloudrip Mountain| Wolkenreißerberge| Place name                   |
 | Plainswood       | Flachlandwald   |                               |
@@ -26,7 +26,7 @@ Good place names are important to give the levels a sense of coherency and fluid
 | Original   | Translation    | Comments               |
 |------------|----------------|------------------------|
 | Ambush     | Hinterhalt     |                        |
-| Buildables |                | "Ting som kan bygges" ?|
+| Buildables | Erstellbare    | Baubar oder Beschwörbar|
 | Brawler    | Raufbold       | Schläger?              |
 | Clan       | Clan           |                        |
 | Chieftain  | Häuptling      |                        |
@@ -51,9 +51,9 @@ Good place names are important to give the levels a sense of coherency and fluid
 * loop over an array
 
 
-| English                 | German                            | Translation Back|
-|-------------------------|-----------------------------------|-----------------|
-| Loop over an array      | Iteriere über einen Array         |                 |
+| English                 | German                            | Translation Back     |
+|-------------------------|-----------------------------------|----------------------|
+| Loop over an array      | Iteriere über einen Array         | Iterate over an array|
 
 # To be discussed
 
