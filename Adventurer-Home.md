@@ -7,3 +7,4 @@ Hello [Adventurers](https://codecombat.com/contribute/adventurer)! Welcome to th
 
 ###### Useful Links
 * [Information](https://codecombat.com/contribute/adventurer)
+* [Forum](https://discourse.codecombat.com/c/adventurer)
