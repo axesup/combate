@@ -31,8 +31,8 @@ If you get a white screen on http://localhost:3000 with no JavaScript errors, or
 
 ### fatal error: 'utility' file not found
 
-This error occurred after upgrading to Mac OS 10.14.
-This happens because you don't have the most recent version of XCode Command Line Tools installed.
+This error occurs after upgrading to Mac OS 10.14.
+It may happen because you don't have the most recent version of XCode Command Line Tools installed.
 
 Download `Command Line Tools (macOS 10.14) from [downloads for apple developers](https://developer.apple.com/download/more/).
 Install the tools.
