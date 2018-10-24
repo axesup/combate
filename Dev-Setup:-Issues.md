@@ -28,3 +28,17 @@ export LC_ALL=en_US.UTF-8
 If you only see a white screen, check to see if the first line of app.css is `ERROR: Cannot load compass`. If so, try either uninstalling compass (`gem uninstall compass`) or re-installing it if you actually need it (`gem install compass --pre`).
 
 If you get a white screen on http://localhost:3000 with no JavaScript errors, or if your page loads fine but no CSS is applied, it could be that your brunch isn't compiling Sass properly (`public\stylesheets\app.css` is like 70KB instead of >600KB). We don't know of any current issues that are causing this, or workarounds, but it has been a common symptom in the past with different Sass compilation setups, especially on Windows. 
+
+### fatal error: 'utility' file not found
+
+This error occurred after upgrading to Mac OS 10.14.
+This happens because you don't have the most recent version of XCode Command Line Tools installed.
+
+Download `Command Line Tools (macOS 10.14) from [downloads for apple developers](https://developer.apple.com/download/more/).
+Install the tools.
+Restart the terminal.
+Delete the `.node-gyp` folder from your root directory as well as your `node_modules` folder.
+
+Then install it piecemeal as shown above.
+
+This partial solution was found from [this stack overflow thread](https://stackoverflow.com/questions/52545166/node-6-node-gyp-rebuild-for-hiredis-fails-on-macos).
