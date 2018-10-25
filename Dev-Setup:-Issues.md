@@ -44,4 +44,4 @@ Then install it piecemeal as shown above.
 This partial solution was found from [this stack overflow thread](https://stackoverflow.com/questions/52545166/node-6-node-gyp-rebuild-for-hiredis-fails-on-macos).
 
 At this point if you're still getting the error, check your `'MACOSX_DEPLOYMENT_TARGET'` version in your `/Users/<USERNAME>/.node-gyp/6.12.2/include/node/common.gypi` file.
-You may need to manually change the version to your MacOS version which was `10.14` in my case.
+You may need to [manually change the version](https://github.com/nodejs/node-gyp/issues/1574) to your MacOS version which was `10.14` in my case.
