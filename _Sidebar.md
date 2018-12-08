@@ -21,6 +21,7 @@
  * [[Editing Thang Components]]
  * [[Important Artisan Concepts]]
  * [[Keyboard Shortcuts]]
+ * [[Debugging]]
  * [[Artisan How-To Index]]
 * **[[Adventurer General|Adventurer Home]]**
 * **[[Scribe General|Scribe Home]]**
