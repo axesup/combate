@@ -27,6 +27,10 @@ Note, we recommend that you use [CodeCombat Direct](http://direct.codecombat.com
 
 * [[Artisan How-To Index]]
 
+###### Debugging
+
+* [[Debugging]]
+
 ###### More Resources
 
 * [Public Slack Channel](https://coco-slack-invite.herokuapp.com/)
