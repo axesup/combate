@@ -2,7 +2,7 @@
 Below you will find some information on default tasks for creating a level for CodeCombat. These have been resorted in order that they should occur during the natural progression of a level.
 ## Table of Contents
 1. [Build the level](#build-the-level)
-2. [Create a Referee stub if needed](#create-a-Referee stub-if-needed)
+2. [Create a Referee stub, if needed](#create-a-Referee-stub-if-needed)
 3. [Name the level](#name-the-level)
 4. [Write the sample code](#write-the-sample-code)
 5. [Do basic set decoration](#do-basic-set-decoration)
