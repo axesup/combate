@@ -157,7 +157,7 @@ If there is a tip that is short and sweet and absolutely must be delivered to th
 ## Chief Artisan Only
 Don't worry about these tasks, these will be performed by the Chief Artisans at CodeCombat. However, it is always educational to see how things work behind the scenes!
 #### Create achievements, including unlocking next level.
-Create the achievements for this level. Always one for the completion of the level, sometimes extra for optional goals (statement-count, bonus-goals.) Be sure to set the rewards appropriate for the final location for the level. If inserting somewhere in the middle of the campaign, include the level after it as a reward.
+Create the achievements for this level(but how?). Always one for the completion of the level, sometimes extra for optional goals (statement-count, bonus-goals.) Be sure to set the rewards appropriate for the final location for the level. If inserting somewhere in the middle of the campaign, include the level after it as a reward.
 #### Add to a campaign.
 Go to the campaign editor and add the level to the campaign. Move the level circle to where it needs to be. Pay attention to where it is placed, as the level flags must be taken into consideration. Rearrange the side panel so the level is easily findable when giving a quick look.
 #### Choose level options like required/restricted gear.
