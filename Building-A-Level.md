@@ -19,7 +19,7 @@
 1. **Sample Code**. Add the default code shown to the player when your level starts for the first time. [[Read more...|Sample Code]]
 1. **Add Details**. In the Settings tab, give your Level a description, documentation, and a victory screen. [[Read more...|Settings Tab]]
 1. **Configure Systems**. These control some higher level things associated with systems that don't often need to be changed, like teams, UI and gravity.
-1. **Roll your own Components and Systems**. This is rather advanced, and due to security concerns, not enabled by default (we'll be building a community review system in the future so that it can be enabled). If you would like to do some custom logic, you can edit and add systems and components in the level editor but you won't be able to save them. Get in touch with us through our [public HipChat room](http://www.hipchat.com/g3plnOKqa) and we'll help you out. [[Read more...|Components And Systems Tabs]]
+1. **Roll your own Components and Systems**. This is rather advanced, and due to security concerns, not enabled by default (we'll be building a community review system in the future so that it can be enabled). If you would like to do some custom logic, you can edit and add systems and components in the level editor but you won't be able to save them. Get in touch with us through our [public Slack chat](https://coco-slack-invite.herokuapp.com/) and we'll help you out. [[Read more...|Components And Systems Tabs]]
 1. **Test test test**. Click 'play' in the upper right corner to play your level.
 1. **Save and publish**. Check 'publish' when saving your Level to make it accessible to anyone.
 
@@ -29,7 +29,7 @@ No matter what you're building, regular and frequent iteration is key to making 
 
 To get feedback:
 
-* Show us and others hanging out in our [public HipChat room](http://www.hipchat.com/g3plnOKqa).
+* Show us and others hanging out in our [public Slack chat](https://coco-slack-invite.herokuapp.com/).
 * Post on the Artisan section of our [Discourse forum](http://discourse.codecombat.com/category/artisan).
 * Link friends and family to it and have them play it.
 * If you want the best possible result, consider UX testing it. It's a tough skill to learn, but extremely valuable.
@@ -78,6 +78,6 @@ If you check out a level like Ice Soccer, you can see there are two big collisio
 
 *9-* Click the `Populate i18n button` - If you've pressed it already and nothing has happened, don't worry, I can take care of this too.  It's finicky.
 
-*10-* Check completion/engagement/problem analyitcs - The last several tasks, like this one and adding videos, are for us to do once the level has been released, to tune it based on where players are getting stuck.  Don't worry about getting them all.
+*10-* Check completion/engagement/problem analytics - The last several tasks, like this one and adding videos, are for us to do once the level has been released, to tune it based on where players are getting stuck.  Don't worry about getting them all.
 
 I think it will also help if when you get a level ready to go, you post it on the forums, like "New Level: Kelvintaph Brawl", and link to the http://direct.codecombat.com/play/level/kelvintaph-brawl and describe it.  You might think about including a screenshot and a description of the level, and asking for playtests to play it and give feedback.  Once we have improved the level based on suggestions there, we can get it all polished up and ready to put in the main campaign.
