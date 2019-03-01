@@ -18,7 +18,7 @@ You'll want to fork the repo on Github, then clone it to your machine.
 
 You'll then want to install the dependencies and build the asset files.
 
-    npm install --global --production windows-build-tools
+    npm install --global --production windows-build-tools@3.1.0
     npm install
 
 ### Running
