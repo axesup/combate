@@ -15,6 +15,24 @@ We follow the [CoffeeScript Style Guide](https://github.com/polarmobile/coffeesc
 
 Note that Brunch automatically fails to compile when certain rules aren't followed, using a selection of [CoffeeLint](http://www.coffeelint.org/) rules. Keep an eye out for rule failures in Brunch output for guidance here.
 
+## JavaScript Code Style
+
+We use the tool [StandardJS](https://standardjs.com) to keep our JavaScript consistent.
+This is an opinionated tool that helps us keep a consistent style and lint common problems.
+
+The commands listed below can be slow and it's recommended to install an [editor plugin](https://standardjs.com/#are-there-text-editor-plugins) for faster feedback.
+
+### Command Reference
+
+`npm run fix` will run `standard --fix` on the entire codebase ignoring certain directories.
+
+`npm run fix <filename>` will run `standard --fix` on a single file.
+
+`npm run standard` will provide linting info for the entire project.
+
+`npm run standard <filename>` will provide standard linting info for a single file.
+
+
 ## Commenting
 
 Try to avoid writing low-value comments. Comments should be mainly used to flag areas in need of improvement or that really need some explaining. Ideally, code should be structured so that reading the raw logic reveals what it is doing and how it is doing it. If a function is long and convoluted, break it down into many clearly named functions. If it's not clear what a function does, rename or otherwise refactor it to make things clearer.
