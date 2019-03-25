@@ -11,7 +11,7 @@ Our installation guides are split into per-OS guides which will give you step-by
 
 This is the general overview for what you need in order to set up the development environment. For more specific instructions with recommended paths to success, see the installation guides listed above.
 
-1. Install [Node.js 6](https://nodejs.org/en/download/), npm 3.10.10, and [Git](https://desktop.github.com/)
+1. Install [Node.js 8](https://nodejs.org/en/download/), npm 6.4.1, and [Git](https://desktop.github.com/)
 1. `git clone` [this repository](https://github.com/codecombat/codecombat).
 1. `npm install` in the repository's root directory.
 
