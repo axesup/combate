@@ -11,9 +11,9 @@ These steps are our **recommended approach** to setting up CodeCombat's developm
 1. **[Install Xcode](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12).**
 1. **Install Xcode Command Line Tools.** Open XCode and go through menus `Xcode -> Preferences -> Downloads`. This will install Git and provide the command line tools for building the development environment.
 1. **[Install NVM](https://github.com/creationix/nvm#install-script)**. This will help in installing Node, and NPM, the Node package manager. There are multiple ways to install Node, so if you install the latest Stable version some other way, skip down to setting up GitHub.
-1. **Install Node and NPM with NVM.** As of writing, we're using Node 6.14.4 on the server and Node 8.15.1 on the client, so the command is `nvm install 6.14.4`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
-1. **Use Node 6 (Stable) By Default**. `nvm alias default 6.14.4`. This way Node 6.14.4 is used for every new terminal. Otherwise you'll need to run `nvm use 6.14.4` before running any dev environment commands.
-1. **Update npm to 3.10.10**. `npm install -g npm@3.10.10`. We need this version for some of our dependencies to install correctly.
+1. **Install Node and NPM with NVM.** As of writing, we're using Node 8.15.1, so the command is `nvm install 8.15.1`. Check the node version we're using in [package.json](https://github.com/codecombat/codecombat/blob/master/package.json).
+1. **Use Node 8 By Default**. `nvm alias default 8.15.1`. This way Node 8.15.1 is used for every new terminal. Otherwise you'll need to run `nvm use 8.15.1` before running any dev environment commands.
+1. **Update npm to 6.4.1**. `npm install -g npm@6.4.1`. We need this version for some of our dependencies to install correctly.
 1. **[Create an account on GitHub](https://github.com/join).** This is where our code repository is hosted.
 1. **[Configure Git to connect with your GitHub account](https://help.github.com/articles/set-up-git/).**
 1. **[Clone the CodeCombat repository](https://help.github.com/articles/cloning-a-repository/).** `git clone https://github.com/codecombat/codecombat`. This will copy our source code and all its history to your computer to be run and modified.
