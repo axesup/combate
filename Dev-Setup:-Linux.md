@@ -2,7 +2,7 @@
 
 You will need to install Node.js, Git, "build essentials", and Python 2.7.
 
-**NOTE: These instructions are for installing Node v4, but currently CodeCombat uses v5**. Consider using [nvm](https://github.com/creationix/nvm) instead.
+**NOTE: These instructions are for installing Node v4, but currently CodeCombat uses Node 8**. Consider using [nvm](https://github.com/creationix/nvm) instead.
 
 Example for Ubuntu:
 
