@@ -25,7 +25,7 @@ Other globals, such as `features` and `serverConfig` can also be added to the gl
 
 ## Using Router for Vue components
 
-In order to use Vue Components directly in the backbone router, the first step is to import the vue component in `dynamicRequire.js`. Then when adding its route in `Router.coffee`, call `routeDirectly` with the options containing `vueRoute = true`. Also send `propsData` and `baseTemplate` in the options if required.
+In order to use Vue Components directly in the backbone router, the first step is to import the vue component in `dynamicRequire.js`. Then add its route in the `Router.coffee`, and call `routeDirectly` with the options containing `vueRoute = true`. Also send `propsData` and `baseTemplate` in the options if required.
 
 Example:
 
