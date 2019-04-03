@@ -1,6 +1,6 @@
 Wondering how to do something with Vue instead of with Backbone? Here's the cheat sheet for you!
 
-## Me (and other global objects)
+## Me (and other global objects) - Vuex Store
 
 Instead of a global `me` object, use the [Vuex](https://vuex.vuejs.org/en/intro.html) `me` [module](https://vuex.vuejs.org/en/modules.html), with its logged-in-user specific [getters](https://vuex.vuejs.org/en/getters.html) and [actions](https://vuex.vuejs.org/en/actions.html).
 
@@ -23,49 +23,66 @@ While both systems are in use, changes to `me` User automatically get pushed to 
 
 Other globals, such as `features` and `serverConfig` can also be added to the global vuex store, either at the root level or as their own modules, as needed.
 
-## Page Layout
+## Using Router for Vue components
 
-Instead of extending `base.jade` and `base-flat.jade`, include the `page-layout` component and put content inside it.
+In order to use Vue Components directly in the backbone router, the first step is to import the vue component in `dynamicRequire.js`. Then when adding its route in `Router.coffee`, call `routeDirectly` with the options containing `vueRoute = true`. Also send `propsData` and `baseTemplate` in the options if required.
 
-With Backbone:
+Example:
+
+```javascript
+//dynamicRequire.js
+'views/MyVueComponent': function () { return import(/* webpackChunkName: "VueComponentExample" */ 'views/MyVueComponent')
+```
+
+Then set up the route for `MyVueComponent` in `Router.coffee`
 
 ```coffeescript
-# View
-RootView = require 'views/core/RootView'
-class MyView extends RootView
-  template: require('templates/my-view')
+'MyVueComponentRoute(/:id)': (id) ->
+  props = {
+    id: parseInt(id)
+  }
+  # Send vueRoute: true, propsData, and baseTemplate 
+  @routeDirectly('MyVueComponent', [], {propsData: props, baseTemplate: 'base-empty', vueRoute: true})
 ```
 
-```jade
-// Template
-extends /templates/base-flat
+This will use the generic backbone view `VueComponentView.js` in the background which would render your vue component `MyVueComponent`. 
 
-block content
-  div Content...
+The value for `baseTemplate` will be used as a base template for the backbone view. By default, it will use `base-flat.jade` as the base template. Possible values for `baseTemplate`:
+  1. base-empty : This is the empty base template without headers and footers.
+  2. base-flat-empty : This is the empty base template with flat styling.
+  3. base : This is the base template with coco headers and footers.
+  4. base-flat (default value): This is the base template including headers and footers with flat styling.
+
+`MyVueComponent.vue` should be created as a [single-file vue component](https://vuejs.org/v2/guide/single-file-components.html). If required, you can dynamically add a vuex module definition for your page using `this.$store.registerModule`. Make sure to also unregister it in the vue component when no longer needed, which would clear all its data.
+
+Example:
+
+```javascript
+beforeCreate() {
+    // Register a vuex store module for this page, and destroy it when navigating away
+    this.$store.registerModule('MyPageModule', {
+      namespaced: true,  // module will be namespaced to 'MyPageModule/'
+      state: {
+        myState: 'demoValue'
+      }
+      ...
+    })
+  }
+
+destroyed() {
+    // Destroy the dynamically registered module for this page by unregistering it
+    this.$store.unregisterModule('MyPageModule')
+  }
+
+//Use the registered module as a computed property in the vue component
+computed: Vuex.mapState('MyVuexModule', ['testState']) //this means this.testState = store.state.MyVuexModule.testState
 ```
-
-With Vue:
-
-```coffeescript
-# Component
-FlatLayout = require 'core/components/FlatLayout'
-MyComponent = Vue.extend
-  template: require('templates/my-component')()
-  components:
-    'flat-layout': FlatLayout
-```
-
-```jade
-// Template
-flat-layout
-  div Content...
-```
-
-This setup uses [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots). Currently, it doesn't include footer and header pieces (handled by `RootComponent` described later), but eventually FlatLayout will handle the entire page.
 
 ## RootView -> RootComponent
 
-In order to keep using the Backbone router as-is, use a RootComponent as a wrapper for your component. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added upon navigating to the page.
+NOTE: This is another way of routing to vue components using the backbone router. However using this method, you will not be able to use vue components directly in the router, and will have to create a new backbone view with each vue component and then use the router as-is. This is NOT RECOMMENDED, since we are moving towards full VueJS migration and eventually want to deprecate `RootComponent.coffee` going forward. 
+
+In order to route using this method, you will need to use a RootComponent as a wrapper for your component, i.e. create a backbone view extending from `RootComponent`. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added as the 'page' module upon navigating to the page and will be removed by the RootComponent when navigating away.
 
 Backbone:
 
@@ -92,11 +109,71 @@ module.exports = class MyView extends RootComponent
   ...
 ```
 
-As shown above, you can include your own vuex module definition, which RootComponent will add dynamically as the 'page' module. RootComponent will remove that module and all its data when the Router navigates away. This is so that larger pages can take advantage of the vuex store, but also automatically clear any loaded data when no longer needed.
+## Page Layout for Vue Components
 
-The next step is to set up the Router to handle vue components directly, rather than needing the `RootComponent`.
+Instead of extending `base.jade` and `base-flat.jade`, include the `page-layout` component and put content inside it.
 
-## Internal components
+With Backbone:
+
+```coffeescript
+# View
+RootView = require 'views/core/RootView'
+class MyView extends RootView
+  template: require('templates/my-view')
+```
+
+```jade
+// Template
+extends /templates/base-flat
+
+block content
+  div Content...
+```
+
+With Vue:
+
+```
+# Component
+<template lang="pug">
+flat-layout
+  div Content...
+</template>
+
+<script>
+import FlatLayout from 'core/components/FlatLayout'
+module.exports = Vue.extend
+  components:
+    'flat-layout': FlatLayout
+</script>
+```
+
+This setup uses [Vue.js slots](https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots).
+
+## Using Isolated Vue components
+
+In order to use other isolated Vue components inside your vue component, include it in the components and use it in the template.
+
+```
+# Component
+<template lang="pug">
+pie-chart(
+    :percent='10',
+    :stroke-width="10",
+    color="#20572B",
+    :opacity="1"
+  )
+</template>
+
+<script>
+import PieChart from 'core/components/PieComponent'
+module.exports = Vue.extend
+  components:
+    'pie-chart': PieChart
+</script>
+```
+
+
+## Internal vue components in existing Backbone Views
 
 Say you want to take a smaller piece of a Backbone view and make it a Vue component. To do this, create (or update) the vue component instance in the Backbone view's `afterRender` method, and destroy it in the view's `destroy` method.
 
