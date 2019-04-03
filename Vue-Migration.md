@@ -80,7 +80,7 @@ computed: Vuex.mapState('MyVuexModule', ['testState']) //this means this.testSta
 
 ## RootView -> RootComponent
 
-NOTE: This is another way of routing to vue components using the backbone router. However using this method, you will not be able to use vue components directly in the router, and will have to create a new backbone view with each vue component and then use the router as-is. This is NOT RECOMMENDED, since we are moving towards full VueJS migration and eventually want to deprecate `RootComponent.coffee` going forward. 
+**NOTE**: This is another way of routing to vue components using the backbone router. However using this method, you will not be able to use vue components directly in the router, and will have to create a new backbone view with each vue component and then use the router as-is. This is **NOT RECOMMENDED**, since we are moving towards full VueJS migration and eventually want to deprecate `RootComponent.coffee` going forward.
 
 In order to route using this method, you will need to use a RootComponent as a wrapper for your component, i.e. create a backbone view extending from `RootComponent`. Give it a single root Vue component and, if needed, a vuex store module which will be dynamically added as the 'page' module upon navigating to the page and will be removed by the RootComponent when navigating away.
 
