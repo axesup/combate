@@ -78,6 +78,15 @@ destroyed() {
 computed: Vuex.mapState('MyVuexModule', ['testState']) //this means this.testState = store.state.MyVuexModule.testState
 ```
 
+Since we are using a backbone view to render the vue component by using vue constructor, please use `Vue.extend` while exporting from the vue component.
+
+```
+<script>
+module.exports = Vue.extend({ })
+//OR, export default Vue.extend({ })
+</script>
+```
+
 ## RootView -> RootComponent
 
 **NOTE**: This is another way of routing to vue components using the backbone router. However using this method, you will not be able to use vue components directly in the router, and will have to create a new backbone view with each vue component and then use the router as-is. This is **NOT RECOMMENDED**, since we are moving towards full VueJS migration and eventually want to deprecate `RootComponent.coffee` going forward.
