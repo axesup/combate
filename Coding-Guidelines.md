@@ -33,9 +33,17 @@ The commands listed below can be slow and it's recommended to install an [editor
 `npm run standard <filename>` will provide standard linting info for a single file.
 
 
-## Commenting
+## Commenting and JSDoc
 
 Try to avoid writing low-value comments. Comments should be mainly used to flag areas in need of improvement or that really need some explaining. Ideally, code should be structured so that reading the raw logic reveals what it is doing and how it is doing it. If a function is long and convoluted, break it down into many clearly named functions. If it's not clear what a function does, rename or otherwise refactor it to make things clearer.
+
+It is recommended that comments follow JSDoc conventions.
+Often your IDE will help you but [their website](http://usejsdoc.org/) is an excellent reference.
+
+At a minimum it is recommended you include [`@param`](http://usejsdoc.org/tags-param.html) to document the parameters to a function or method.
+As well as [`@return`](http://usejsdoc.org/tags-returns.html) for a description of what is returned.
+
+Many JS editors such as VSCode automatically include JSDoc comments on hover, and will then also provide methods or properties appropriate for the type referenced in the comment.
 
 ## Breaking CodeCombat Down Into Third-Party Modules
 
