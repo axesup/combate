@@ -8,11 +8,15 @@ The basis for French translations is set in: https://discourse.codecombat.com/t/
 
 4. Names are translated if possible. Ex : Bloodhoof -> Sabots-de-Sang ; SpellBane -> Fléau-des-Sorts ; Kithmaze -> Labykith etc. See [this](http://discourse.codecombat.com/t/translation-standards-google-keywords/3440) for specific discussion.
 
-5. Infinitive form for goals description. Ex : bad “Traverse le labyrinthe” ; good “Traverser le labyrinthe”.
+5. Infinitive form for goals description. Ex : bad “Traverse le labyrinthe” ; good “Traverser le labyrinthe”. This is not always possible, eg. with “Humans must survive”.
 
 6. Edit after finding information about it : I use French standards in punctuation : I’m adding a SPACE before an exclamation mark and a question mark, whereas in english there is never a space before a text and a punctuation. Ex : “Tu as gagné !”, where english sentence to translate was : “You won!”.
 
-7. Standard sentences that I’m copy pasting to make sure there are no shaky translations or slight modifications from one level to another. I think standard spacing / capitalization / periods / Slashes etc are important to be reproduced coherently throughout the game :
+7. “Defeat” is translated as “Vaincre”, not “Tuer”.
+
+8. Be careful with inequalities, especially with instructions counts. By default, inequalities are strict in English, but not in French (at least in mathematics classes).
+
+9. Standard sentences that I’m copy pasting to make sure there are no shaky translations or slight modifications from one level to another. I think standard spacing / capitalization / periods / Slashes etc are important to be reproduced coherently throughout the game :
 
    * Ton héros doit survivre.
    * Les humains doivent survivre.
@@ -26,5 +30,4 @@ The basis for French translations is set in: https://discourse.codecombat.com/t/
    * Vue d’ensemble
    * Tu as gagné pour cette fois, mais recommence - Cela deviendra plus difficile à chaque fois.
    * Maman disait toujours : économise tes gemmes pour une meilleure armure.
-   * Les Ogres doivent mourir.
    * N’efface pas le code fourni ! Recharge le code initial.
